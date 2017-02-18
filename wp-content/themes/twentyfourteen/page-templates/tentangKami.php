@@ -70,47 +70,37 @@ else:
             <aside class="side-bar">
                 <div class="widget recent-posts-entry">
                     <h4 class="widget-title">Recent Posts</h4>
+<?php $latest = new WP_Query('showposts=4&cat=4'); ?>
+<?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
                     <div class="widget-post-bx">
                         <div class="widget-post clearfix">
                             <div class="dez-post-media"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt="" /> </div>
                             <div class="dez-post-info">
                                 <div class="dez-post-header">
-                                    <h6 class="post-title">Title of first blog post entry</h6>
+                                    <h6 class="post-title"><?php the_title(); ?></h6>
                                 </div>
                                 <div class="dez-post-meta">
                                     <ul>
-                                        <li class="post-author">By Admin</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="widget-post clearfix">
-                            <div class="dez-post-media"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic2.jpg" width="200" height="160" alt="" /> </div>
-                            <div class="dez-post-info">
-                                <div class="dez-post-header">
-                                    <h6 class="post-title">Title of first blog post entry</h6>
-                                </div>
-                                <div class="dez-post-meta">
-                                    <ul>
-                                        <li class="post-author">By Admin</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="widget-post clearfix">
-                            <div class="dez-post-media"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic3.jpg" width="200" height="160" alt="" /> </div>
-                            <div class="dez-post-info">
-                                <div class="dez-post-header">
-                                    <h6 class="post-title">Title of first blog post entry</h6>
-                                </div>
-                                <div class="dez-post-meta">
-                                    <ul>
-                                        <li class="post-author">By Admin</li>
+                                        <li class="post-author">By <?php the_author(); ?></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
+<?php endwhile; ?>
+    <div class="navigation">
+        <div class="next-posts"><?php next_posts_link(); ?></div>
+        <div class="prev-posts"><?php previous_posts_link(); ?></div>
+    </div>
+
+<?php else : ?>
+
+    <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+        <h1>Not Found</h1>
+    </div>
+
+<?php endif; ?>
+                    <?php wp_reset_query(); ?>
                 </div>
 
                 <div class="widget widget_gallery">
