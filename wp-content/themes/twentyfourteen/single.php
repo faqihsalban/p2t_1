@@ -50,7 +50,7 @@ get_header(); ?>
                             </div>
                           
                             <div class="dez-post-text">
-                                <p><?php the_content();?></p>
+                                <p><?php get_the_content();?></p>
                             </div>
                             <div class="dez-post-tags clear">
                                 <div class="post-tags"> <a href="#">Child </a> <a href="#">Eduction </a> <a href="#">Money </a> <a href="#">Resturent </a> </div>
