@@ -72,7 +72,7 @@
                    ?>
                                 <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="<?php echo $src;?>" alt="" /> </a>
                                     <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="<?php echo $src;?>" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                        <div class="overlay-icon">  <a href="<?php echo $src;?>" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                     </div>
                                 </div>
 							<?php 
