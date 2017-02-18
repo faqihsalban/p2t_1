@@ -77,14 +77,14 @@ else:
 <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
                     <div class="widget-post-bx">
                         <div class="widget-post clearfix">
-                            <div class="dez-post-media"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt="" /> </div>
+                            <div class="dez-post-media"> <a href="<?php the_permalink();?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt="" /> </a></div>
                             <div class="dez-post-info">
                                 <div class="dez-post-header">
-                                    <h6 class="post-title"><?php the_title(); ?></h6>
+                                    <a href="<?php the_permalink();?>"><h6 class="post-title"><?php the_title(); ?></h6></a>
                                 </div>
                                 <div class="dez-post-meta">
                                     <ul>
-                                        <li class="post-author">By <?php the_author(); ?></li>
+                                        <a href="<?php the_permalink();?>"><li class="post-author">By <?php the_author(); ?></li></a>
                                     </ul>
                                 </div>
                             </div>
