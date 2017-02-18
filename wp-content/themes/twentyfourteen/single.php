@@ -72,7 +72,7 @@ else:
                             <div class="widget recent-posts-entry">
                                 <h4 class="widget-title">Recent Posts</h4>
                                 <div class="widget-post-bx">
-								<?php $latest = new WP_Query('showposts=4'); ?>
+								<?php $latest = new WP_Query('showposts=8&cat=4'); ?>
         <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
                                     <div class="widget-post clearfix">
                                         <div class="dez-post-media"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt="" /> </div>
@@ -87,10 +87,7 @@ else:
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                </div>
-                            </div>
-                           <?php endwhile; ?> 
+                                    <?php endwhile; ?> 
           <div class="navigation">
            <div class="next-posts"><?php next_posts_link(); ?></div>
            <div class="prev-posts"><?php previous_posts_link(); ?></div>
@@ -104,6 +101,9 @@ else:
 
          <?php endif; ?>
          <?php wp_reset_query(); ?>
+                                </div>
+                            </div>
+                           
                             <div class="widget widget_gallery">
                                 <h5 class="widget-title">Our services</h5>
                                 <ul>
