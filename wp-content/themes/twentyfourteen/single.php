@@ -75,14 +75,14 @@ else:
 								<?php $latest = new WP_Query('showposts=8&cat=4'); ?>
         <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
                                     <div class="widget-post clearfix">
-                                        <div class="dez-post-media"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt="" /> </div>
+                                        <div class="dez-post-media"> <img src="<?php  the_field('cover'); ?>" width="200" height="143" alt="" /> </div>
                                         <div class="dez-post-info">
                                             <div class="dez-post-header">
-                                                <h6 class="post-title">Title of first blog post entry</h6>
+                                                <h6 class="post-title"><?php  the_title(); ?></h6>
                                             </div>
                                             <div class="dez-post-meta">
                                                 <ul>
-                                                    <li class="post-author">By Admin</li>
+                                                    <li class="post-author">By <?php  the_author(); ?></li>
                                                 </ul>
                                             </div>
                                         </div>
