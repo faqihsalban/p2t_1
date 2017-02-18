@@ -33,3 +33,11 @@ a, .text-primary, .primary li:before, .breadcrumb-row ul li a, .header-nav .nav 
 .site-button:active, .site-button:hover, .site-button:focus, .active > .site-button, .bg-primary-dark, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .owl-prev:hover, .owl-prev:active, .owl-prev:focus, .owl-next:hover, .owl-next:active, .owl-next:focus {
     background-color: #400a5d;
 }
+
+[class*=bg-] .header-nav .nav>li>a {
+    color: #fff;
+}
+
+[class*=bg-] .header-nav .nav>li.active>a, [class*=bg-] .header-nav .nav>li.current-menu-item>a, [class*=bg-] .header-nav .nav>li:hover>a, [class*=bg-] .header-nav .nav>li>a:hover {
+    color: #2D3239;
+}
