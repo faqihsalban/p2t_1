@@ -163,7 +163,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<!-- main nav -->
 				<div class="header-nav navbar-collapse collapse">
 					<ul class=" nav navbar-nav">
-						<li class="active"> <a href="http://p2t.azurewebsites.net/">Home<i class="fa fa-chevron-down"></i></a></li>
+						<li> <a href="http://p2t.azurewebsites.net/">Home<i class="fa fa-chevron-down"></i></a></li>
 						<li> <a href="http://p2t.azurewebsites.net/tentang-kami/">Tentang Kami<i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
 								<li><a href="http://p2t.azurewebsites.net/tentang-kami/sejarah/">Sejarah</a></li>
@@ -211,17 +211,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<li><a href="http://p2t.azurewebsites.net/perusahaan/modifikasi-perilaku">Modifikasi Prilaku</a></li>
 									</ul>
 								</li>
-								<li><a href="http://p2t.azurewebsites.net/short-court/">Short Course</a></li>
 							</ul>
 						</li>
+						<li > <a href="http://p2t.azurewebsites.net/short-court/">Short Course</a></li>
 						<li> <a href="http://p2t.azurewebsites.net/berita">Berita<i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
 								<li> <a href="http://p2t.azurewebsites.net/berita/kegiatan-yang-akan-dilakukan">Kegiatan Yang Akan Dilakukan</a></li>
 								<li> <a href="http://p2t.azurewebsites.net/perusahaan/kegiatan-yang-sudah-dilakukan">Kegiatan Yang Telah Dilakukan</a></li>
 							</ul>
 						</li>
-						<li class="active"> <a href="http://p2t.azurewebsites.net/klien/">Klien<i class="fa fa-chevron-down"></i></a></li>
-						<li class="active"> <a href="http://p2t.azurewebsites.net/kontak/">Kontak<i class="fa fa-chevron-down"></i></a></li>
+						<li > <a href="http://p2t.azurewebsites.net/galeri/">Galeri<i class="fa fa-chevron-down"></i></a></li>
+						<li > <a href="http://p2t.azurewebsites.net/klien/">Klien<i class="fa fa-chevron-down"></i></a></li>
+						<li > <a href="http://p2t.azurewebsites.net/kontak/">Kontak<i class="fa fa-chevron-down"></i></a></li>
 					</ul>
 				</div>
 		
