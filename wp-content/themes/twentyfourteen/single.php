@@ -44,7 +44,7 @@ get_header(); ?>
                             </div>
                             <div class="dez-post-meta m-b20">
                                 <ul>
-                                    <li class="post-date"> <i class="fa fa-calendar"></i><?php the_date('d M','<strong>','</strong>'); ?><?php the_date('Y','<span>','</span>'); ?></li>
+                                    <li class="post-date"> <i class="fa fa-calendar"></i><?php the_date(); ?></li>
                                     <li class="post-author"><i class="fa fa-user"></i>By <a href="#"><?php the_author();?></a> </li>
                                 </ul>
                             </div>
@@ -57,7 +57,6 @@ get_header(); ?>
                             </div>
                         </div>
                         <!-- blog END -->
-						<?php the_content();?>
   <?php
 endwhile;
 else:
