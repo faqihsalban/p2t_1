@@ -45,7 +45,7 @@
                                     </div>
                                     <div class="dez-post-meta ">
                                         <ul>
-                                            <li class="post-date"> <i class="fa fa-calendar"></i><?php the_date('d Mon', '<strong>', '</strong>'); ?><?php the_date('Y', '<span>', '</span>'); ?> </li>
+                                            <li class="post-date"> <i class="fa fa-calendar"></i><strong><?php the_date('d Mon', '<strong>', '</strong>'); ?></strong><span><?php the_date('Y', '<span>', '</span>'); ?> </span></li>
                                             <li class="post-author"><i class="fa fa-user"></i>By <a href="#"><?php the_author();?></a> </li>
                                           
                                         </ul>
