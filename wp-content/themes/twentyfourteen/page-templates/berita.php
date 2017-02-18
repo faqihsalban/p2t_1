@@ -48,7 +48,7 @@
                                             <li class="post-date"> <i class="fa fa-calendar"></i><strong><?php the_date('d Mon'); ?></strong><span><?php the_date('Y'); ?> </span></li><strong>
                                             <li class="post-author"><i class="fa fa-user"></i>By <a href="#"><?php the_author();?></a> </li>
                                           
-                                        </ul>
+                                        </ul> 
                                     </div>
                                     
                                 </div>
