@@ -41,3 +41,6 @@ a, .text-primary, .primary li:before, .breadcrumb-row ul li a, .header-nav .nav 
 [class*=bg-] .header-nav .nav>li.active>a, [class*=bg-] .header-nav .nav>li.current-menu-item>a, [class*=bg-] .header-nav .nav>li:hover>a, [class*=bg-] .header-nav .nav>li>a:hover {
     color: #2D3239;
 }
+.content-area {
+    padding-top: 10px;
+}
