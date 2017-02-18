@@ -163,8 +163,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<!-- main nav -->
 				<div class="header-nav navbar-collapse collapse">
 					<ul class=" nav navbar-nav">
-						<li class="active"> <a href="http://google.com">Home<i class="fa fa-chevron-down"></i></a></li>
-						<li> <a href="javascript:;">Tentang Kami<i class="fa fa-chevron-down"></i></a>
+						<li class="active"> <a href="http://p2t.azurewebsites.net/">Home<i class="fa fa-chevron-down"></i></a></li>
+						<li> <a href="http://p2t.azurewebsites.net/tentang-kami/">Tentang Kami<i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
 								<li><a href="./product.html">Sejarah</a></li>
 								<li><a href="./product-details.html">Nilai-nilai P2T</a></li>
