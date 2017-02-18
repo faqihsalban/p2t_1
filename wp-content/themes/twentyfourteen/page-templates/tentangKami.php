@@ -92,30 +92,71 @@ get_header();
     </div>
     <!-- Left part END -->
     <!-- Side bar start -->
-    <div class="col-md-3">
-    <aside class="side-bar">
-    <div class="widget recent-posts-entry">
-    <h4 class="widget-title">Recent Posts</h4>
-    <div class="widget-post-bx">
-    <div class="widget-post clearfix">
-        <div class="dez-post-media"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt="" /> </div>
-        <div class="dez-post-info">
-            <div class="dez-post-header">
-                <h6 class="post-title">Title of first blog post entry</h6>
-            </div>
-            <div class="dez-post-meta">
-                <ul>
-                    <li class="post-author">By Admin</li>
-                </ul>
-            </div>
+        <div class="col-md-3">
+            <aside class="side-bar">
+                <div class="widget recent-posts-entry">
+                    <h4 class="widget-title">Recent Posts</h4>
+                    <div class="widget-post-bx">
+                        <div class="widget-post clearfix">
+                            <div class="dez-post-media"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt="" /> </div>
+                            <div class="dez-post-info">
+                                <div class="dez-post-header">
+                                    <h6 class="post-title">Title of first blog post entry</h6>
+                                </div>
+                                <div class="dez-post-meta">
+                                    <ul>
+                                        <li class="post-author">By Admin</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-post clearfix">
+                            <div class="dez-post-media"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic2.jpg" width="200" height="160" alt="" /> </div>
+                            <div class="dez-post-info">
+                                <div class="dez-post-header">
+                                    <h6 class="post-title">Title of first blog post entry</h6>
+                                </div>
+                                <div class="dez-post-meta">
+                                    <ul>
+                                        <li class="post-author">By Admin</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-post clearfix">
+                            <div class="dez-post-media"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic3.jpg" width="200" height="160" alt="" /> </div>
+                            <div class="dez-post-info">
+                                <div class="dez-post-header">
+                                    <h6 class="post-title">Title of first blog post entry</h6>
+                                </div>
+                                <div class="dez-post-meta">
+                                    <ul>
+                                        <li class="post-author">By Admin</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget widget_gallery">
+                    <h5 class="widget-title">Our services</h5>
+                    <ul>
+                        <li class="img-effect2"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/gallery/pic1.jpg" alt="" /></a> </li>
+                        <li class="img-effect2"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/gallery/pic2.jpg" alt="" /></a> </li>
+                        <li class="img-effect2"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/gallery/pic3.jpg" alt="" /></a> </li>
+                        <li class="img-effect2"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/gallery/pic4.jpg" alt="" /></a> </li>
+                        <li class="img-effect2"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/gallery/pic5.jpg" alt="" /></a> </li>
+                        <li class="img-effect2"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/gallery/pic6.jpg" alt="" /></a> </li>
+                    </ul>
+                </div>
+
+            </aside>
         </div>
+        <!-- Side bar END -->
     </div>
-    <div class="widget-post clearfix">
-    <div class="dez-post-media"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic2.jpg" width="200" height="160" alt="" /> </div>
-    <div class="dez-post-info">
-        <div class="dez-post-header">
-            <h6 class="post-title">Title of first blog post entry</h6>
-        </div>
-        <div class="dez-post-meta">
+    </div>
+    </div>
+    </div>
 <?php
 get_footer();
