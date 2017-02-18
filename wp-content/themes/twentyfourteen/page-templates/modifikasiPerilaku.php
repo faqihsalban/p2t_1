@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Tentang Kami
+ * Template Name: Modifikasi Perilaku
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen
