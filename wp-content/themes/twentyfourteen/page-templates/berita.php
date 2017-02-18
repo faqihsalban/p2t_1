@@ -34,7 +34,7 @@
                 <div class="row">
                     <!-- blog grid -->
                     <div id="masonry" class="dez-blog-grid-3">
-                        <?php $latest = new WP_Query('showposts=20&cat=3'); ?>
+                        <?php $latest = new WP_Query('showposts=20&cat=4'); ?>
         <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
                         <div class="post card-container col-lg-3 col-md-4 col-sm-6 col-xs-12">
                             <div class="blog-post blog-grid date-style-2">
