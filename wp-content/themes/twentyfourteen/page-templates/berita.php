@@ -44,7 +44,7 @@
                                         <h3 class="post-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
                                     </div>
                                     <div class="dez-post-meta ">
-                                        <ul>
+                                        <ul> 
                                             <li class="post-date"> <i class="fa fa-calendar"></i><?php the_date('d M','<strong>','</strong>'); ?><?php the_date('Y','<span>','</span>'); ?></li><strong>
                                             <li class="post-author"><i class="fa fa-user"></i>By <a href="#"><?php the_author();?></a> </li>
                                           
