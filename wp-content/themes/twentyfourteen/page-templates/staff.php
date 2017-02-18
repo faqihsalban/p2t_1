@@ -65,10 +65,13 @@ else:
                     <h4 class="widget-title">Pages</h4>
 
                     <div class="widget-post-bx">
-                        <h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/">Tentang Kami</a></h6>
-						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/sejarah/">Sejarah</a></h6>
-						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/nilai-nilai-p2t/">Nilai-nilai P2T</a></h6>
-                    </div>
+                        <h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/">Profil</a></h6>
+						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/sejarah/">Direktur</a></h6>
+						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/nilai-nilai-p2t/">Manajer Operasional</a></h6>
+						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/">Staf</a></h6>
+						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/">Dosen</a></h6>
+						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/">Mitra Kreatif</a></h6>
+					</div>
 
                 </div>
                 <div class="widget recent-posts-entry">
