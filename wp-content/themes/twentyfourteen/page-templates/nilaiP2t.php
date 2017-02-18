@@ -64,18 +64,9 @@ else:
                     <h4 class="widget-title">Pages</h4>
 
                     <div class="widget-post-bx">
-                        <div class="widget-post clearfix">
-                            <div class="dez-post-info">
-                                <div class="dez-post-header">
-                                    <h6 class="post-title"><?php the_title(); ?></h6>
-                                </div>
-                                <div class="dez-post-meta">
-                                    <ul>
-                                        <li class="post-author">By <?php the_author(); ?></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/">Tentang Kami</a></h6>
+						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/sejarah/">Sejarah</a></h6>
+						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/nilai-nilai-p2t/">Nilai-nilai P2T</a></h6>
                     </div>
 
                 </div>
