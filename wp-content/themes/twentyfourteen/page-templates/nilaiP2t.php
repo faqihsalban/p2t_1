@@ -109,12 +109,21 @@ else:
                 <div class="widget widget_gallery">
                     <h5 class="widget-title">Our services</h5>
                     <ul>
-                        <li class="img-effect2"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/gallery/pic1.jpg" alt="" /></a> </li>
-                        <li class="img-effect2"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/gallery/pic2.jpg" alt="" /></a> </li>
-                        <li class="img-effect2"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/gallery/pic3.jpg" alt="" /></a> </li>
-                        <li class="img-effect2"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/gallery/pic4.jpg" alt="" /></a> </li>
-                        <li class="img-effect2"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/gallery/pic5.jpg" alt="" /></a> </li>
-                        <li class="img-effect2"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/gallery/pic6.jpg" alt="" /></a> </li>
+                        <?php
+                /* The loop */
+                 
+                  $gallery = get_post_gallery( 104, false );
+                  
+                  /* Loop through all the image and output them one by one */
+                  foreach( $gallery['src'] AS $src )
+                  {
+                   ?>
+				   <li class="img-effect2"> <a href="http://p2t.azurewebsites.net/galeri/"><img src="<?php echo $src;?>" alt="" /></a> </li>
+                                
+							<?php 
+                  }
+                 
+               ?>
                     </ul>
                 </div>
 
