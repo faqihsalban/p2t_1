@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div class="page-content">
         <!-- inner page banner -->
-        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(<?php echo get_template_directory_uri() ?>/images/background/bg4.jpg);">
+        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(<?php echo get_template_directory_uri() ?>/assets/images/background/bg4.jpg);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
                     <h1 class="text-white">Blog single on sidebar</h1>
@@ -43,7 +43,7 @@ get_header(); ?>
                             <li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0 Comments</a> </li>
                         </ul>
                     </div>
-                    <div class="dez-post-media dez-img-effect zoom-slow"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/blog/default/thum1.jpg" alt="" /></a> </div>
+                    <div class="dez-post-media dez-img-effect zoom-slow"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/default/thum1.jpg" alt="" /></a> </div>
                     <div class="dez-post-text">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy 
                             text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum 
@@ -61,7 +61,7 @@ get_header(); ?>
                             ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen  
                             It has urvived not only five centuries, but also the leap into electronic typesetting.</p>
                         <h5>Completely Responsive</h5>
-                        <img class="alignleft" width="300" src="<?php echo get_template_directory_uri() ?>/images/blog/grid/pic4.jpg" alt="" />
+                        <img class="alignleft" width="300" src="<?php echo get_template_directory_uri() ?>/assets/images/blog/grid/pic4.jpg" alt="" />
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
                             ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only                                 
                             five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
@@ -72,7 +72,7 @@ get_header(); ?>
                             It was popularised in the 1960s with the releasefive centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                             It was popularised in the 1960s with the release</p>
                         <div class="dez-divider bg-gray-dark"></div>
-                        <img class="alignright" width="300" src="<?php echo get_template_directory_uri() ?>/images/blog/grid/pic1.jpg" alt="" />
+                        <img class="alignright" width="300" src="<?php echo get_template_directory_uri() ?>/assets/images/blog/grid/pic1.jpg" alt="" />
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
                             ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only                                 
                             five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
@@ -94,7 +94,7 @@ get_header(); ?>
                             <ol class="comment-list">
                                 <li class="comment">
                                     <div class="comment-body">
-                                        <div class="comment-author vcard"> <img class="avatar photo" src="<?php echo get_template_directory_uri() ?>/images/testimonials/pic1.jpg" alt="" /> <cite class="fn">Stacy poe</cite> <span class="says">says:</span> </div>
+                                        <div class="comment-author vcard"> <img class="avatar photo" src="<?php echo get_template_directory_uri() ?>/assets/images/testimonials/pic1.jpg" alt="" /> <cite class="fn">Stacy poe</cite> <span class="says">says:</span> </div>
                                         <div class="comment-meta"> <a href="#">October 6, 2015 at 7:15 am</a> </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae neqnsectetur adipiscing elit. Nam viae neqnsectetur adipiscing elit.
                                             Nam vitae neque vitae sapien malesuada aliquet. </p>
@@ -103,7 +103,7 @@ get_header(); ?>
                                     <ol class="children">
                                         </ol></li><li class="comment odd parent">
                                             <div class="comment-body">
-                                                <div class="comment-author vcard"> <img class="avatar photo" src="<?php echo get_template_directory_uri() ?>/images/testimonials/pic2.jpg" alt="" /> <cite class="fn">Stacy poe</cite> <span class="says">says:</span> </div>
+                                                <div class="comment-author vcard"> <img class="avatar photo" src="<?php echo get_template_directory_uri() ?>/assets/images/testimonials/pic2.jpg" alt="" /> <cite class="fn">Stacy poe</cite> <span class="says">says:</span> </div>
                                                 <div class="comment-meta"> <a href="#">October 6, 2015 at 7:15 am</a> </div>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae neque vitae sapien malesuada aliquet. 
                                                     In viverra dictum justo in vehicula. Fusce et massa eu ante ornare molestie. Sed vestibulum sem felis, 
@@ -113,7 +113,7 @@ get_header(); ?>
                                             <ol class="children">
                                                 </ol></li><li class="comment odd parent">
                                                     <div class="comment-body">
-                                                        <div class="comment-author vcard"> <img class="avatar photo" src="<?php echo get_template_directory_uri() ?>/images/testimonials/pic3.jpg" alt="" /> <cite class="fn">Stacy poe</cite> <span class="says">says:</span> </div>
+                                                        <div class="comment-author vcard"> <img class="avatar photo" src="<?php echo get_template_directory_uri() ?>/assets/images/testimonials/pic3.jpg" alt="" /> <cite class="fn">Stacy poe</cite> <span class="says">says:</span> </div>
                                                         <div class="comment-meta"> <a href="#">October 6, 2015 at 7:15 am</a> </div>
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae neque vitae sapien malesuada aliquet. 
                                                             In viverra dictum justo in vehicula. Fusce et massa eu ante ornare molestie. Sed vestibulum sem felis, 
@@ -129,7 +129,7 @@ get_header(); ?>
                                 
                                 <li class="comment">
                                     <div class="comment-body">
-                                        <div class="comment-author vcard"> <img class="avatar photo" src="<?php echo get_template_directory_uri() ?>/images/testimonials/pic1.jpg" alt="" /> <cite class="fn">Stacy poe</cite> <span class="says">says:</span> </div>
+                                        <div class="comment-author vcard"> <img class="avatar photo" src="<?php echo get_template_directory_uri() ?>/assets/images/testimonials/pic1.jpg" alt="" /> <cite class="fn">Stacy poe</cite> <span class="says">says:</span> </div>
                                         <div class="comment-meta"> <a href="#">October 6, 2015 at 7:15 am</a> </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae neque vitae sapien malesuada aliquet. 
                                             In viverra dictum justo in vehicula. Fusce et massa eu ante ornare molestie. Sed vestibulum sem felis, 
@@ -139,7 +139,7 @@ get_header(); ?>
                                 </li>
                                 <li class="comment">
                                     <div class="comment-body">
-                                        <div class="comment-author vcard"> <img class="avatar photo" src="<?php echo get_template_directory_uri() ?>/images/testimonials/pic2.jpg" alt="" /> <cite class="fn">Stacy poe</cite> <span class="says">says:</span> </div>
+                                        <div class="comment-author vcard"> <img class="avatar photo" src="<?php echo get_template_directory_uri() ?>/assets/images/testimonials/pic2.jpg" alt="" /> <cite class="fn">Stacy poe</cite> <span class="says">says:</span> </div>
                                         <div class="comment-meta"> <a href="#">October 6, 2015 at 7:15 am</a> </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae neque vitae sapien malesuada aliquet. 
                                             In viverra dictum justo in vehicula. Fusce et massa eu ante ornare molestie. Sed vestibulum sem felis, 
@@ -149,7 +149,7 @@ get_header(); ?>
                                 </li>
                                 <li class="comment">
                                     <div class="comment-body">
-                                        <div class="comment-author vcard"> <img class="avatar photo" src="<?php echo get_template_directory_uri() ?>/images/testimonials/pic3.jpg" alt="" /> <cite class="fn">Stacy poe</cite> <span class="says">says:</span> </div>
+                                        <div class="comment-author vcard"> <img class="avatar photo" src="<?php echo get_template_directory_uri() ?>/assets/images/testimonials/pic3.jpg" alt="" /> <cite class="fn">Stacy poe</cite> <span class="says">says:</span> </div>
                                         <div class="comment-meta"> <a href="#">October 6, 2015 at 7:15 am</a> </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae neque vitae sapien malesuada aliquet. 
                                             In viverra dictum justo in vehicula. Fusce et massa eu ante ornare molestie. Sed vestibulum sem felis, 
