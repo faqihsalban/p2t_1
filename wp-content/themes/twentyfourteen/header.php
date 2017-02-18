@@ -220,8 +220,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li> <a href="http://p2t.azurewebsites.net/perusahaan/kegiatan-yang-sudah-dilakukan">Kegiatan Yang Telah Dilakukan</a></li>
 							</ul>
 						</li>
-						<li class="active"> <a href="http://google.com">Klien<i class="fa fa-chevron-down"></i></a></li>
-						<li class="active"> <a href="http://google.com">Kontak<i class="fa fa-chevron-down"></i></a></li>
+						<li class="active"> <a href="http://p2t.azurewebsites.net/klien/">Klien<i class="fa fa-chevron-down"></i></a></li>
+						<li class="active"> <a href="http://p2t.azurewebsites.net/kontak/">Kontak<i class="fa fa-chevron-down"></i></a></li>
 					</ul>
 				</div>
 		
