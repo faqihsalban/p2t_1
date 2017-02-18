@@ -9,100 +9,145 @@
  * @since Twenty Fourteen 1.0
  */
 ?>
-
-	<div class="footer">
-	<div class="footer-top">
-	   <div class="wrap">
-		   <div class="section group">
-				<div class="col_1_of_3 span_1_of_3">
-					<h3>About Us</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					<button class="btn1 btn-8 btn-8b">Learn more</button>
-					<h4>Photo Stream</h4>
-					<div class="gallery">
-						<ul>
-							<li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="<?php echo get_template_directory_uri() ?>/assets/images/g1.jpg" alt=""/></a></li>
-							<li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="<?php echo get_template_directory_uri() ?>/assets/images/g2.jpg" alt=""/></a></li>
-							<li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="<?php echo get_template_directory_uri() ?>/assets/images/g3.jpg" alt=""/></a></li>
-							<li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="<?php echo get_template_directory_uri() ?>/assets/images/g4.jpg" alt=""/></a></li>
-							<li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="<?php echo get_template_directory_uri() ?>/assets/images/g5.jpg" alt=""/></a></li>
-							<li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="<?php echo get_template_directory_uri() ?>/assets/images/g6.jpg" alt=""/></a></li>
-							 <div id="small-dialog1" class="mfp-hide">
-								<div class="pop_up">
-								 	<h2>A Sample Photo Stream</h2>
-									<img src="<?php echo get_template_directory_uri() ?>/assets/images/g_zoom.jpg" alt=""/>
-					  			</div>
-							</div>
-						</ul>
-					</div>
+<!-- footer bottom part -->
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 text-left"> <span>© Copyright 2017</span> </div>
+					<div class="col-md-4 text-center"> <span> Design With <i class="fa fa-heart text-red heart"></i> By DexignZone </span> </div>
+					<div class="col-md-4 text-right "> <a href="./assets/about-2.html"> About</a> <a href="./assets/help.html"> Help Desk</a> <a href="./assets/privacy-policy.html"> Privacy Policy</a> </div>
 				</div>
-				<div class="col_1_of_3 span_1_of_3">
-					<h3>Latest tweets</h3>
-					<div class="footer-list">
-						<ul>
-							<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/tw.png" alt=""/><p>Lorem ipsum <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/tw.png" alt=""/><p>Lorem ipsum <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/tw.png" alt=""/><p>Lorem ipsum dolor sit amet, <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, sed diam nonummy nibh<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/tw.png" alt=""/><p>Lorem ipsum dolor sit amet, <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, sed diam nonummy nibh<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/tw.png" alt=""/><p>Lorem ipsum <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
-						</ul>
-					</div>
-					 <div class="social-icons">	
-					 	<h4>Social Connecting</h4>
-						    <ul>	
-							  <li class="facebook"><a href="#"><span> </span></a></li>
-					          <li class="google"><a href="#"><span> </span></a></li>
-					          <li class="twitter"><a href="#"><span> </span></a></li>
-					          <li class="linkedin"><a href="#"><span> </span></a></li>	 
-					          <li class="youtube"><a href="#"><span> </span></a></li>	
-					          <li class="bloger"><a href="#"><span> </span></a></li>
-					          <li class="rss"><a href="#"><span> </span></a></li>	
-					          <li class="dribble"><a href="#"><span> </span></a></li>		        	
-					        </ul>
-				     </div>
-			    </div>
-				<div class="col_1_of_3 span_1_of_3">
-					<h3>Contact info</h3>
-					<div class="footer-list">
-						<ul>
-							<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/address.png" alt=""/><p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit, sed diam nonummy nibh<br>&nbsp;web design</p><div class="clear"></div></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/phone.png" alt=""/><p>Phone: +1 800 258 2689<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1 800 258 2689 </p><div class="clear"></div></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/assets/images/msg.png" alt=""/><p>Email: <span class="yellow"><a href="#">info(at)skokov.com</a></span></p><div class="clear"></div></li>
-					   </ul>
-					</div>
-					<div class="follow">
-					   <h4>Follow Us</h4>
-					   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-					   <div class="search">
-						  <form>
-							   <input type="text" value="">
-							   <input type="submit" value="">
-						  </form>
-					   </div>
-				    </div>
-				</div>
-				<div class="clear"></div>
 			</div>
-	  </div>
-	 </div>
-	 <div class="footer-bottom">
-	 	<div class="wrap">
-		 	<div class="copy">
-			     <p class="copy">© 2013 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
-		    </div>
-		 	<div class="footer-nav">
-		 		<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li> 
-					<li><a href="blog.html">Blog</a></li> 
-					<li><a href="about.html">About Us</a></li> 
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-		 	</div>
-		 	<div class="clear"></div>
-	    </div>
-	</div>
+		</div>
+	</footer>
+	<!-- Footer END-->
+    <!-- scroll top button -->
+    <button class="scroltop fa fa-caret-up"></button>
 </div>
+<!-- JavaScript  files ========================================= -->
+<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+<!-- jquery.min js -->
+<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+<!-- bootstrap.min js -->
+<script type="text/javascript" src="./assets/js/bootstrap-select.min.js"></script>
+<!-- Form js -->
+<script type="text/javascript" src="./assets/js/jquery.bootstrap-touchspin.js"></script>
+<!-- Form js -->
+<script type="text/javascript" src="./assets/js/magnific-popup.js"></script>
+<!-- magnific-popup js -->
+<script type="text/javascript" src="./assets/js/waypoints-min.js"></script>
+<!-- waypoints js -->
+<script type="text/javascript" src="./assets/js/counterup.min.js"></script>
+<!-- counterup js -->
+<script type="text/javascript" src="./assets/js/imagesloaded.js"></script>
+<!-- masonry  -->
+<script type="text/javascript" src="./assets/js/masonry-3.1.4.js"></script>
+<!-- masonry  -->
+<script type="text/javascript" src="./assets/js/masonry.filter.js"></script>
+<!-- masonry  -->
+<script type="text/javascript" src="./assets/js/owl.carousel.js"></script>
+<!-- OWL  Slider  -->
+<script type="text/javascript" src="./assets/js/custom.min.js"></script>
+<!-- custom fuctions  -->
+<script type="text/javascript" src="./assets/js/sortcode.min.js"></script>
+<!-- sortcode fuctions  -->
+<script type="text/javascript" src="./assets/js/switcher.min.js"></script>
+<!-- switcher fuctions  -->
+<!-- revolution JS FILES -->
+<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript">
+		var tpj=jQuery;
+			var revapi486;
+			tpj(document).ready(function() {
+				if(tpj("#rev_slider_486_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_486_1");
+				}else{
+					revapi486 = tpj("#rev_slider_486_1").show().revolution({
+						sliderType:"standard",
+						jsFileLocation:"//server.local/revslider/wp-content/plugins/revslider/public/assets/js/",
+						sliderLayout:"fullwidth",
+						dottedOverlay:"none",
+						delay:9000,
+						navigation: {
+                                keyboardNavigation: "on",
+                                keyboard_direction: "vertical",
+                                mouseScrollNavigation: "off",
+                                onHoverStop: "off",
+                                touch: {
+                                    touchenabled: "on",
+                                    swipe_threshold: 75,
+                                    swipe_min_touches: 1,
+                                    swipe_direction: "vertical",
+                                    drag_block_vertical: false
+                                },
+                                arrows: {
+                                    style: "erinyen",
+                                    enable: true,
+                                    hide_onmobile: false,
+                                    hide_onleave: false,
+                                    tmp: '<div class="tp-title-wrap">  	<div class="tp-arr-imgholder"></div>    <div class="tp-arr-img-over"></div>	<span class="tp-arr-titleholder">{{title}}</span> </div>',
+                                    left: {
+                                        h_align: "left",
+                                        v_align: "center",
+                                        h_offset: 10,
+                                        v_offset: 0
+                                    },
+                                    right: {
+                                        h_align: "right",
+                                        v_align: "center",
+                                        h_offset: 10,
+                                        v_offset: 0
+                                    }
+                                },
+                                
+                            },
+						
+						responsiveLevels:[1240,1024,778,480],
+						visibilityLevels:[1240,1024,778,480],
+						gridwidth:[1240,1024,778,480],
+						gridheight:[700,700,700	,600],
+						lazyType:"none",
+						parallax: {
+							type:"scroll",
+							origo:"enterpoint",
+							speed:400,
+							levels:[5,10,15,20,25,30,35,40,45,50,46,47,48,49,50,55],
+							type:"scroll",
+						},
+						shadow:0,
+						spinner:"off",
+						stopLoop:"off",
+						stopAfterLoops:-1,
+						stopAtSlide:-1,
+						shuffle:"off",
+						autoHeight:"off",
+						hideThumbsOnMobile:"off",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							nextSlideOnWindowFocus:"off",
+							disableFocusListener:false,
+						}
+					});
+				}
+			});	/*ready*/
+</script>
+
 <?php wp_footer(); ?>
+<!-- Style Switcher End -->
 </body>
 </html>
