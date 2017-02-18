@@ -61,36 +61,25 @@
                         <li data-filter="home" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
                             <div class="dez-box dez-gallery-box">
 							<?php
-/* The loop */
-while ( have_posts() ) :
-the_post();
-if ( get_post_gallery() ) :
-$gallery = get_post_gallery( get_the_ID(), false );
-/* create an array of IDs from */
-$gids = explode( ",", $gallery['ids'] );
-/* Loop through all the image and output them one by one */
-foreach ($gids as $id) {
-/* pull all the available attachment data with the new function */
-$attachment = wp_get_attachment($id);
-/* Uncomment the next line to see all the available data in
-$attachment */
-?>
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="<?php echo $attachment['src']; ?>" alt="" /> </a>
+                /* The loop */
+                 
+                 if ( get_post_gallery() ) :
+                  $gallery = get_post_gallery( get_the_ID(), false );
+                  
+                  /* Loop through all the image and output them one by one */
+                  foreach( $gallery['src'] AS $src )
+                  {
+                   ?>
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="<?php echo $src;?>" alt="" /> </a>
                                     <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="<?php echo $src;?>" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                     </div>
                                 </div>
-								
-								<div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="./images/gallery/pic1.jpg" alt="" /> </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/pic1.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                    </div>
-                                </div>
-								<?php
-}
-endif;
-endwhile;
-?>
+							<?php 
+                  }
+                 endif;
+                 
+               ?>
                             </div>
                         </li>
                     </ul>
