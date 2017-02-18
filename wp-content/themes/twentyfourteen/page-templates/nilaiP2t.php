@@ -108,7 +108,7 @@ else:
 
     <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
         <h1>Not Found</h1>
-    </div>
+    </div> 
 
 <?php endif; ?>
                     <?php wp_reset_query(); ?>
