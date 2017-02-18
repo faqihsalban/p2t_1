@@ -8,7 +8,8 @@
  */
 get_header();
 ?>
-    <div class="page-content">
+    
+  <div class="page-content">
     <!-- inner page banner -->
         <?php
         if ( have_posts() ) : while ( have_posts() ) : the_post();
@@ -25,6 +26,7 @@ get_header();
     <div class="breadcrumb-row">
         <div class="container">
             <ul class="list-inline">
+			<li><a href="http://p2t.azurewebsites.net/">Home</a></li>
                 <li><?php the_title(); ?></li>
             </ul>
         </div>
@@ -63,35 +65,26 @@ else:
                     <h4 class="widget-title">Pages</h4>
 
                     <div class="widget-post-bx">
-                        <div class="widget-post clearfix">
-                            <div class="dez-post-info">
-                                <div class="dez-post-header">
-                                    <h6 class="post-title"><?php the_title(); ?></h6>
-                                </div>
-                                <div class="dez-post-meta">
-                                    <ul>
-                                        <li class="post-author">By <?php the_author(); ?></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/">Tentang Kami</a></h6>
+						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/sejarah/">Sejarah</a></h6>
+						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/nilai-nilai-p2t/">Nilai-nilai P2T</a></h6>
                     </div>
 
                 </div>
                 <div class="widget recent-posts-entry">
                     <h4 class="widget-title">Recent Posts</h4>
-<?php $latest = new WP_Query('showposts=4&cat=4'); ?>
+<?php $latest = new WP_Query('showposts=4&cat=3,4,5,6'); ?>
 <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
                     <div class="widget-post-bx">
                         <div class="widget-post clearfix">
-                            <div class="dez-post-media"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt="" /> </div>
+                            <div class="dez-post-media"> <a href="<?php the_permalink();?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt="" /> </a></div>
                             <div class="dez-post-info">
                                 <div class="dez-post-header">
-                                    <h6 class="post-title"><?php the_title(); ?></h6>
+                                    <a href="<?php the_permalink();?>"><h6 class="post-title"><?php the_title(); ?></h6></a>
                                 </div>
                                 <div class="dez-post-meta">
                                     <ul>
-                                        <li class="post-author">By <?php the_author(); ?></li>
+                                        <a href="<?php the_permalink();?>"><li class="post-author">By <?php the_author(); ?></li></a>
                                     </ul>
                                 </div>
                             </div>
@@ -107,7 +100,7 @@ else:
 
     <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
         <h1>Not Found</h1>
-    </div>
+    </div> 
 
 <?php endif; ?>
                     <?php wp_reset_query(); ?>
