@@ -28,7 +28,7 @@ get_header();
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Layanan</a></li>
                     <li><a href="#">Individual</a></li>
                     <li><?php the_title(); ?></li>
                 </ul>
