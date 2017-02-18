@@ -53,11 +53,10 @@ get_header();
                                                 </li>
                                                 <strong>
                                                     <li class="post-author"><i class="fa fa-user"></i>By <a
+                                                                href="#"><?php the_author(); ?></a>By <a
+                                                                href="#"><?php the_author(); ?></a>By <a
                                                                 href="#"><?php the_author(); ?></a></li>
-                                                    <li class="post-author"><i class="fa fa-user"></i>By <a
-                                                                href="#"><?php the_author(); ?></a></li>
-                                                    <li class="post-author"><i class="fa fa-user"></i>By <a
-                                                                href="#"><?php the_author(); ?></a></li>
+
 
                                             </ul>
                                         </div>
