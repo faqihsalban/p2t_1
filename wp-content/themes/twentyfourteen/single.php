@@ -9,12 +9,12 @@
 
 get_header(); ?>
 
-	<div class="page-content">
+    <div class="page-content">
         <!-- inner page banner -->
         <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(<?php echo get_template_directory_uri() ?>/assets/images/background/bg4.jpg);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
-                    <h1 class="text-white"><?php the_title();?></h1>
+                    <h1 class="text-white">Blog single with sidebar</h1>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@ get_header(); ?>
             <div class="container">
                 <ul class="list-inline">
                     <li><a href="#">Home</a></li>
-                    <li><?php the_title();?></li>
+                    <li>Blog single with sidebar</li>
                 </ul>
             </div>
         </div>
@@ -34,36 +34,36 @@ get_header(); ?>
                 <div class="row">
                     <!-- Left part start -->
                     <div class="col-md-9">
-					<?php
-						if ( have_posts() ) : while ( have_posts() ) : the_post();
-  ?>
                         <!-- blog start -->
-                        <div class="blog-post blog-single">
-                            <div class="dez-post-title ">
-                                <h3 class="post-title"><a href="#"><?php the_title();?></a></h3>
+                        <?php
+                        if ( have_posts() ) : while ( have_posts() ) : the_post();
+                            ?>
+                            <div class="blog-post blog-single">
+                                <div class="dez-post-title ">
+                                    <h3 class="post-title"><a href="#"><?php the_title(); ?></a></h3>
+                                </div>
+                                <div class="dez-post-meta m-b20">
+                                    <ul>
+                                        <li class="post-date"> <i class="fa fa-calendar"></i><?php the_date(); ?></li>
+                                        <li class="post-author"><i class="fa fa-user"></i>By <a href="#"><?php the_author(); ?></a> </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dez-post-text">
+                                    <?php the_content(); ?>
+                                </div>
+                                <div class="dez-post-tags clear">
+                                    <div class="post-tags"> <a href="#">Child </a> <a href="#">Eduction </a> <a href="#">Money </a> <a href="#">Resturent </a> </div>
+                                </div>
                             </div>
-                            <div class="dez-post-meta m-b20">
-                                <ul>
-                                    <li class="post-date"> <i class="fa fa-calendar"></i><?php the_date(); ?></li>
-                                    <li class="post-author"><i class="fa fa-user"></i>By <a href="#"><?php the_author();?></a> </li>
-                                </ul>
-                            </div>
-                          
-                            <div class="dez-post-text">
-                                <p><?php get_the_content();?></p>
-                            </div>
-                            <div class="dez-post-tags clear">
-                                <div class="post-tags"> <a href="#">Child </a> <a href="#">Eduction </a> <a href="#">Money </a> <a href="#">Resturent </a> </div>
-                            </div>
-                        </div>
+                            <?php
+                        endwhile;
+                        else:
+                            ?>
+                            <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+                        <?php endif;
+                        ?>
                         <!-- blog END -->
-  <?php
-endwhile;
-else:
-?>
-  <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-<?php endif;
-						?>
                     </div>
                     <!-- Left part END -->
                     <!-- Side bar start -->
@@ -71,39 +71,39 @@ else:
                         <aside class="side-bar">
                             <div class="widget recent-posts-entry">
                                 <h4 class="widget-title">Recent Posts</h4>
-                                <div class="widget-post-bx">
-								<?php $latest = new WP_Query('showposts=8&cat=4'); ?>
-        <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
-                                    <div class="widget-post clearfix">
-                                        <div class="dez-post-media"> <img src="<?php  the_field('cover'); ?>" width="200" height="143" alt="" /> </div>
-                                        <div class="dez-post-info">
-                                            <div class="dez-post-header">
-                                                <h6 class="post-title"><?php  the_title(); ?></h6>
-                                            </div>
-                                            <div class="dez-post-meta">
-                                                <ul>
-                                                    <li class="post-author">By <?php  the_author(); ?></li>
-                                                </ul>
+                                <?php $latest = new WP_Query('showposts=4&cat=4'); ?>
+                                <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
+                                    <div class="widget-post-bx">
+                                        <div class="widget-post clearfix">
+                                            <div class="dez-post-media"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt="" /> </div>
+                                            <div class="dez-post-info">
+                                                <div class="dez-post-header">
+                                                    <h6 class="post-title"><?php the_title(); ?></h6>
+                                                </div>
+                                                <div class="dez-post-meta">
+                                                    <ul>
+                                                        <li class="post-author">By <?php the_author(); ?></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <?php endwhile; ?> 
-          <div class="navigation">
-           <div class="next-posts"><?php next_posts_link(); ?></div>
-           <div class="prev-posts"><?php previous_posts_link(); ?></div>
-          </div>
+                                <?php endwhile; ?>
+                                    <div class="navigation">
+                                        <div class="next-posts"><?php next_posts_link(); ?></div>
+                                        <div class="prev-posts"><?php previous_posts_link(); ?></div>
+                                    </div>
 
-         <?php else : ?>
+                                <?php else : ?>
 
-          <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-           <h1>Not Found</h1>
-          </div>
+                                    <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                                        <h1>Not Found</h1>
+                                    </div>
 
-         <?php endif; ?>
-         <?php wp_reset_query(); ?>
-                                </div>
+                                <?php endif; ?>
+                                <?php wp_reset_query(); ?>
                             </div>
-                           
+
                             <div class="widget widget_gallery">
                                 <h5 class="widget-title">Our services</h5>
                                 <ul>
@@ -115,7 +115,7 @@ else:
                                     <li class="img-effect2"> <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/images/gallery/pic6.jpg" alt="" /></a> </li>
                                 </ul>
                             </div>
-                            
+
                         </aside>
                     </div>
                     <!-- Side bar END -->
@@ -123,7 +123,6 @@ else:
             </div>
         </div>
     </div>
-
 <?php
 //get_sidebar( 'content' );
 //get_sidebar();
