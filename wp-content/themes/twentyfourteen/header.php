@@ -204,7 +204,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</li>
 								<li> <a href="http://p2t.azurewebsites.net/perusahaan/">Perusahaan</a>
 									<ul class="sub-menu">
-										<li><a href="http://p2t.azurewebsites.net/perusahaan/rekutmen-dan-seleksi-karyawan/">Rekruitmen Dan Seleksi Karyawan</a></li>
+										<li><a href="http://p2t.azurewebsites.net/perusahaan/rekrutmen-dan-seleksi-karyawan/">Rekruitmen Dan Seleksi Karyawan</a></li>
 										<li><a href="http://p2t.azurewebsites.net/perusahaan/assesmen/">Asesment</a></li>
 										<li><a href="http://p2t.azurewebsites.net/perusahaan/pemetaan-kompetensi-karyawan/">Pemetaan Kompetensi Karyawan</a></li>
 										<li><a href="http://p2t.azurewebsites.net/perusahaan/pelatihan-dan-pengembangan-diri/">Pemetaan Dan Pengembangan Diri</a></li>
