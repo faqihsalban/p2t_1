@@ -119,7 +119,6 @@ else:
                         <?php
                 /* The loop */
                  
-                 if ( get_post_gallery() ) :
                   $gallery = get_post_gallery( 104, false );
                   
                   /* Loop through all the image and output them one by one */
@@ -130,7 +129,6 @@ else:
                                 
 							<?php 
                   }
-                 endif;
                  
                ?>
                     </ul>
