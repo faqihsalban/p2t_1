@@ -166,49 +166,49 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li class="active"> <a href="http://p2t.azurewebsites.net/">Home<i class="fa fa-chevron-down"></i></a></li>
 						<li> <a href="http://p2t.azurewebsites.net/tentang-kami/">Tentang Kami<i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
-								<li><a href="./product.html">Sejarah</a></li>
-								<li><a href="./product-details.html">Nilai-nilai P2T</a></li>
+								<li><a href="http://p2t.azurewebsites.net/tentang-kami/sejarah/">Sejarah</a></li>
+								<li><a href="http://p2t.azurewebsites.net/tentang-kami/nilai-nilai-p2t/">Nilai-nilai P2T</a></li>
 							</ul>
 						</li>
-						<li> <a href="javascript:;">Profil<i class="fa fa-chevron-down"></i></a>
+						<li> <a href="http://p2t.azurewebsites.net/profil/">Profil<i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
-								<li><a href="./product.html">Direktur</a></li>
-								<li><a href="./product-details.html">Manajer Operasional</a></li>
-								<li><a href="./product-details.html">Staf</a></li>
-								<li><a href="./product-details.html">Dosen</a></li>
-								<li><a href="./product-details.html">Mitra Kreatif</a></li>
+								<li><a href="http://p2t.azurewebsites.net/profil/direktur/">Direktur</a></li>
+								<li><a href="http://p2t.azurewebsites.net/profil/manajer-operasional/">Manajer Operasional</a></li>
+								<li><a href="http://p2t.azurewebsites.net/profil/staff/">Staf</a></li>
+								<li><a href="http://p2t.azurewebsites.net/profil/dosen/">Dosen</a></li>
+								<li><a href="http://p2t.azurewebsites.net/profil/mitra-kreatif/">Mitra Kreatif</a></li>
 							</ul>
 						</li>
-						<li> <a href="javascript:;">Layanan<i class="fa fa-chevron-down"></i></a>
+						<li> <a href="http://p2t.azurewebsites.net/layanan/">Layanan<i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
-								<li> <a href="javascript:;">Individual</a>
+								<li> <a href="http://p2t.azurewebsites.net/layanan/individual/">Individual</a>
 									<ul class="sub-menu">
-										<li><a href="./about-1.html">Psikotes Individual</a></li>
-										<li><a href="./about-2.html">Konseling Individual</a></li>
-										<li><a href="./about-2.html">Terapi</a></li>
+										<li><a href="http://p2t.azurewebsites.net/layanan/psikotes-individual/">Psikotes Individual</a></li>
+										<li><a href="http://p2t.azurewebsites.net/layanan/konseling-individual/">Konseling Individual</a></li>
+										<li><a href="http://p2t.azurewebsites.net/layanan/terapi/">Terapi</a></li>
 									</ul>
 								</li>
-								<li> <a href="javascript:;">Keluarga</a>
+								<li> <a href="http://p2t.azurewebsites.net/keluarga/">Keluarga</a>
 									<ul class="sub-menu">
-										<li><a href="./faq-1.html">Konseling Keluarga</a></li>
-										<li><a href="./faq-2.html">Terapi Group</a></li>
+										<li><a href="http://p2t.azurewebsites.net/layanan/konseling-keluarga/">Konseling Keluarga</a></li>
+										<li><a href="http://p2t.azurewebsites.net/layanan/terapi-grup/">Terapi Group</a></li>
 									</ul>
 								</li>
-								<li> <a href="javascript:;">Sekolah</a>
+								<li> <a href="http://p2t.azurewebsites.net/sekolah/">Sekolah</a>
 									<ul class="sub-menu">
-										<li><a href="./services-1.html">Bidik Jurusan Untuk Pelajar</a></li>
-										<li><a href="./services-2.html">Bidik Minat Dan Bakat</a></li>
-										<li><a href="./services-3.html">Pendamping Siswa Cerdas Istimewa (CI)</a></li>
-										<li><a href="./services-3.html">Parenting</a></li>
+										<li><a href="http://p2t.azurewebsites.net/sekolah/bidik-jurusan-untuk-pelajar/">Bidik Jurusan Untuk Pelajar</a></li>
+										<li><a href="http://p2t.azurewebsites.net/sekolah/bidik-minat-dan-bakat/">Bidik Minat Dan Bakat</a></li>
+										<li><a href="http://p2t.azurewebsites.net/sekolah/pendampingan-siswa-cerdas-istimewa/">Pendamping Siswa Cerdas Istimewa (CI)</a></li>
+										<li><a href="http://p2t.azurewebsites.net/sekolah/parenting">Parenting</a></li>
 									</ul>
 								</li>
-								<li> <a href="javascript:;">Perusahaan</a>
+								<li> <a href="http://p2t.azurewebsites.net/perusahaan/">Perusahaan</a>
 									<ul class="sub-menu">
-										<li><a href="./services-1.html">Rekruitmen Dan Seleksi Karyawan</a></li>
-										<li><a href="./services-1.html">Asesment</a></li>
-										<li><a href="./services-1.html">Pemetaan Kopetensi Karyawan</a></li>
-										<li><a href="./services-1.html">Pemetaan Dan Pengembangan Diri</a></li>
-										<li><a href="./services-1.html">Modifikasi Prilaku</a></li>
+										<li><a href="http://p2t.azurewebsites.net/perusahaan/rekutmen-dan-seleksi-karyawan/">Rekruitmen Dan Seleksi Karyawan</a></li>
+										<li><a href="http://p2t.azurewebsites.net/perusahaan/assesmen/">Asesment</a></li>
+										<li><a href="http://p2t.azurewebsites.net/perusahaan/pemetaan-kompetensi-karyawan/">Pemetaan Kompetensi Karyawan</a></li>
+										<li><a href="http://p2t.azurewebsites.net/perusahaan/pelatihan-dan-pengembangan-diri/">Pemetaan Dan Pengembangan Diri</a></li>
+										<li><a href="http://p2t.azurewebsites.net/perusahaan/modifikasi-perilaku">Modifikasi Prilaku</a></li>
 									</ul>
 								</li>
 								<li><a href="./career.html">Short Course</a></li>
