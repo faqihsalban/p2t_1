@@ -15,7 +15,7 @@
 				<div class="row">
 					<div class="col-md-4 text-left"> <span>© Copyright 2017</span> </div>
 					<div class="col-md-4 text-center"> <span> Design With <i class="fa fa-heart text-red heart"></i> By DexignZone </span> </div>
-					<div class="col-md-4 text-right "> <a href="./assets/about-2.html"> About</a> <a href="./assets/help.html"> Help Desk</a> <a href="./assets/privacy-policy.html"> Privacy Policy</a> </div>
+					<div class="col-md-4 text-right "> <a href="./about-2.html"> About</a> <a href="./assets/help.html"> Help Desk</a> <a href="./assets/privacy-policy.html"> Privacy Policy</a> </div>
 				</div>
 			</div>
 		</div>
@@ -25,47 +25,47 @@
     <button class="scroltop fa fa-caret-up"></button>
 </div>
 <!-- JavaScript  files ========================================= -->
-<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/jquery.min.js"></script>
 <!-- jquery.min js -->
-<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/bootstrap.min.js"></script>
 <!-- bootstrap.min js -->
-<script type="text/javascript" src="./assets/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/bootstrap-select.min.js"></script>
 <!-- Form js -->
-<script type="text/javascript" src="./assets/js/jquery.bootstrap-touchspin.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/jquery.bootstrap-touchspin.js"></script>
 <!-- Form js -->
-<script type="text/javascript" src="./assets/js/magnific-popup.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/magnific-popup.js"></script>
 <!-- magnific-popup js -->
-<script type="text/javascript" src="./assets/js/waypoints-min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/waypoints-min.js"></script>
 <!-- waypoints js -->
-<script type="text/javascript" src="./assets/js/counterup.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/counterup.min.js"></script>
 <!-- counterup js -->
-<script type="text/javascript" src="./assets/js/imagesloaded.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/imagesloaded.js"></script>
 <!-- masonry  -->
-<script type="text/javascript" src="./assets/js/masonry-3.1.4.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/masonry-3.1.4.js"></script>
 <!-- masonry  -->
-<script type="text/javascript" src="./assets/js/masonry.filter.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/masonry.filter.js"></script>
 <!-- masonry  -->
-<script type="text/javascript" src="./assets/js/owl.carousel.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/owl.carousel.js"></script>
 <!-- OWL  Slider  -->
-<script type="text/javascript" src="./assets/js/custom.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/custom.min.js"></script>
 <!-- custom fuctions  -->
-<script type="text/javascript" src="./assets/js/sortcode.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/sortcode.min.js"></script>
 <!-- sortcode fuctions  -->
-<script type="text/javascript" src="./assets/js/switcher.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/switcher.min.js"></script>
 <!-- switcher fuctions  -->
 <!-- revolution JS FILES -->
-<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
 <!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="./assets/plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/plugins/revolution/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/plugins/revolution/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/plugins/revolution/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js"></script>
 <script type="text/javascript">
 		var tpj=jQuery;
 			var revapi486;
