@@ -85,7 +85,7 @@ $wp_query = null;
 $wp_query = new WP_Query($args); 
 ?>
 
-<?php
+<?php 
 
  get_template_part( 'loop', 'index' );?>
                     <div class="pagination-bx col-lg-12 clearfix ">
