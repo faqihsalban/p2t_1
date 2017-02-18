@@ -40,19 +40,11 @@ get_header();
             <div class="dez-post-title ">
                 <h3 class="post-title"><a href="#"><?php the_title(); ?></a></h3>
             </div>
-            <div class="dez-post-meta m-b20">
-                <ul>
-                    <li class="post-date"> <i class="fa fa-calendar"></i><?php the_date(); ?></li>
-                    <li class="post-author"><i class="fa fa-user"></i>By <a href="#"><?php the_author(); ?></a> </li>
-                </ul>
-            </div>
-
+         
             <div class="dez-post-text">
                 <?php the_content(); ?>
             </div>
-            <div class="dez-post-tags clear">
-                <div class="post-tags"> <a href="#">Child </a> <a href="#">Eduction </a> <a href="#">Money </a> <a href="#">Resturent </a> </div>
-            </div>
+            
         </div>
     <?php
 endwhile;
@@ -67,6 +59,25 @@ else:
     <!-- Side bar start -->
         <div class="col-md-3">
             <aside class="side-bar">
+			<div class="widget recent-posts-entry">
+                    <h4 class="widget-title">Pages</h4>
+
+                    <div class="widget-post-bx">
+                        <div class="widget-post clearfix">
+                            <div class="dez-post-info">
+                                <div class="dez-post-header">
+                                    <h6 class="post-title"><?php the_title(); ?></h6>
+                                </div>
+                                <div class="dez-post-meta">
+                                    <ul>
+                                        <li class="post-author">By <?php the_author(); ?></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
                 <div class="widget recent-posts-entry">
                     <h4 class="widget-title">Recent Posts</h4>
 <?php $latest = new WP_Query('showposts=4&cat=4'); ?>
