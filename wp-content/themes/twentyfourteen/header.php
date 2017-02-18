@@ -211,7 +211,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<li><a href="http://p2t.azurewebsites.net/perusahaan/modifikasi-perilaku">Modifikasi Prilaku</a></li>
 									</ul>
 								</li>
-								<li><a href="./career.html">Short Course</a></li>
+								<li><a href="http://p2t.azurewebsites.net/short-court/">Short Course</a></li>
 							</ul>
 						</li>
 						<li> <a href="javascript:;">Berita<i class="fa fa-chevron-down"></i></a>
