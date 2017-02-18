@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home Page
+ * Template Name: Profil
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen

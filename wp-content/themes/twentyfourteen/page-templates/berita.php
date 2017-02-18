@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home Page
+ * Template Name: Berita
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen

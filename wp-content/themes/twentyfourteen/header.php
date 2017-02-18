@@ -14,7 +14,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
  * @subpackage Twenty_Fourteen
  * @since Twenty Fourteen 1.0
  */
-?><!DOCTYPE HTML>
+?> <!DOCTYPE HTML>
 <html>
 <head>
 <title>Free Skokov Website Template | Home :: w3layouts</title>
