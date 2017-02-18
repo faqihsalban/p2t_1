@@ -71,7 +71,7 @@
       <aside class="side-bar">
        <div class="widget recent-posts-entry">
         <h4 class="widget-title">Recent Posts</h4>
-           <?php $latest = new WP_Query('showposts=4&cat=3'); ?>
+           <?php $latest = new WP_Query('showposts=4&cat=4'); ?>
            <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
             <div class="widget-post-bx">
              <div class="widget-post clearfix">
