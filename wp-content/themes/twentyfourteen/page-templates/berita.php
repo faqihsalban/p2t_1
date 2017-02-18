@@ -34,7 +34,7 @@
                 <div class="row">
                     <!-- blog grid -->
                     <div id="masonry" class="dez-blog-grid-3">
-                        <?php $latest = new WP_Query('showposts=20&cat=4'); ?>
+                        <?php $latest = new WP_Query('showposts=8&cat=4'); ?>
         <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
                         <div class="post card-container col-lg-3 col-md-4 col-sm-6 col-xs-12">
                             <div class="blog-post blog-grid date-style-2">
@@ -71,6 +71,23 @@
                     </div>
                     <!-- blog grid END -->
                     <!-- Pagination -->
+					<?php 
+$type = 'book';
+$args=array(
+  'post_type' => $type,
+  'post_status' => 'publish',
+  'paged' => $paged,
+  'posts_per_page' => 8,
+  'caller_get_posts'=> 1
+);
+$temp = $wp_query;  // assign orginal query to temp variable for later use   
+$wp_query = null;
+$wp_query = new WP_Query($args); 
+?>
+
+<?php 
+
+ get_template_part( 'loop', 'index' );?>
                     <div class="pagination-bx col-lg-12 clearfix ">
                         <ul class="pagination">
                             <li class="previous"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
