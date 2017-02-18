@@ -214,7 +214,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li><a href="http://p2t.azurewebsites.net/short-court/">Short Course</a></li>
 							</ul>
 						</li>
-						<li> <a href="javascript:;">Berita<i class="fa fa-chevron-down"></i></a>
+						<li> <a href="http://p2t.azurewebsites.net/berita">Berita<i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
 								<li> <a href="javascript:;">Kegiatan Yang Akan Dilakukan</a></li>
 								<li> <a href="javascript:;">Kegiatan Yang Telah Dilakukan</a></li>
