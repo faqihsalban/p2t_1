@@ -25,7 +25,6 @@ get_header();
     <div class="breadcrumb-row">
         <div class="container">
             <ul class="list-inline">
-                <li><a href="#">Tentang Kami</a></li>
                 <li><?php the_title(); ?></li>
             </ul>
         </div>

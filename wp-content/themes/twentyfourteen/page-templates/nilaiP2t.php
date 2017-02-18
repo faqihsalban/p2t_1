@@ -10,11 +10,14 @@
 ?>
 
  <div class="page-content">
+     <?php
+     if ( have_posts() ) : while ( have_posts() ) : the_post();
+     ?>
   <!-- inner page banner -->
   <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(<?php echo get_template_directory_uri() ?>/assets/images/background/bg4.jpg);">
    <div class="container">
     <div class="dez-bnr-inr-entry">
-     <h1 class="text-white">Blog single with sidebar</h1>
+     <h1 class="text-white"><?php the_title(); ?></h1>
     </div>
    </div>
   </div>
@@ -23,8 +26,8 @@
   <div class="breadcrumb-row">
    <div class="container">
     <ul class="list-inline">
-     <li><a href="#">Home</a></li>
-     <li>Blog single with sidebar</li>
+     <li><a href="#">Tentang Kami</a></li>
+     <li><?php the_title(); ?></li>
     </ul>
    </div>
   </div>
@@ -35,9 +38,6 @@
      <!-- Left part start -->
      <div class="col-md-9">
       <!-- blog start -->
-         <?php
-         if ( have_posts() ) : while ( have_posts() ) : the_post();
-             ?>
           <div class="blog-post blog-single">
            <div class="dez-post-title ">
             <h3 class="post-title"><a href="#"><?php the_title(); ?></a></h3>
