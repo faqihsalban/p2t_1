@@ -75,10 +75,10 @@ get_header();
                                     </div>
                                 </div>
                             </div>
-<!--                                <div class="navigation">-->
-<!--                                    <div class="next-posts">--><?php //echo get_previous_posts_link( 'Newer Entries' ); // display newer posts link ?><!--</div>-->
-<!--                                    <div class="prev-posts">--><?php //echo get_next_posts_link( 'Older Entries', $the_query->max_num_pages ); // display older posts link ?><!--</div>-->
-<!--                                </div>-->
+                                <div class="navigation">
+                                    <div class="next-posts"></div>
+                                    <div class="prev-posts"></div>
+                                </div>
                     </div>
                     <!-- blog grid END -->
                     <!-- Pagination -->
