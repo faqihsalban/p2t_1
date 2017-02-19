@@ -75,21 +75,10 @@ get_header();
                                     </div>
                                 </div>
                             </div>
-                        <?php endwhile; ?>
-                            <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
 <!--                                <div class="navigation">-->
 <!--                                    <div class="next-posts">--><?php //echo get_previous_posts_link( 'Newer Entries' ); // display newer posts link ?><!--</div>-->
 <!--                                    <div class="prev-posts">--><?php //echo get_next_posts_link( 'Older Entries', $the_query->max_num_pages ); // display older posts link ?><!--</div>-->
 <!--                                </div>-->
-                            <?php } ?>
-                        <?php else : ?>
-
-                            <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-                                <h1>Not Found</h1>
-                            </div>
-
-                        <?php endif; ?>
-                        <?php wp_reset_query(); ?>
                     </div>
                     <!-- blog grid END -->
                     <!-- Pagination -->
@@ -110,15 +99,26 @@ get_header();
                     <!--                    --><?php
                     //
                     //                    get_template_part('loop', 'index'); ?>
+                    <?php endwhile; ?>
+                    <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
                     <div class="pagination-bx col-lg-12 clearfix ">
                         <ul class="pagination">
-                            <li class="previous"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                            <li class="previous"><a href="#"><?php echo get_next_posts_link( 'Older Entries', $the_query->max_num_pages ); // display older posts link ?><i class="fa fa-angle-double-left"></i></a></li>
                             <li class="active"><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
-                            <li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                            <li class="next"><a href="#"><?php echo get_previous_posts_link( 'Newer Entries' ); // display newer posts link ?><i class="fa fa-angle-double-right"></i></a></li>
                         </ul>
                     </div>
+                    <?php } ?>
+                    <?php else : ?>
+
+                        <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                            <h1>Not Found</h1>
+                        </div>
+
+                    <?php endif; ?>
+                    <?php wp_reset_query(); ?>
                     <!-- Pagination END -->
                 </div>
             </div>
