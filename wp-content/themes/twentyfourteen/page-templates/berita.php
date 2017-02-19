@@ -48,7 +48,8 @@ get_header();
                         $the_query = new WP_Query($query_args);
                         ?>
 
-                        <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
+                        <?php if ($the_query->have_posts()) :
+                        while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
                             <div class="post card-container col-lg-3 col-md-4 col-sm-6 col-xs-12">
                                 <div class="blog-post blog-grid date-style-2">
                                     <div class="dez-post-media dez-img-effect zoom-slow"><a
@@ -75,10 +76,12 @@ get_header();
                                     </div>
                                 </div>
                             </div>
-                                <div class="navigation">
-                                    <div class="next-posts"></div>
-                                    <div class="prev-posts"></div>
-                                </div>
+                        <?php endwhile; ?>
+
+                        <div class="navigation">
+                            <div class="next-posts"><?php echo get_previous_posts_link('Newer Entries'); // display newer posts link ?></div>
+                            <div class="prev-posts"><?php echo get_next_posts_link('Older Entries', $the_query->max_num_pages); // display older posts link ?></div>
+                        </div>
                     </div>
                     <!-- blog grid END -->
                     <!-- Pagination -->
@@ -99,15 +102,14 @@ get_header();
                     <!--                    --><?php
                     //
                     //                    get_template_part('loop', 'index'); ?>
-                    <?php endwhile; ?>
                     <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
                     <div class="pagination-bx col-lg-12 clearfix ">
                         <ul class="pagination">
-                            <li class="previous"><a href="#"><?php echo get_next_posts_link($the_query->max_num_pages); // display older posts link ?><i class="fa fa-angle-double-left"></i></a></li>
+                            <li class="previous"><a href="<?php echo get_previous_posts_link(); ?>"><i class="fa fa-angle-double-left"></i></a></li>
                             <li class="active"><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
-                            <li class="next"><a href="#"><?php echo get_previous_posts_link(); // display newer posts link ?><i class="fa fa-angle-double-right"></i></a></li>
+                            <li class="next"><a href="<?php echo get_next_posts_link($the_query->max_num_pages); ?>"><i class="fa fa-angle-double-right"></i></a></li>
                         </ul>
                     </div>
                     <?php } ?>
