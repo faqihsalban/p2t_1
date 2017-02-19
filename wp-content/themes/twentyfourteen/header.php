@@ -306,7 +306,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</li>
 							</ul>
 						</li>
-						<li > <a href="http://p2t.azurewebsites.net/short-court/">Short Course</a></li>
+						<li > <a href="http://p2t.azurewebsites.net/short-course/">Short Course</a></li>
 						<li> <a href="http://p2t.azurewebsites.net/berita">Berita<i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
 								<li> <a href="http://p2t.azurewebsites.net/berita/kegiatan-yang-akan-dilakukan">Kegiatan Yang Akan Dilakukan</a></li>
