@@ -24,6 +24,7 @@
     <!-- scroll top button -->
     <button class="scroltop fa fa-caret-up"></button>
 </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
 <!-- JavaScript  files ========================================= -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/jquery.min.js"></script>
 <!-- jquery.min js -->
