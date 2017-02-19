@@ -79,8 +79,8 @@ get_header();
                         <?php endwhile; ?>
 
                         <div class="navigation">
-                            <div class="next-posts"></div>
-                            <div class="prev-posts"></div>
+                            <div class="next-posts"><?php echo get_previous_posts_link('Newer Entries'); // display newer posts link ?></div>
+                            <div class="prev-posts"><?php echo get_next_posts_link('Older Entries', $the_query->max_num_pages); // display older posts link ?></div>
                         </div>
                     </div>
                     <!-- blog grid END -->
@@ -105,11 +105,11 @@ get_header();
                     <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
                     <div class="pagination-bx col-lg-12 clearfix ">
                         <ul class="pagination">
-                            <li class="previous"><a href=""><i class="fa fa-angle-double-left"><?php echo get_previous_posts_link(); ?></i></a></li>
+                            <li class="previous"><a href="<?php echo get_previous_posts_link('Newer Entries'); ?>"><i class="fa fa-angle-double-left"></i></a></li>
                             <li class="active"><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
-                            <li class="next"><a href=""><i class="fa fa-angle-double-right"><?php echo get_next_posts_link($the_query->max_num_pages); ?></i></a></li>
+                            <li class="next"><a href="<?php echo get_next_posts_link('Older Entries', $the_query->max_num_pages); ?>"><i class="fa fa-angle-double-right"></i></a></li>
                         </ul>
                     </div>
                     <?php } ?>
