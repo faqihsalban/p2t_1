@@ -104,11 +104,11 @@ get_header();
                     <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
                     <div class="pagination-bx col-lg-12 clearfix ">
                         <ul class="pagination">
-                            <li class="previous"><a href="#"><i class="fa fa-angle-double-left"></i><?php echo get_previous_posts_link('Newer Entries'); // display newer posts link ?></a></li>
+                            <li class="previous"><a href="#"><i class="fa fa-angle-double-left"></i><?php echo get_previous_posts_link(); // display newer posts link ?></a></li>
                             <li class="active"><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
-                            <li class="next"><a href="#"><i class="fa fa-angle-double-right"></i><?php echo get_next_posts_link('Older Entries', $the_query->max_num_pages); // display older posts link ?></a></li>
+                            <li class="next"><a href="#"><i class="fa fa-angle-double-right"></i><?php echo get_next_posts_link($the_query->max_num_pages); // display older posts link ?></a></li>
                         </ul>
                     </div>
                     <?php } ?>
