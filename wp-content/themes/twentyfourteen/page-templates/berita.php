@@ -41,7 +41,7 @@ get_header();
                         $query_args = array(
                             'post_type' => 'post',
                             'category_name' => 'berita',
-                            'posts_per_page' => 5,
+                            'posts_per_page' => 4,
                             'paged' => $paged
                         );
                         // create a new instance of WP_Query
@@ -77,10 +77,10 @@ get_header();
                             </div>
                         <?php endwhile; ?>
                             <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
-                                <div class="navigation">
-                                    <div class="next-posts"><?php echo get_previous_posts_link( 'Newer Entries' ); // display newer posts link ?></div>
-                                    <div class="prev-posts"><?php echo get_next_posts_link( 'Older Entries', $the_query->max_num_pages ); // display older posts link ?></div>
-                                </div>
+<!--                                <div class="navigation">-->
+<!--                                    <div class="next-posts">--><?php //echo get_previous_posts_link( 'Newer Entries' ); // display newer posts link ?><!--</div>-->
+<!--                                    <div class="prev-posts">--><?php //echo get_next_posts_link( 'Older Entries', $the_query->max_num_pages ); // display older posts link ?><!--</div>-->
+<!--                                </div>-->
                             <?php } ?>
                         <?php else : ?>
 
