@@ -11,7 +11,11 @@
 
  <!-- Content -->
  <div class="page-content">
-  <!-- inner page banner -->Short Course</h1>
+  <!-- inner page banner -->
+  <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(./images/background/bg4.jpg);">
+   <div class="container">
+    <div class="dez-bnr-inr-entry">
+     <h1 class="text-white">Short Course</h1>
     </div>
    </div>
   </div>
