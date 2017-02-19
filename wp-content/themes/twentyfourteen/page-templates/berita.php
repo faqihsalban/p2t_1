@@ -34,8 +34,21 @@ get_header();
                 <div class="row">
                     <!-- blog grid -->
                     <div id="masonry" class="dez-blog-grid-3">
-                        <?php $latest = new WP_Query('showposts=8&cat=4'); ?>
-                        <?php if (have_posts()) : while ($latest->have_posts()) : $latest->the_post(); ?>
+                        <!--                        --><?php //$latest = new WP_Query('showposts=8&cat=4'); ?>
+                        <!--                        --><?php //if (have_posts()) : while ($latest->have_posts()) : $latest->the_post(); ?>
+                        <?php
+                        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                        $query_args = array(
+                            'post_type' => 'post',
+                            'category_name' => 'berita',
+                            'posts_per_page' => 4,
+                            'paged' => $paged
+                        );
+                        // create a new instance of WP_Query
+                        $the_query = new WP_Query($query_args);
+                        ?>
+
+                        <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
                             <div class="post card-container col-lg-3 col-md-4 col-sm-6 col-xs-12">
                                 <div class="blog-post blog-grid date-style-2">
                                     <div class="dez-post-media dez-img-effect zoom-slow"><a
@@ -63,11 +76,12 @@ get_header();
                                 </div>
                             </div>
                         <?php endwhile; ?>
-                            <div class="navigation">
-                                <div class="next-posts"><?php next_posts_link(); ?></div>
-                                <div class="prev-posts"><?php previous_posts_link(); ?></div>
-                            </div>
-
+                            <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
+                                <div class="navigation">
+                                    <div class="next-posts"><?php echo get_previous_posts_link( 'Newer Entries' ); // display newer posts link ?></div>
+                                    <div class="prev-posts"><?php echo get_next_posts_link( 'Older Entries', $the_query->max_num_pages ); // display older posts link ?></div>
+                                </div>
+                            <?php } ?>
                         <?php else : ?>
 
                             <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -79,23 +93,23 @@ get_header();
                     </div>
                     <!-- blog grid END -->
                     <!-- Pagination -->
-<!--                    --><?php
-//                    $type = 'book';
-//                    $args = array(
-//                        'post_type' => $type,
-//                        'post_status' => 'publish',
-//                        'paged' => $paged,
-//                        'posts_per_page' => 8,
-//                        'caller_get_posts' => 1
-//                    );
-//                    $temp = $wp_query;  // assign orginal query to temp variable for later use
-//                    $wp_query = null;
-//                    $wp_query = new WP_Query($args);
-//                    ?>
-<!---->
-<!--                    --><?php
-//
-//                    get_template_part('loop', 'index'); ?>
+                    <!--                    --><?php
+                    //                    $type = 'book';
+                    //                    $args = array(
+                    //                        'post_type' => $type,
+                    //                        'post_status' => 'publish',
+                    //                        'paged' => $paged,
+                    //                        'posts_per_page' => 8,
+                    //                        'caller_get_posts' => 1
+                    //                    );
+                    //                    $temp = $wp_query;  // assign orginal query to temp variable for later use
+                    //                    $wp_query = null;
+                    //                    $wp_query = new WP_Query($args);
+                    //                    ?>
+                    <!---->
+                    <!--                    --><?php
+                    //
+                    //                    get_template_part('loop', 'index'); ?>
                     <div class="pagination-bx col-lg-12 clearfix ">
                         <ul class="pagination">
                             <li class="previous"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
