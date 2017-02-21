@@ -184,7 +184,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 				</div>
 				<div class="slide-up">
-					<div class="container clearfix bg-primary" style="background:white">
+					<div class="container clearfix bg-primary" style="background:white"> 
 					
 						<!-- website logo -->
 						<div class="logo-header mostion"><a href="./index.html"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logo-white.png" width="193" height="89" alt="" /></a></div>
