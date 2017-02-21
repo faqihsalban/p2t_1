@@ -200,13 +200,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<!-- extra nav -->
 						<div class="extra-nav">
 							<div class="extra-cell">
-								<button id="quik-search-btn" type="button" class="site-button"><i class="fa fa-search"></i></button>
+								<button id="quik-search-btn" type="button" class="site-button" style="background:#ae52de;"><i class="fa fa-search"></i></button>
 							</div>
 						</div>
 						
 						<!-- Quik search -->
 						<div class="dez-quik-search bg-primary">
-							<form action="#" />
+							<form action="#" style="    background: #c394dc;" />
 								<input name="search" value="search" type="text" class="form-control" placeholder="Type to search" />
 								<span id="quik-search-remove"><i class="fa fa-remove"></i></span>
 							</form>
