@@ -9,9 +9,9 @@
  get_header();
 ?>
 	
-    <!-- Content -->
+    <!-- Content --> 
     <div class="page-content">
-		<!--Slider Start-->
+		<!--Slider Start--> 
         <div id="jssor_1" style="position:relative;margin-top:70;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
