@@ -169,27 +169,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="page-wraper">
 	<!-- header -->
 	<header class="site-header header-style-4 dark">
-		<!-- top bar -->
-		<div class="top-bar">
-			<div class="container">
-				<div class="row">
-					<div class="dez-topbar-left">
-						<ul class="social-line text-center pull-right">
-							<li><a href="javascript:void(0);"><i class="fa fa-map-marker"></i> <span> 8901 Marmora Road Chi Minh City, Vietnam </span> </a></li>
-						</ul>
-					</div>                        
-					<div class="dez-topbar-right">
-						<ul class="social-line text-center pull-right">
-							<li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-							<li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-							<li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-							<li><a href="javascript:void(0);" class="fa fa-google-plus"></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- top bar END-->
+
 		
 		<!-- main header -->
 		<div class="sticky-header main-bar-wraper">
@@ -200,28 +180,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="col-md-4">
 							<div class="logo-header "><a href="./index.html"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logo3.png" width="193" height="89" alt="" /></a></div>
 						</div>
-						<div class="col-md-8">
-							<ul class="contact-info clearfix">
-								<li>
-									<h6 class="text-primary"><i class="fa fa-phone"></i> Call Us</h6>
-									<span>+141 0800-123456</span>
-								</li>
-								<li>
-									<h6 class="text-primary"><i class="fa fa-envelope-o"></i> Send us an Email</h6>
-									<span>info@dexignzone.com</span>
-								</li>
-								<li>
-									<h6 class="text-primary"><i class="fa fa-clock-o"></i> Opening Time</h6>
-									<span>Mon -Sat: 7:00 - 17:00</span>
-								</li>
-								<li>
-									<span class="site-button m-r15 text-white text-center btn-block" type="button">  
-										<h5 class="m-a0">Coll Toll Free</h5>
-										<p class="m-a0">+00 980 012 3456</p>  
-									</span>
-								</li>
-							</ul>
-						</div>
+						
 					</div>
 				</div>
 				<div class="slide-up">
