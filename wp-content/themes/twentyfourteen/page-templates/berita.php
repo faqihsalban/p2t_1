@@ -34,9 +34,19 @@ get_header();
                 <div class="row">
                     <!-- blog grid -->
                     <div id="masonry" class="dez-blog-grid-3">
-                        <?php $latest = new WP_Query('showposts=8&cat=4'); ?>
-                        <?php if (have_posts()) : while ($latest->have_posts()) : $latest->the_post(); ?>
-                            <?php
+                        <?php
+                        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+                        $args = array(
+                            'posts_per_page' => 20,
+                            'offset' => 5,
+                            'category_name' => 'Media',
+                            'paged' => $paged,
+                        );
+                        $the_query = new WP_Query( $args );
+                        ?>
+<!--                        --><?php //$latest = new WP_Query('showposts=8&cat=4'); ?>
+<!--                        --><?php //if (have_posts()) : while ($latest->have_posts()) : $latest->the_post(); ?>
+<!--                            --><?php
 //                        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 //                        $query_args = array(
 //                            'post_type' => 'post',
@@ -121,6 +131,15 @@ get_header();
                     </div>
                     <!--                    --><?php //} ?>
                     <!-- Pagination END -->
+                    <?php
+                    $big = 999999999; // need an unlikely integer
+                    echo paginate_links( array(
+                    'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                    'format' => '?paged=%#%',
+                    'current' => max( 1, get_query_var('paged') ),
+                    'total' => $the_query->max_num_pages
+                    ) );
+                    ?>
                 </div>
             </div>
         </div>
