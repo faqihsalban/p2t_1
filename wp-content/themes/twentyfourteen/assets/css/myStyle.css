@@ -31,15 +31,15 @@ a, .text-primary, .primary li:before, .breadcrumb-row ul li a, .header-nav .nav 
     font-size: 15px;
 }
 .site-button:active, .site-button:hover, .site-button:focus, .active > .site-button, .bg-primary-dark, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .owl-prev:hover, .owl-prev:active, .owl-prev:focus, .owl-next:hover, .owl-next:active, .owl-next:focus {
-    background-color: #400a5d;
+    background-color: #fff;
 }
 
 [class*=bg-] .header-nav .nav>li>a {
-    color: #fff;
+    color: #2D3239;
 }
 
 [class*=bg-] .header-nav .nav>li.active>a, [class*=bg-] .header-nav .nav>li.current-menu-item>a, [class*=bg-] .header-nav .nav>li:hover>a, [class*=bg-] .header-nav .nav>li>a:hover {
-    color: #2D3239;
+    color: #ae52de;
 }
 .content-area {
     padding-top: 10px;
@@ -49,4 +49,7 @@ style.min.css:1
 .header-nav .nav {
     margin: 0;
     background: #ae52de !important;
+}
+.header-style-3 .slide-up, .header-style-4 .slide-up {
+    background: #fff;
 }
