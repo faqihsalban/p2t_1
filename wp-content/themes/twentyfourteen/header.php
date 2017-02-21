@@ -205,7 +205,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 						
 						<!-- Quik search -->
-						<div class="dez-quik-search bg-primary">
+						<div class="dez-quik-search bg-primary" style="    background: white;">
 							<form action="#" style="background: #c394dc;" />
 								<input name="search" type="text" class="form-control" placeholder="Type to search" />
 								<span id="quik-search-remove"><i class="fa fa-remove"></i></span>
