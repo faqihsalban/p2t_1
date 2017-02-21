@@ -74,9 +74,6 @@ get_header();
                                     </div>
                                 </div>
                             </div>
-                            <?php if (function_exists("pagination")) {
-                                pagination($additional_loop->max_num_pages);
-                            } ?>
                         <?php endwhile; ?>
                             <div class="navigation">
                                 <div class="next-posts"></div>
@@ -120,6 +117,8 @@ get_header();
 <!--                            <li class="next">--><?php //echo get_previous_posts_link('Newer Entries'); // display newer posts link ?><!--</li>-->
 <!--                        </ul>-->
 <!--                    </div>-->
+                    <?php wpbeginner_numeric_posts_nav(); ?>
+
                     <!--                    --><?php //} ?>
 
                     <!-- Pagination END -->

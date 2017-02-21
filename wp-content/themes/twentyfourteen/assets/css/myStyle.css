@@ -44,12 +44,41 @@ a, .text-primary, .primary li:before, .breadcrumb-row ul li a, .header-nav .nav 
 .content-area {
     padding-top: 10px;
 }
-@media only screen and (max-width: 991px)
-style.min.css:1
-.header-nav .nav {
-    margin: 0;
-    background: #ae52de !important;
+@media only screen and (max-width: 991px){
+    .header-nav .nav {
+        margin: 0;
+        background: #ae52de !important;
+    }
 }
+
 .header-style-3 .slide-up, .header-style-4 .slide-up {
     background: #fff;
+}
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+    color: #fff;
+    text-decoration:none;
+}
+
+.navigation li {
+    display: inline;
+}
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+    background-color: #6FB7E9;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 12px;
+    padding: 0.75rem;
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+    background-color: #3C8DC5;
 }
