@@ -119,9 +119,7 @@
 						<h2 class="m-a0">The best theme for university</h2>
 						<p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 					</div>	
-					<div class="col-md-6">
-						<a href="#" class="site-button pull-right m-t15">Buy Now 17$</a>
-					</div>
+					
 				</div>
 			</div>	
 		</div>
@@ -132,10 +130,10 @@
                 <div class="section-content">
                     <div class="row">
                         <div class="col-md-12 text-center section-head">
-                            <h2 class="h2"><span class="text-primary">Our University Services</span></h2>
+                            <h2 class="h2"><span class="text-primary">Berita</span></h2>
 							<div class="dez-separator-outer"><div class="dez-separator bg-primary style-liner"></div></div>
                             <div class="clear"></div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+                            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>-->
                         </div>    
 					</div>		
 					<div class="row">
