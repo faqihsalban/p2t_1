@@ -13,7 +13,7 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 text-left" style="text-align:center;"> <span>© Copyright P2T.COM @2017. All right reserved. - Developed by Anonymous DEV.</span> </div>
+					<div class="col-md-12 text-left" style="text-align:center;"> <span>Copyright P2T.COM @2017. All right reserved. - Developed by Anonymous DEV.</span> </div>
 					
 					
 				</div>
