@@ -10,7 +10,7 @@
 ?>
  <div class="page-content">
         <!-- inner page banner -->
-        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(./images/background/bg4.jpg);">
+        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(./assets/images/background/bg4.jpg);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
                     <h1 class="text-white"><?php the_title();?></h1>
