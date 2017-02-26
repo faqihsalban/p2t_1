@@ -73,21 +73,22 @@ get_header(); ?>
                                 <h4 class="widget-title">Recent Posts</h4>
                                 <?php $latest = new WP_Query('showposts=4&cat=4'); ?>
                                 <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
-                                    <div class="widget-post-bx">
-                                        <div class="widget-post clearfix">
-                                            <div class="dez-post-media"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt="" /> </div>
-                                            <div class="dez-post-info">
-                                                <div class="dez-post-header">
-                                                    <h6 class="post-title"><?php the_title(); ?></h6>
-                                                </div>
-                                                <div class="dez-post-meta">
+								
+								<div class="col-md-4 col-sm-4 m-b30">
+									<div class="dez-box p-a20 border-1">
+										<div class="dez-media"> <a href="<?php the_permalink();?>"><img src="<?php the_field('cover'); ?>" alt=""></a> </div>
+										<div class="dez-info">
+											<h4 class="dez-title m-t20"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
+											<div class="dez-post-meta">
                                                     <ul>
                                                         <li class="post-author">By <?php the_author(); ?></li>
                                                     </ul>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
+											<a href="<?php the_permalink();?>" class="site-button">More</a> </div>
+									</div>
+								</div>
+								
+								
                                 <?php endwhile; ?>
                                     <div class="navigation">
                                         <div class="next-posts"><?php next_posts_link(); ?></div>
