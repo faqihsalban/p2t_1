@@ -10,7 +10,7 @@
  */
 ?>
 <!-- footer bottom part -->
-		<div class="footer-bottom">
+	<!--	<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-left" style="text-align:center;"> <span>Copyright P2T.COM @2017. All right reserved. - Developed by Anonymous DEV.</span> </div>
@@ -19,6 +19,50 @@
 				</div>
 			</div>
 		</div>
+-->
+	<div class="footer-bottom">
+      <div class="container">
+        
+        <div class="row">
+          <div class="empty col-md-2 col-sm-2 col-xs-12"></div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <h3>links</h3>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>              
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <div class="col-md-5 col-sm-5 col-xs-12">
+            <h3>about us</h3>
+            <p>
+              We are a small web design company that is focused on making your vision come to life. 
+            </p>
+            <div class="social-media">
+              <a href="#" data-toggle="tooltip" title="twitter"><i class="icon-twitter"></i></a>
+              <a href="#" data-toggle="tooltip" title="facebook"><i class="icon-facebook"></i></a>
+              <a href="#" data-toggle="tooltip" title="linkedin"><i class="icon-linkedin"></i></a>
+              <a href="#" data-toggle="tooltip" title="github"><i class="icon-github"></i></a>
+              <a href="#" data-toggle="tooltip" title="pinterest"><i class="icon-pinterest"></i></a>
+            </div>
+            
+          </div>
+          <div class="empty col-md-2 col-sm-2 col-xs-12"></div>
+        </div>
+        <div class="row">
+          <div class="empty col-md-2 col-sm-2 col-xs-12"></div>
+          <div class="empty col-md-8 col-sm-8 col-xs-12"><hr /></div>
+          <div class="empty col-md-2 col-sm-2 col-xs-12"></div>
+        </div>
+      </div>
+      
+      <p class="copyright">
+        &copy; Made by <a href="http://webdesigncrowd.com">WebDesignCrowd</a>
+      </p>
+    </div>
+
+
 	</footer>
 	<!-- Footer END-->
     <!-- scroll top button -->
