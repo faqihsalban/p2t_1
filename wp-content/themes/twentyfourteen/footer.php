@@ -20,7 +20,7 @@
 			</div>
 		</div>
 -->
-	<div class="footer-bottom">
+	<div class="footer-bottom" style="text-align:center;">
       <div class="container">
         
         <div class="row">
@@ -57,8 +57,8 @@
         </div>
       </div>
       
-      <p class="copyright">
-        &copy; Made by <a href="http://webdesigncrowd.com">WebDesignCrowd</a>
+      <p class="copyright" >
+        &copy; Made by <a href="">Anonymous Dev</a>
       </p>
     </div>
 
