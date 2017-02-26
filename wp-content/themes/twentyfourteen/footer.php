@@ -21,7 +21,7 @@
 		</div>
 -->
 	<div class="footer-bottom" >
-      <div class="container">
+      <div class="">
         
         <div class="row">
           <div class="empty col-md-2 col-sm-2 col-xs-12"></div>
@@ -51,14 +51,14 @@
           <div class="empty col-md-2 col-sm-2 col-xs-12"></div>
         </div>
         <div class="row">
-          <div class="empty col-md-2 col-sm-2 col-xs-12"></div>
-          <div class="empty col-md-8 col-sm-8 col-xs-12"><hr /></div>
-          <div class="empty col-md-2 col-sm-2 col-xs-12"></div>
+          
+          <hr />
+      
         </div>
       </div>
-       >
+       
       <p class="copyright" style="text-align:center;">
-        &copy; Made by <a href="">Anonymous Dev</a>
+        &copy; Copyright <a href="">P2T Upi</a>
       </p>
 	  
     </div>
