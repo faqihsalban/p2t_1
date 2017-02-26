@@ -60,7 +60,7 @@ get_header();
                                         <a href="<?php the_permalink(); ?>" class="site-button">More</a> </div>
                                 </div>
                             </div>
-
+ 
 
                         <?php endwhile; ?>
                             <div class="navigation">
