@@ -43,7 +43,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link rel="icon" href="http://dexignzone.com/zone/EduZone/xhtml/images/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.png" />
 <!-- Page Title Here -->
-<title>EduZone - Education Template</title>
+<title><?php the_title();?> - P2T</title>
 <!-- Mobile Specific -->
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!--[if lt IE 9]>

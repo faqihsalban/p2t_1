@@ -273,7 +273,7 @@
         </div>
 		<!-- Our Philosophy End -->
 		<!-- Our Gallery -->
-        <div class="section-full p-t70 p-b10">
+        <div class="section-full p-t70 p-b10" style="display:none">
             <div class="container">
                 <div class="section-head text-center">
                     <h2 class="h2"><span class="text-primary">Our University Gallery</span></h2>
@@ -375,7 +375,7 @@
         </div>
         <!-- Our Gallery END -->
 		<!-- Testimonials blog -->
-        <div class="section-full overlay-black-middle bg-img-fix p-t70 p-b60" style="background-image:url(<?php echo get_template_directory_uri() ?>/assets/images/background/college/bg4.jpg);">
+        <div class="section-full overlay-black-middle bg-img-fix p-t70 p-b60" style="background-image:url(<?php echo get_template_directory_uri() ?>/assets/images/background/college/bg4.jpg);display:none">
             <div class="container">
                 <div class="section-head text-white text-center">
                     <h2 class="h2">What Students Says</h2>
@@ -419,7 +419,7 @@
         </div>
         <!-- Testimonials blog END -->
 		<!-- Latest News -->
-		<div class="section-full p-t70 p-b10 box-shadow">
+		<div class="section-full p-t70 p-b10 box-shadow" style="display:none">
 			<div class="container"> 
 				<div class="row">
 					<div class="section-head text-center">

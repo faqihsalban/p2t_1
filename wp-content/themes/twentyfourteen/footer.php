@@ -13,9 +13,9 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4 text-left"> <span>© Copyright 2017</span> </div>
-					<div class="col-md-4 text-center"> <span> Design With <i class="fa fa-heart text-red heart"></i> By DexignZone </span> </div>
-					<div class="col-md-4 text-right "> <a href="./about-2.html"> About</a> <a href="./assets/help.html"> Help Desk</a> <a href="./assets/privacy-policy.html"> Privacy Policy</a> </div>
+					<div class="col-md-12 text-left" style="text-align:center;"> <span>© Copyright P2T.COM @2017. All right reserved. - Developed by Anonymous DEV.</span> </div>
+					
+					
 				</div>
 			</div>
 		</div>
