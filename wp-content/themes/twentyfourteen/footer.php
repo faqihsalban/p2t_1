@@ -58,7 +58,7 @@
       </div>
        >
       <p class="copyright" style="text-align:center;">
-        &copy; Made by <a href="">Anonymous Dev</a>
+        &copy; Copyright <a href="">P2T Upi</a>
       </p>
 	  
     </div>
