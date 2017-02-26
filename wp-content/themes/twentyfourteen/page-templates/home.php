@@ -46,11 +46,11 @@
                             <div class="dez-thu "><img src="<?php echo get_template_directory_uri() ?>/assets/images/student1.png" alt="" /></div>
                         </div>
                         <div class="col-md-7">
-                            <h2 class="h2"> About Our <span class="text-primary">University </span></h2>
+                            <h2 class="h2"> Tentang <span class="text-primary">P2T </span></h2>
                             <div class="dez-separator bg-primary"></div>
                             <div class="clear"></div>
-                            <p><strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</strong></p>
-                            <p class="m-b30">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. [...]</p>
+                            <p><strong>Pusat Psikologi Terapat (P2T) Universitas Pendidikan Indonesia </strong></p>
+                            <p class="m-b30">adalah .... </p>
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="icon-bx-wraper bx-style-1 p-a20 left m-b30">
@@ -116,8 +116,8 @@
             <div class="container">
 				<div class="row text-white p-tb60">	
 					<div class="col-md-6">
-						<h2 class="m-a0">The best theme for university</h2>
-						<p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+						<h2 class="m-a0">Sekilas Info</h2>
+						<p class="m-b0">Dinamis bisa di edit dari dashboard</p>
 					</div>	
 					
 				</div>
