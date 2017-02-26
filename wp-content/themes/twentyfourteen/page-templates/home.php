@@ -12,7 +12,7 @@
     <!-- Content --> 
     <div class="page-content" style="padding-bottom: 0px;">
 		<!--Slider Start--> 
-        <div id="jssor_1" style="position:relative;margin-top:70px;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+        <div id="jssor_1" style="position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
