@@ -52,7 +52,7 @@
         </div>
         <div class="row">
           
-          <div class="empty col-md-8 col-sm-8 col-xs-12"><hr /></div>
+          <hr />
       
         </div>
       </div>
