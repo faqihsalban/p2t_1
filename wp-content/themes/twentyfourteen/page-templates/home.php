@@ -206,8 +206,8 @@ get_header();
             </div>
             <div class="row">
                 <div class="col-md-3 col-sm-6 m-b30 ">
-                    <div class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
-                        <div class="icon-bx-md radius bg-white m-b20">
+                    <div style="position: static; height: 365px;" class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
+                        <div s class="icon-bx-md radius bg-white m-b20">
                             <span class="icon-cell text-primary"><i class="fa fa-male"></i></span>
                         </div>
                         <div class="icon-content">
@@ -225,11 +225,13 @@ get_header();
                             ?>
                             <h4 class="dez-tilte"><?php echo $titleInd; ?></h4>
                             <p><?php echo $excerptInd; ?></p>
+
                         </div>
+                        <button style="top: 10px;" type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalInd">Read More <i class="icon-play3 position-right"></i></button>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 m-b30">
-                    <div class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
+                    <div style="position: static; height: 365px;" class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
                         <div class="icon-bx-md radius bg-white m-b20">
                             <span class="icon-cell text-red"><i class="fa fa-users"></i></span>
                         </div>
@@ -249,10 +251,11 @@ get_header();
                             <h4 class="dez-tilte"><?php echo $titleKel; ?></h4>
                             <p><?php echo $excerptKel; ?></p>
                         </div>
+                        <button type="button" style="top: 10px;" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalKel">Read More <i class="icon-play3 position-right"></i></button>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 m-b30">
-                    <div class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
+                    <div style="position: static; height: 365px;" class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
                         <div class="icon-bx-md radius bg-white m-b20">
                             <span class="icon-cell text-yello"><i class="fa fa-university"></i></span>
                         </div>
@@ -268,15 +271,16 @@ get_header();
                             $excerpt_length = apply_filters( 'excerpt_length', 20 );
                             //                              $excerpt_more = apply_filters( 'excerpt_more', ' ' . '[&hellip;]' );
                             $excerptSek = wp_trim_words( $excerptSek, $excerpt_length, $excerpt_more );
-
                             ?>
                             <h4 class="dez-tilte"><?php echo $titleSek; ?></h4>
                             <p><?php echo $excerptSek; ?></p>
+
                         </div>
+                        <button type="button" style="top: 10px;" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalSek">Read More <i class="icon-play3 position-right"></i></button>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 m-b30">
-                    <div class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
+                    <div style="position: static; height: 365px;" class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
                         <div class="icon-bx-md radius bg-white m-b20">
                             <span class="icon-cell text-green"><i class="fa fa-building-o"></i></span>
                         </div>
@@ -295,7 +299,9 @@ get_header();
                             ?>
                             <h4 class="dez-tilte"><?php echo $titlePer; ?></h4>
                             <p><?php echo $excerptPer; ?></p>
+
                         </div>
+                        <button type="button" style="top: 10px;" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalPer">Read More <i class="icon-play3 position-right"></i></button>
                     </div>
                 </div>
 <!--                <div class="col-md-3 col-sm-6 m-b30">-->
@@ -324,6 +330,84 @@ get_header();
 <!--                </div>-->
             </div>
         </div>
+        <!-- Modal with h4 -->
+        <div id="modalInd" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"><?php echo $titleInd; ?></h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <p class="txtModals"><?php echo $contentInd; ?></p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modalKel" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"><?php echo $titleKel; ?></h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <p class="txtModals"><?php echo $contentKel; ?></p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modalSek" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"><?php echo $titleSek; ?></h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <p class="txtModals"><?php echo $contentSek; ?></p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modalPer" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"><?php echo $titlePer; ?></h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <p class="txtModals"><?php echo $contentPer; ?></p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /modal with h4 -->
     </div>
     <!-- Our Philosophy End -->
     <!-- Our Gallery -->

@@ -125,10 +125,10 @@
 </div>
     <script type="text/javascript">jssor_1_slider_init();</script>
 <!-- JavaScript  files ========================================= -->
-<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/jquery.min.js"></script>
-<!-- jquery.min js -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/bootstrap.min.js"></script>
 <!-- bootstrap.min js -->
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/jquery.min.js"></script>
+<!-- jquery.min js -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/bootstrap-select.min.js"></script>
 <!-- Form js -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/jquery.bootstrap-touchspin.js"></script>
@@ -153,6 +153,8 @@
 <!-- sortcode fuctions  -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/switcher.min.js"></script>
 <!-- switcher fuctions  -->
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/js/components_modals.js"></script>
+<!-- modals fuctions  -->
 <!-- revolution JS FILES -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>

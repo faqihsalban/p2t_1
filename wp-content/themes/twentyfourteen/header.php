@@ -69,6 +69,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css' />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800italic,800,700italic' rel='stylesheet' type='text/css' />
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/assets/css/myStyle.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/assets/css/modals/core.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/assets/css/modals/bootstrap.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/jssor.slider-22.2.8.min.js" type="text/javascript"></script>
     <script type="text/javascript">
