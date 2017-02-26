@@ -208,7 +208,7 @@ get_header();
                 <div class="col-md-3 col-sm-6 m-b30 ">
                     <div class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
                         <div class="icon-bx-md radius bg-white m-b20">
-                            <span class="icon-cell text-primary"><i class="fa fa-bus"></i></span>
+                            <span class="icon-cell text-primary"><i class="fa fa-male"></i></span>
                         </div>
                         <div class="icon-content">
                             <?php
@@ -231,7 +231,7 @@ get_header();
                 <div class="col-md-3 col-sm-6 m-b30">
                     <div class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
                         <div class="icon-bx-md radius bg-white m-b20">
-                            <span class="icon-cell text-red"><i class="fa fa-child"></i></span>
+                            <span class="icon-cell text-red"><i class="fa fa-users"></i></span>
                         </div>
                         <div class="icon-content">
                             <?php
@@ -254,7 +254,7 @@ get_header();
                 <div class="col-md-3 col-sm-6 m-b30">
                     <div class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
                         <div class="icon-bx-md radius bg-white m-b20">
-                            <span class="icon-cell text-yello"><i class="fa fa-apple"></i></span>
+                            <span class="icon-cell text-yello"><i class="fa fa-university"></i></span>
                         </div>
                         <div class="icon-content">
                             <?php
@@ -278,7 +278,7 @@ get_header();
                 <div class="col-md-3 col-sm-6 m-b30">
                     <div class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
                         <div class="icon-bx-md radius bg-white m-b20">
-                            <span class="icon-cell text-green"><i class="fa fa-smile-o"></i></span>
+                            <span class="icon-cell text-green"><i class="fa fa-building-o"></i></span>
                         </div>
                         <div class="icon-content">
                             <?php
