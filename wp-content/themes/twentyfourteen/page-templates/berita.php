@@ -15,7 +15,7 @@ get_header();
         <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(./assets/images/background/bg4.jpg);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
-                    <h1 class="text-white">Berita</h1>
+                    <h1 class="text-white">Kegiatan yang akan dilakukan</h1>
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@ get_header();
             <div class="container">
                 <ul class="list-inline">
                     <li><a href="http://p2t.azurewebsites.net/">Home</a></li>
-                    <li>Berita</li>
+                    <li>Kegiatan yang akan dilakukan</li>
                 </ul>
             </div>
         </div>
@@ -60,10 +60,6 @@ get_header();
                                             <a href="<?php the_permalink(); ?>" class="site-button">More</a> </div>
                                 </div>
                             </div>
-<<<<<<< b57b57d199cf6d2cb5bd7be815f08d7a759669c2
- 
-=======
->>>>>>> 5c38b8617fd2a5e94f6e6145c58b49d171bf431a
 
                         <?php endwhile; ?>
                         <div class="navigation">
