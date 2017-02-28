@@ -14,7 +14,7 @@ get_header();
       
       
        <!-- Slider -->
-         <div class="container">
+         <div class="container"style="width:auto;">
 <?php 
     echo do_shortcode("[metaslider id=230]"); 
 ?></div>
@@ -651,157 +651,27 @@ get_header();
             </div>
         </div>
     </div>
-	<div class="p-a30 bg-white m-b30">
+	 <div class="p-a30 bg-white m-b30">
                     <div class="section-head">
-                        <h2 class="text-uppercase"> Portfolio Carousel </h2>
+                        <h2 class="text-uppercase">Image Carousel with team member</h2>
                     </div>
                     <div class="section-content">
-                        <div class="portfolio-carousel mfp-gallery gallery owl-btn-center-lr owl-carousel owl-theme owl-loaded">
-                            
-                            
-                            
-                            
-                            
-                            
-                        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1425px, 0px, 0px); transition: 0.25s; width: 3990px;"><div class="owl-item cloned" style="width: 255px; margin-right: 30px;"><div class="item">
-                                <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic3.jpg" alt="">
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
-                                        </div>
-                                    </div>
+                        <div class="img-carousel-content mfp-gallery gallery owl-btn-center-lr">
+                            <div class="item">
+                                <div class="ow-carousel-entry">
+                                    <div class="ow-entry-media dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic1.jpg" alt="" /> </div>
+                                   
                                 </div>
                             </div>
-							</div>
-							</div></div>
-							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1425px, 0px, 0px); transition: 0.25s; width: 3990px;"><div class="owl-item cloned" style="width: 255px; margin-right: 30px;"><div class="item">
-                                <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic3.jpg" alt="">
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
-                                        </div>
-                                    </div>
+                              <div class="item">
+                                <div class="ow-carousel-entry">
+                                    <div class="ow-entry-media dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic1.jpg" alt="" /> </div>
+                                   
                                 </div>
                             </div>
-							</div>
-							</div></div>
-							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1425px, 0px, 0px); transition: 0.25s; width: 3990px;"><div class="owl-item cloned" style="width: 255px; margin-right: 30px;"><div class="item">
-                                <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic3.jpg" alt="">
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-							</div>
-							</div></div>
-							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1425px, 0px, 0px); transition: 0.25s; width: 3990px;"><div class="owl-item cloned" style="width: 255px; margin-right: 30px;"><div class="item">
-                                <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic3.jpg" alt="">
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-							</div>
-							</div></div>
-							
-							<div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="fa fa-chevron-left"></i></div><div class="owl-next" style=""><i class="fa fa-chevron-right"></i></div></div><div class="owl-dots" style="display: none;"></div></div></div>
-                    </div>
-                </div>
-    <!-- Testimonials blog END -->
-    <!-- Latest News -->
-    <div class="section-full p-t70 p-b10 box-shadow" style="display:none">
-        <div class="container">
-            <div class="row">
-                <div class="section-head text-center">
-                    <h2 class="h2"><span class="text-primary">Meet Our Best Tutors</span></h2>
-                    <div class="dez-separator-outer">
-                        <div class="dez-separator bg-primary style-liner"></div>
-                    </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's
-                        standard dummy text ever since the been when an unknown printer.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-4 m-b30">
-                    <div class="dez-box dez-img-effect rotate">
-                        <div class="dez-media"><a href="#"><img
-                                        src="<?php echo get_template_directory_uri() ?>/assets/images/our-services/college/pic3.jpg"
-                                        alt=""/></a></div>
-                        <div class="dez-info p-a20 border-1 text-center">
-                            <h2 class="dez-title m-t0 m-b10 font-weight-900"><a href="#">New Classroom</a></h2>
-                            <div class="text-center news-info m-tb15">
-                                <ul class="icon-list">
-                                    <li class="event-time"><i class="fa fa-clock-o text-primary m-r10"></i>Aug 24, 2015
-                                        at 9:00 PM
-                                    </li>
-                                    <li class="event-date"><i class="fa fa-user text-primary m-r10"></i>By Mary Jane
-                                    </li>
-                                    <li class="event-address"><i class="fa fa-map-marker text-primary m-r10"></i>south
-                                        africa
-                                    </li>
-                                </ul>
-                            </div>
-                            <p>Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur
-                                Fusce varius [...] </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 m-b30">
-                    <div class="dez-box dez-img-effect rotate">
-                        <div class="dez-media"><a href="#"><img
-                                        src="<?php echo get_template_directory_uri() ?>/assets/images/our-services/college/pic2.jpg"
-                                        alt=""/></a></div>
-                        <div class="dez-info p-a20 border-1 text-center">
-                            <h2 class="dez-title m-t0 m-b10 font-weight-900"><a href="#">Our New Teacher</a></h2>
-                            <div class="text-center news-info m-tb15">
-                                <ul class="icon-list">
-                                    <li class="event-time"><i class="fa fa-clock-o text-primary m-r10"></i>Aug 24, 2015
-                                        at 9:00 PM
-                                    </li>
-                                    <li class="event-date"><i class="fa fa-user text-primary m-r10"></i>By Mary Jane
-                                    </li>
-                                    <li class="event-address"><i class="fa fa-map-marker text-primary m-r10"></i>south
-                                        africa
-                                    </li>
-                                </ul>
-                            </div>
-                            <p>Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur
-                                Fusce varius [...] </p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-md-4 col-sm-4 m-b30">
-                    <div class="dez-box dez-img-effect rotate">
-                        <div class="dez-media"><a href="#"><img
-                                        src="<?php echo get_template_directory_uri() ?>/assets/images/our-services/college/pic4.jpg"
-                                        alt=""/></a></div>
-                        <div class="dez-info p-a20 border-1 text-center">
-                            <h2 class="dez-title m-t0 m-b10 font-weight-900"><a href="#">Toddler Care</a></h2>
-                            <div class="text-center news-info m-tb15">
-                                <ul class="icon-list">
-                                    <li class="event-time"><i class="fa fa-clock-o text-primary m-r10"></i>Aug 24, 2015
-                                        at 9:00 PM
-                                    </li>
-                                    <li class="event-date"><i class="fa fa-user text-primary m-r10"></i>By Mary Jane
-                                    </li>
-                                    <li class="event-address"><i class="fa fa-map-marker text-primary m-r10"></i>south
-                                        africa
-                                    </li>
-                                </ul>
-                            </div>
-                            <p>Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor consectetur
-                                Fusce varius [...] </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Latest News END -->
     </div>
 <?php
 get_footer();
