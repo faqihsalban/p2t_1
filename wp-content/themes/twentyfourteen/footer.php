@@ -108,6 +108,7 @@
             </div>
         </div>
         <!-- footer bottom part -->
+        <hr style="margin-bottom: 0px; margin-top: 0px;">
         <div class="footer-bottom bg-primary-dark">
             <div class="container">
                 <div class="row">
