@@ -49,6 +49,30 @@ get_header(); ?>
                             
                         </div>
                     </div>
+					<div class="col-md-12">
+                        
+                            <h2 class="h2"><span class="text-primary">Latar Belakang Pendidikan</span></h2>
+                            <div class="dez-separator bg-primary"></div>
+                            <div class="clear"></div>
+                            <p><?php the_field('latar_belakang_pendidikan'); ?></p>
+                            
+                    </div>
+					<div class="col-md-12">
+                        
+                            <h2 class="h2"><span class="text-primary">Prestasi</span></h2>
+                            <div class="dez-separator bg-primary"></div>
+                            <div class="clear"></div>
+                            <p><?php the_field('prestasi'); ?></p>
+                            
+                    </div>
+					<div class="col-md-12">
+                        
+                            <h2 class="h2"><span class="text-primary">Pengalaman Organisasi</span></h2>
+                            <div class="dez-separator bg-primary"></div>
+                            <div class="clear"></div>
+                            <p><?php the_field('pengalaman_organisasi'); ?></p>
+                            
+                    </div>
                 </div>
             </div>
         </div>
