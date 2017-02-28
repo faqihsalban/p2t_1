@@ -51,7 +51,7 @@ get_header();
 
                         <?php if ($the_query->have_posts()) :
                         while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
-                             <div class="col-md-2 col-sm-3 m-b30">
+                             <div class="col-md-5 col-sm-3 m-b30">
                                 <div class="dez-box">
                                     <div class="dez-media"> <a href="<?php the_permalink(); ?>"><img src="<?php the_field('cover'); ?>" alt=""></a> </div>
                                     <div class="dez-info p-a30 border-1">
