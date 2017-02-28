@@ -145,7 +145,7 @@ get_header();
                                     <div class="dez-info p-a20 border-1 text-center">
                                         <h2 class="dez-title m-t0 m-b10 font-weight-900"><a
                                                     href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
-                                        <p><?php echo substr(strip_tags(get_the_content()),0,35) . '[...]'; ?> </p>
+                                        <p><?php echo substr(strip_tags(get_the_title()),0,35) . '[...]'; ?> </p>
                                     </div>
                                 </div>
                             </div>
