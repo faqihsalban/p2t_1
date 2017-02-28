@@ -275,7 +275,7 @@ get_header();
                         </div>
                         <div class="icon-content">
                             <?php
-                            $postInd = get_post(46);
+                            $postInd = get_post(211);
                             $titleInd = $postInd->post_title;
                             $contentInd = $postInd->post_content;
 
@@ -300,7 +300,7 @@ get_header();
                         </div>
                         <div class="icon-content">
                             <?php
-                            $postKel = get_post(48);
+                            $postKel = get_post(214);
                             $titleKel = $postKel->post_title;
                             $contentKel = $postKel->post_content;
 
@@ -324,7 +324,7 @@ get_header();
                         </div>
                         <div class="icon-content">
                             <?php
-                            $postSek = get_post(50);
+                            $postSek = get_post(216);
                             $titleSek = $postSek->post_title;
                             $contentSek = $postSek->post_content;
 
@@ -349,7 +349,7 @@ get_header();
                         </div>
                         <div class="icon-content">
                             <?php
-                            $postPer = get_post(52);
+                            $postPer = get_post(218);
                             $titlePer = $postPer->post_title;
                             $contentPer = $postPer->post_content;
 
