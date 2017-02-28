@@ -58,7 +58,7 @@ get_header();
                                                 src="<?php the_field('cover'); ?>" alt=""></a></div>
                                 <div class="dez-info p-a30 border-1">
                                     <h4 class="dez-title m-t0"><a
-                                                href="<?php the_permalink(); ?>"><?php echo substr(strip_tags(get_the_title()),0,35) . '[...]'; ?></a></h4>
+                                                href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                                     <!--<i class="fa fa-user"></i>By <a href="<?php the_permalink(); ?>"><?php the_author(); ?>-->
                                 </div>
                             </div>
