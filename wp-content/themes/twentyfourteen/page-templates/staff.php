@@ -65,7 +65,9 @@ get_header();
 												<img width="358" height="460" src="<?php the_field('cover');?>" alt="" />
 											</a>
 											<div class="dez-info-has bg-primary">
-												<a href="<?php the_permalink();?>">Lihat Saya</a>
+												<a href="<?php the_permalink();?>" style="    border: rgba(255,255,255,0.4) solid 1.5px;
+    padding: 10px;
+    color: white;">Lihat Saya</a>
 										  </div>
 										</div> 
 										<div class="p-a10">

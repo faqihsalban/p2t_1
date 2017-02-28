@@ -8,7 +8,9 @@
  */
 
 get_header(); ?>
-
+<?php
+						if ( have_posts() ) : while ( have_posts() ) : the_post();
+  ?>
     <div class="page-content">
         <!-- inner page banner -->
         <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(<?php echo get_template_directory_uri() ?>/assets/images/background/bg4.jpg);">
@@ -40,7 +42,7 @@ get_header(); ?>
                                         alt=""/></div>
                         </div>
                         <div class="col-md-7">
-                            
+                            <h2 class="h2"><span class="text-primary"><?php the_field('name'); ?></span></h2>
                             <div class="dez-separator bg-primary"></div>
                             <div class="clear"></div>
                             <p><?php the_content(); ?></p>
@@ -50,7 +52,15 @@ get_header(); ?>
                 </div>
             </div>
         </div>
+		
     </div>
+	<?php
+endwhile;
+else:
+?>
+  <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+<?php endif;
+						?>
 <?php
 //get_sidebar( 'content' );
 //get_sidebar();
