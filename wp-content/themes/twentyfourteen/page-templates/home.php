@@ -10,7 +10,7 @@ get_header();
 ?>
 
     <!-- Content -->
-    <div class="page-content padtop" style="padding-bottom: 0px;
+    <div class="page-content padtop" style="padding-bottom: 0px;">
         <!--Slider Start-->
         <div id="jssor_1"
              style="position:relative;margin-top: 0px;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
