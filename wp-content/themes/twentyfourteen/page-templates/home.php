@@ -21,13 +21,29 @@ get_header();
             </div>
             <div data-u="slides"
                  style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
-
+<?php
+/* The loop */
+while ( have_posts() ) :
+the_post();
+if ( get_post_gallery() ) :
+$gallery = get_post_gallery( get_the_ID(), false );
+/* create an array of IDs from */
+$gids = explode( ",", $gallery['ids'] );
+/* Loop through all the image and output them one by one */
+foreach ($gids as $id) {
+/* pull all the available attachment data with the new function */
+$attachment = wp_get_attachment($id);
+/* Uncomment the next line to see all the available data in
+$attachment */
+?>
                 <div>
-                    <img data-u="image" src="<?php echo get_template_directory_uri() ?>/assets/images/purple.jpg"/>
+                    <img data-u="image" src="<?php echo $attachment['src']; ?>"/>
                 </div>
-                <div>
-                    <img data-u="image" src="<?php echo get_template_directory_uri() ?>/assets/images/blue.jpg"/>
-                </div>
+                <?php
+}
+endif;
+endwhile;
+?>
             </div>
             <!-- Bullet Navigator -->
             <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
