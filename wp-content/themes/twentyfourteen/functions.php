@@ -611,3 +611,19 @@ require get_template_directory() . '/inc/customizer.php';
 if (!class_exists('Featured_Content') && 'plugins.php' !== $GLOBALS['pagenow']) {
     require get_template_directory() . '/inc/featured-content.php';
 }
+add_action('template_include', 'load_single_template');
+  function load_single_template($template) {
+    $new_template = '';
+
+    // single post template
+    if( is_single() ) {
+      global $post;
+
+      if( has_term('staff', 'category', $post) ) {
+        $new_template = locate_template(array('single1.php' ));
+      }
+      
+
+    }
+    return ('' != $new_template) ? $new_template : $template;
+  };

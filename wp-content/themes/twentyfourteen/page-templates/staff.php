@@ -65,12 +65,7 @@ get_header();
 												<img width="358" height="460" src="<?php the_field('cover');?>" alt="" />
 											</a>
 											<div class="dez-info-has bg-primary">
-												<ul class="dez-social-icon border">
-													<li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-													<li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-													<li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-													<li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-												</ul>
+												<a href="<?php the_permalink();?>">Lihat Saya</a>
 										  </div>
 										</div> 
 										<div class="p-a10">
