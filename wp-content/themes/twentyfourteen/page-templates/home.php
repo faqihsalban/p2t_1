@@ -145,7 +145,9 @@ get_header();
                                     <div class="dez-info p-a20 border-1 text-center">
                                         <h2 class="dez-title m-t0 m-b10 font-weight-900"><a
                                                     href="<?php the_permalink();?>"><?php echo substr(strip_tags(get_the_title()),0,35) . '[...]'; ?></a></h2>
-                                        <li class="post-date"> <i class="fa fa-calendar"></i><?php the_date(); ?></li>
+                                        <ul>
+                                            <li class="post-date"> <i class="fa fa-calendar"></i><?php the_date(); ?></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
