@@ -159,15 +159,15 @@ get_header();
 
                     <?php if ($the_query->have_posts()) :
                         while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
-                            <div class="col-md-4 col-sm-4 m-b30">
+                              <div class="col-md-4 col-sm-4 m-b30">
                                 <div class="dez-box dez-img-effect rotate">
-                                    <div class="dez-media"><a href="#"><img
-                                                    src="<?php echo get_template_directory_uri() ?>/assets/images/our-services/college/pic1.jpg"
+                                    <div class="dez-media"><a href="<?php the_permalink();?>"><img
+                                                    src="<?php the_field('cover');?>"
                                                     alt=""/></a></div>
                                     <div class="dez-info p-a20 border-1 text-center">
                                         <h2 class="dez-title m-t0 m-b10 font-weight-900"><a
-                                                    href="#"><?php the_title(); ?></a></h2>
-                                        <p><?php echo substr(strip_tags(get_the_content()),0,35) . '[...]'; ?></p>
+                                                    href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+                                        <p><?php echo substr(strip_tags(get_the_content()),0,35) . '[...]'; ?> </p>
                                     </div>
                                 </div>
                             </div>
@@ -194,7 +194,7 @@ get_header();
                 <div class="section-content">
                     <div class="row">
                         <div class="col-md-12 text-center section-head">
-                            <a href="http://p2t.azurewebsites.net/berita"><h2 class="h2"><span class="text-primary">Short Course</span>
+                            <a href="http://p2t.azurewebsites.net/short-course"><h2 class="h2"><span class="text-primary">Short Course</span>
                                 </h2></a>
                             <div class="dez-separator-outer">
                                 <div class="dez-separator bg-primary style-liner"></div>
@@ -207,7 +207,7 @@ get_header();
                     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     $query_args = array(
                         'post_type' => 'post',
-                        'category_name' => 'berita',
+                        'category_name' => 'short-course',
                         'posts_per_page' => 3,
                         'paged' => $paged
                     );
@@ -219,12 +219,12 @@ get_header();
                         while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
                             <div class="col-md-4 col-sm-4 m-b30">
                                 <div class="dez-box dez-img-effect rotate">
-                                    <div class="dez-media"><a href="#"><img
-                                                    src="<?php echo get_template_directory_uri() ?>/assets/images/our-services/college/pic1.jpg"
+                                    <div class="dez-media"><a href="<?php the_permalink();?>"><img
+                                                    src="<?php the_field('cover');?>"
                                                     alt=""/></a></div>
                                     <div class="dez-info p-a20 border-1 text-center">
                                         <h2 class="dez-title m-t0 m-b10 font-weight-900"><a
-                                                    href="#"><?php the_title(); ?></a></h2>
+                                                    href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
                                         <p><?php echo substr(strip_tags(get_the_content()),0,35) . '[...]'; ?> </p>
                                     </div>
                                 </div>
