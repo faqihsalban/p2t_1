@@ -49,8 +49,20 @@ get_header();
                     
                     <div class="section-content">
                         <div class="row">
-						<?php $latest = new WP_Query('showposts=10&cat=11'); ?>
-        <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
+						<?php
+                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                    $query_args = array(
+                        'post_type' => 'post',
+                        'category_name' => 'klien',
+                        'posts_per_page' => 200,
+                        'paged' => $paged
+                    );
+                    // create a new instance of WP_Query
+                    $the_query = new WP_Query($query_args);
+                    ?>
+
+                    <?php if ($the_query->have_posts()) :
+                        while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
                             <div class="col-md-3 col-sm-3 m-b30">
                                 <div class="dez-box">
                                     <div class="dez-media"><img src="<?php the_field('cover');?>" alt="" /></div>
@@ -60,19 +72,19 @@ get_header();
                                 </div>
                             </div>
 							<?php endwhile; ?>
-          <div class="navigation">
-           <div class="next-posts"><?php next_posts_link(); ?></div>
-           <div class="prev-posts"><?php previous_posts_link(); ?></div>
-          </div>
+                        <div class="navigation">
+                            <div class="next-posts"><?php next_posts_link(); ?></div>
+                            <div class="prev-posts"><?php previous_posts_link(); ?></div>
+                        </div>
 
-         <?php else : ?>
+                    <?php else : ?>
 
-          <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-           <h1>Not Found</h1>
-          </div>
+                        <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                            <h1>Not Found</h1>
+                        </div>
 
-         <?php endif; ?>
-         <?php wp_reset_query(); ?>
+                    <?php endif; ?>
+                    <?php wp_reset_query(); ?>
                         </div>
                     </div>
                 </div>
