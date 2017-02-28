@@ -92,8 +92,8 @@ a, .text-primary, .primary li:before, .breadcrumb-row ul li a, .header-nav .nav 
 	padding-top:70px;
 }
 .dez-info-has.bg-primary {
-    background-color: rgba(174, 82, 222, 0.55);
+    background-color: rgba(174, 82, 222, 0.55) !important;
 }
 .text-primary {
-    color: #ae52de;
+    color: #ae52de !important;
 }
