@@ -67,13 +67,13 @@
 	</footer>
   -->
 <footer class="site-footer" style="display: block; height: 509px;">
-        <div class="footer-top bg-primary">
+        <div class="footer-top bg-primary" style="background: white;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-4 footer-col-4">
                         <div class="widget widget_about">
                             <div class="logo-footer"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logo3.png" width="193" height="89" alt="" /></div>
-                            <p class="m-tb20"><strong>UNIVERSITAS PENDIDIKAN INDONESIA</strong> <br>
+                            <p class="m-tb20" style="color: black;"><strong style="color: black;">UNIVERSITAS PENDIDIKAN INDONESIA</strong> <br>
                             
                             Jl. Dr. Setiabudhi no. 229 Lt. 2 Fakultas Ilmu Pendidikan<br>
                             Bandung - 40154, Jawa Barat, Indonesia <br>
@@ -95,12 +95,22 @@
                     </div>
                    <div class="col-md-4 col-sm-4 footer-col-4">
                         <div class="widget widget_getintuch">
-                            <h4 class="m-b15 text-uppercase">Contact us</h4>
+                            <h4 class="m-b15 text-uppercase" style="
+    color: black;
+">Contact us</h4>
                             <div class="dez-separator bg-primary"></div>
-                            <ul>
-                                <li><i class="fa fa-map-marker"></i><strong>address</strong> Jl. Dr. Setiabudhi no. 229 Lt. 2 Fakultas Ilmu Pendidikan Bandung - 40154, Jawa Barat, Indonesia</li>
-                                <li><i class="fa fa-phone"></i><strong>phone</strong>085100131596</li>
-                                <li><i class="fa fa-envelope"></i><strong>Email</strong>p2t.psiupi@gmail.com</li>
+                            <ul style="
+    color: black;
+">
+                                <li><i class="fa fa-map-marker"></i><strong  style="
+    color: black;
+">address</strong> Jl. Dr. Setiabudhi no. 229 Lt. 2 Fakultas Ilmu Pendidikan Bandung - 40154, Jawa Barat, Indonesia</li>
+                                <li><i class="fa fa-phone"></i><strong  style="
+    color: black;
+">phone</strong>085100131596</li>
+                                <li><i class="fa fa-envelope"></i><strong  style="
+    color: black;
+">Email</strong>p2t.psiupi@gmail.com</li>
                             </ul>
                         </div>
                     </div>
@@ -112,9 +122,7 @@
         <div class="footer-bottom bg-primary-dark">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 text-left"> <span>© Copyright 2017</span> </div>
-					<div class="col-md-4 text-center"> <span> Design With <i class="fa fa-heart text-white heart"></i> P2T UPI </span> </div>
-					<div class="col-md-4 text-right "> <a href="about-2.html"> About</a> <a href="help.html"> Help Desk</a> <a href="privacy-policy.html"> Privacy Policy</a> </div>
+                    <div class="col-md-12 text-left"> <span>Copyright P2T.COM @2017. All right reserved. - Developed by Anonymous DEV.</span> </div>
                 </div>
             </div>
         </div>
