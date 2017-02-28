@@ -14,7 +14,9 @@ get_header();
       
       
        <!-- Slider -->
-[metaslider id=230]
+<?php 
+    echo do_shortcode("[metaslider id=230]"); 
+?>
       
         
         <!-- About Company -->
