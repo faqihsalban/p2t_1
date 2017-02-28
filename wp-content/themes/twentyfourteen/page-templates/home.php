@@ -652,9 +652,12 @@ get_header();
         </div>
     </div>
 	 <div class="p-a30 bg-white m-b30">
-                    <div class="section-head">
-                        <h2 class="text-uppercase">Image Carousel with team member</h2>
-                    </div>
+                    <a href="http://p2t.azurewebsites.net/berita"><h2 class="h2"><span class="text-primary">Berita</span>
+                                </h2></a>
+                            <div class="dez-separator-outer">
+                                <div class="dez-separator bg-primary style-liner"></div>
+                            </div>
+                            <div class="clear"></div>
                     <div class="section-content">
                         <div class="img-carousel-content mfp-gallery gallery owl-btn-center-lr">
                             <div class="item">
