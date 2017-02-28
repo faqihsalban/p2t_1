@@ -162,7 +162,7 @@ get_header();
                               <div class="col-md-4 col-sm-4 m-b30">
                                 <div class="dez-box dez-img-effect rotate">
                                     <div class="dez-media"><a href="<?php the_permalink();?>"><img
-                                                    src="<?php the_field('cover');?>"
+                                                    src="/assets/images/<?php the_field('cover');?>"
                                                     alt=""/></a></div>
                                     <div class="dez-info p-a20 border-1 text-center">
                                         <h2 class="dez-title m-t0 m-b10 font-weight-900"><a
@@ -219,8 +219,13 @@ get_header();
                         while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
                             <div class="col-md-4 col-sm-4 m-b30">
                                 <div class="dez-box dez-img-effect rotate">
+<<<<<<< Updated upstream
                                     <div class="dez-media"><a href="<?php the_permalink();?>"><img
                                                     src="<?php the_field('cover');?>"
+=======
+                                    <div class="dez-media"><a href="#"><img
+                                                    src="<?php echo get_template_directory_uri() ?>/assets/images/<?php the_field('cover') ?>"
+>>>>>>> Stashed changes
                                                     alt=""/></a></div>
                                     <div class="dez-info p-a20 border-1 text-center">
                                         <h2 class="dez-title m-t0 m-b10 font-weight-900"><a
