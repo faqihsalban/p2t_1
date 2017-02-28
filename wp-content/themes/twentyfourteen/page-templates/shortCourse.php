@@ -66,7 +66,7 @@ $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $query_args = array(
     'post_type' => 'post',
     'category_name' => 'short-course',
-    'posts_per_page' => 8,
+    'posts_per_page' => 3,
     'paged' => $paged
 );
 // create a new instance of WP_Query
