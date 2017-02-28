@@ -230,7 +230,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li><a href="http://p2t.azurewebsites.net/profil/manajer-operasional/">Manajer Operasional</a></li>
 								<li><a href="http://p2t.azurewebsites.net/profil/staff/">Staf</a></li>
 								<li><a href="http://p2t.azurewebsites.net/profil/dosen/">Dosen</a></li>
-								<li><a href="http://p2t.azurewebsites.net/profil/mitra-kreatif/">Mitra Kreatif</a></li>
 							</ul>
 						</li>
 						<li class="has-mega-menu "> <a href="http://p2t.azurewebsites.net/layanan/">Layanan<i class="fa fa-chevron-down"></i></a>
