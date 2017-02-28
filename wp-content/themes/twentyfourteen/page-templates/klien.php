@@ -66,8 +66,14 @@ get_header();
                             <div class="col-md-3 col-sm-3 m-b30">
                                 <div class="dez-box">
                                     <div class="dez-media"><img src="<?php the_field('cover');?>" alt="" /></div>
-                                    <div class="dez-info p-a30 border-1">
-                                        <h4 class="dez-title m-t0"><?php the_title();?></h4>
+                                    <div class="dez-info p-a30 border-1"style="
+    padding: 0px;
+    text-align: center;
+    font-size: 10px;
+">
+                                        <h4 class="dez-title m-t0" style="
+    font-size:15px
+"><?php the_title();?></h4>
                                          </div>
                                 </div>
                             </div>
