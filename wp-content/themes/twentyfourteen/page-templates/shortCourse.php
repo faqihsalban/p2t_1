@@ -87,25 +87,6 @@ $the_query = new WP_Query($query_args);
                            <div class="prev-posts"></div>
                        </div>
                    </div>
-                   <!-- blog grid END -->
-                   <!-- Pagination -->
-                   <!--                    --><?php
-                   //                    $type = 'book';
-                   //                    $args = array(
-                   //                        'post_type' => $type,
-                   //                        'post_status' => 'publish',
-                   //                        'paged' => $paged,
-                   //                        'posts_per_page' => 8,
-                   //                        'caller_get_posts' => 1
-                   //                    );
-                   //                    $temp = $wp_query;  // assign orginal query to temp variable for later use
-                   //                    $wp_query = null;
-                   //                    $wp_query = new WP_Query($args);
-                   //                    ?>
-                   <!---->
-                   <!--                    --><?php
-                   //
-                   //                    get_template_part('loop', 'index'); ?>
                    <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
                        <div class="pagination-bx col-lg-12 clearfix ">
                            <ul class="pagination">
