@@ -22,28 +22,23 @@ get_header();
             <div data-u="slides"
                  style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
 <?php
-/* The loop */
-while ( have_posts() ) :
-the_post();
-if ( get_post_gallery() ) :
-$gallery = get_post_gallery( get_the_ID(), false );
-/* create an array of IDs from */
-$gids = explode( ",", $gallery['ids'] );
-/* Loop through all the image and output them one by one */
-foreach ($gids as $id) {
-/* pull all the available attachment data with the new function */
-$attachment = wp_get_attachment($id);
-/* Uncomment the next line to see all the available data in
-$attachment */
-?>
+                /* The loop */
+                 
+                 if ( get_post_gallery() ) :
+                  $gallery = get_post_gallery( get_the_ID(), false );
+                  
+                  /* Loop through all the image and output them one by one */
+                  foreach( $gallery['src'] AS $src )
+                  {
+                   ?>
                 <div>
-                    <img data-u="image" src="<?php echo $attachment['src']; ?>"/>
+                    <img data-u="image" src="<?php echo $src;?>"/>
                 </div>
-                <?php
-}
-endif;
-endwhile;
-?>
+                <?php 
+                  }
+                 endif;
+                 
+               ?>
             </div>
             <!-- Bullet Navigator -->
             <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
@@ -64,15 +59,14 @@ endwhile;
                     <div class="row">
                         <div class="col-md-5 m-b30">
                             <div class="dez-thu "><img
-                                        src="<?php echo get_template_directory_uri() ?>/assets/images/student1.png"
+                                        src="<?php the_field('cover_about'); ?>"
                                         alt=""/></div>
                         </div>
                         <div class="col-md-7">
                             <h2 class="h2"> Tentang <span class="text-primary">P2T </span></h2>
                             <div class="dez-separator bg-primary"></div>
                             <div class="clear"></div>
-                            <p><strong>Pusat Psikologi Terapat (P2T) Universitas Pendidikan Indonesia </strong></p>
-                            <p class="m-b30">adalah .... </p>
+                            <p><?php the_field('short_about'); ?></p>
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="icon-bx-wraper bx-style-1 p-a20 left m-b30">
