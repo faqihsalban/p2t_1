@@ -671,47 +671,10 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
-                            </div></div><div class="owl-item cloned" style="width: 255px; margin-right: 30px;"><div class="item">
-                                <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic4.jpg" alt="">
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div></div><div class="owl-item cloned" style="width: 255px; margin-right: 30px;"><div class="item">
-                                <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic5.jpg" alt="">
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div></div><div class="owl-item cloned" style="width: 255px; margin-right: 30px;"><div class="item">
-                                <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic6.jpg" alt="">
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div></div><div class="owl-item" style="width: 255px; margin-right: 30px;"><div class="item">
-                                <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic1.jpg" alt="">
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div></div><div class="owl-item active" style="width: 255px; margin-right: 30px;"><div class="item">
-                                <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" alt="">
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div></div><div class="owl-item active" style="width: 255px; margin-right: 30px;"><div class="item">
+                            </div>
+							</div>
+							</div></div>
+							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1425px, 0px, 0px); transition: 0.25s; width: 3990px;"><div class="owl-item cloned" style="width: 255px; margin-right: 30px;"><div class="item">
                                 <div class="ow-portfolio">
                                     <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic3.jpg" alt="">
                                         <div class="overlay-bx">
@@ -719,47 +682,10 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
-                            </div></div><div class="owl-item active" style="width: 255px; margin-right: 30px;"><div class="item">
-                                <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic4.jpg" alt="">
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div></div><div class="owl-item active" style="width: 255px; margin-right: 30px;"><div class="item">
-                                <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic5.jpg" alt="">
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div></div><div class="owl-item" style="width: 255px; margin-right: 30px;"><div class="item">
-                                <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic6.jpg" alt="">
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div></div><div class="owl-item cloned" style="width: 255px; margin-right: 30px;"><div class="item">
-                                <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic1.jpg" alt="">
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div></div><div class="owl-item cloned" style="width: 255px; margin-right: 30px;"><div class="item">
-                                <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" alt="">
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div></div><div class="owl-item cloned" style="width: 255px; margin-right: 30px;"><div class="item">
+                            </div>
+							</div>
+							</div></div>
+							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1425px, 0px, 0px); transition: 0.25s; width: 3990px;"><div class="owl-item cloned" style="width: 255px; margin-right: 30px;"><div class="item">
                                 <div class="ow-portfolio">
                                     <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic3.jpg" alt="">
                                         <div class="overlay-bx">
@@ -767,15 +693,22 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
-                            </div></div><div class="owl-item cloned" style="width: 255px; margin-right: 30px;"><div class="item">
+                            </div>
+							</div>
+							</div></div>
+							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1425px, 0px, 0px); transition: 0.25s; width: 3990px;"><div class="owl-item cloned" style="width: 255px; margin-right: 30px;"><div class="item">
                                 <div class="ow-portfolio">
-                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic4.jpg" alt="">
+                                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow"> <img src="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic3.jpg" alt="">
                                         <div class="overlay-bx">
                                             <div class="overlay-icon"> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-search-plus icon-bx-xs"></i> </a> <a href="<?php echo get_template_directory_uri() ?>/assets/images/our-work/pic2.jpg" class="mfp-link"> <i class="fa fa-link icon-bx-xs"></i> </a> </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="fa fa-chevron-left"></i></div><div class="owl-next" style=""><i class="fa fa-chevron-right"></i></div></div><div class="owl-dots" style="display: none;"></div></div></div>
+                            </div>
+							</div>
+							</div></div>
+							
+							<div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="fa fa-chevron-left"></i></div><div class="owl-next" style=""><i class="fa fa-chevron-right"></i></div></div><div class="owl-dots" style="display: none;"></div></div></div>
                     </div>
                 </div>
     <!-- Testimonials blog END -->
