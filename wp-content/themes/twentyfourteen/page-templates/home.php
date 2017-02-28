@@ -11,9 +11,10 @@ get_header();
 
     <!-- Content -->
     <div class="page-content padtop" style="padding-bottom: 0px;">
-       <?php 
-    echo do_shortcode("[metaslider id=230]"); 
-?>
+      
+      
+       <!-- Slider -->
+[metaslider id=230]
       
         
         <!-- About Company -->
