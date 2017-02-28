@@ -661,7 +661,7 @@ get_header();
 "><span class="text-primary">Klien Kami</span>
                                 </h2></a>
                             <div class="dez-separator-outer" style="
-    text-align: center;
+    text-align: center; 
 ">
                                 <div class="dez-separator bg-primary style-liner"></div>
                             </div>
