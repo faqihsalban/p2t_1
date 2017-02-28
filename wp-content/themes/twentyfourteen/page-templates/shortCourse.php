@@ -12,7 +12,7 @@
  <!-- Content -->
  <div class="page-content">
   <!-- inner page banner -->
-  <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(./assets/images/background/bg4.jpg);">
+  <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(<?php echo get_template_directory_uri() ?>/assets/images/background/bg4.jpg);">
    <div class="container">
     <div class="dez-bnr-inr-entry">
      <h1 class="text-white">Short Course</h1>
@@ -51,12 +51,12 @@
 
          <?php if ($the_query->have_posts()) :
          while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
-          <div class="col-md-4 col-sm-4 m-b30">
+          <div class="col-md-3 col-sm-3 m-b30">
                                 <div class="dez-box">
                                     <div class="dez-media"> <a href="<?php the_permalink(); ?>"><img src="<?php the_field('cover'); ?>" alt=""></a> </div>
                                     <div class="dez-info p-a30 border-1">
                                         <h4 class="dez-title m-t0"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                        <i class="fa fa-user"></i>By <a href="<?php the_permalink(); ?>"><?php the_author(); ?>
+                                        <!--<i class="fa fa-user"></i>By <a href="<?php the_permalink(); ?>"><?php the_author(); ?>-->
                                         <a href="<?php the_permalink(); ?>" class="site-button">More</a> </div>
                                 </div>
                             </div>

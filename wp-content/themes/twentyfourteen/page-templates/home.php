@@ -190,6 +190,65 @@ get_header();
                 </div>
             </div>
         </div>
+		 <div class="section-full box-shadow bg-white p-t70 p-b40">
+            <div class="container">
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-md-12 text-center section-head">
+                            <a href="http://p2t.azurewebsites.net/berita"><h2 class="h2"><span class="text-primary">Short Course</span>
+                                </h2></a>
+                            <div class="dez-separator-outer">
+                                <div class="dez-separator bg-primary style-liner"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>-->
+                        </div>
+                    </div>
+                    <?php
+                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                    $query_args = array(
+                        'post_type' => 'post',
+                        'category_name' => 'berita',
+                        'posts_per_page' => 3,
+                        'paged' => $paged
+                    );
+                    // create a new instance of WP_Query
+                    $the_query = new WP_Query($query_args);
+                    ?>
+
+                    <?php if ($the_query->have_posts()) :
+                        while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
+                            <div class="col-md-4 col-sm-4 m-b30">
+                                <div class="dez-box dez-img-effect rotate">
+                                    <div class="dez-media"><a href="#"><img
+                                                    src="<?php echo get_template_directory_uri() ?>/assets/images/our-services/college/pic1.jpg"
+                                                    alt=""/></a></div>
+                                    <div class="dez-info p-a20 border-1 text-center">
+                                        <h2 class="dez-title m-t0 m-b10 font-weight-900"><a
+                                                    href="#"><?php the_title(); ?></a></h2>
+                                        <p>Lorem ipsum dolor Fusce varius euismod lacus eget feugiat rorem ipsum dolor
+                                            consectetur Fusce varius [...] </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <?php endwhile; ?>
+                        <div class="navigation">
+                            <div class="next-posts"><?php next_posts_link(); ?></div>
+                            <div class="prev-posts"><?php previous_posts_link(); ?></div>
+                        </div>
+
+                    <?php else : ?>
+
+                        <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                            <h1>Not Found</h1>
+                        </div>
+
+                    <?php endif; ?>
+                    <?php wp_reset_query(); ?>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Our Awesome Services END -->
     <!-- Our Philosophy -->
@@ -682,7 +741,7 @@ get_header();
                                 Fusce varius [...] </p>
                         </div>
                     </div>
-                </div>
+                </div> 
                 <div class="col-md-4 col-sm-4 m-b30">
                     <div class="dez-box dez-img-effect rotate">
                         <div class="dez-media"><a href="#"><img

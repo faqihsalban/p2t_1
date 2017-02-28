@@ -234,22 +234,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</ul>
 						</li>
 						<li> <a href="http://p2t.azurewebsites.net/layanan/">Layanan<i class="fa fa-chevron-down"></i></a>
-							<ul class="sub-menu">
+							<ul class="mega-menu">
 								<li> <a href="http://p2t.azurewebsites.net/layanan/individual/">Individual</a>
-									<ul class="sub-menu">
+									<ul>
 										<li><a href="http://p2t.azurewebsites.net/layanan/psikotes-individual/">Psikotes Individual</a></li>
 										<li><a href="http://p2t.azurewebsites.net/layanan/konseling-individual/">Konseling Individual</a></li>
 										<li><a href="http://p2t.azurewebsites.net/layanan/terapi/">Terapi</a></li>
 									</ul>
 								</li>
 								<li> <a href="http://p2t.azurewebsites.net/keluarga/">Keluarga</a>
-									<ul class="sub-menu">
+									<ul>
 										<li><a href="http://p2t.azurewebsites.net/layanan/konseling-keluarga/">Konseling Keluarga</a></li>
 										<li><a href="http://p2t.azurewebsites.net/layanan/terapi-grup/">Terapi Group</a></li>
 									</ul>
 								</li>
 								<li> <a href="http://p2t.azurewebsites.net/sekolah/">Sekolah</a>
-									<ul class="sub-menu">
+									<ul>
 										<li><a href="http://p2t.azurewebsites.net/sekolah/bidik-jurusan-untuk-pelajar/">Bidik Jurusan Untuk Pelajar</a></li>
 										<li><a href="http://p2t.azurewebsites.net/sekolah/bidik-minat-dan-bakat/">Bidik Minat Dan Bakat</a></li>
 										<li><a href="http://p2t.azurewebsites.net/sekolah/pendampingan-siswa-cerdas-istimewa/">Pendamping Siswa Cerdas Istimewa (CI)</a></li>
@@ -257,7 +257,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									</ul>
 								</li>
 								<li> <a href="http://p2t.azurewebsites.net/perusahaan/">Perusahaan</a>
-									<ul class="sub-menu">
+									<ul>
 										<li><a href="http://p2t.azurewebsites.net/perusahaan/rekrutmen-dan-seleksi-karyawan/">Rekruitmen Dan Seleksi Karyawan</a></li>
 										<li><a href="http://p2t.azurewebsites.net/perusahaan/assesmen/">Asesment</a></li>
 										<li><a href="http://p2t.azurewebsites.net/perusahaan/pemetaan-kompetensi-karyawan/">Pemetaan Kompetensi Karyawan</a></li>
@@ -268,10 +268,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</ul>
 						</li>
 						<li > <a href="http://p2t.azurewebsites.net/short-course/">Short Course</a>
-                            <ul class="sub-menu">
-                                <li> <a href="http://p2t.azurewebsites.net/berita/kegiatan-yang-akan-dilakukan">Kegiatan Yang Akan Dilakukan</a></li>
-                                <li> <a href="http://p2t.azurewebsites.net/perusahaan/kegiatan-yang-sudah-dilakukan">Kegiatan Yang Telah Dilakukan</a></li>
-                            </ul>
+                           
+                        </li>
+						<li > <a href="http://p2t.azurewebsites.net/berita/">Berita</a>
+                           
                         </li>
 <!--						<li> <a href="http://p2t.azurewebsites.net/berita">Berita<i class="fa fa-chevron-down"></i></a>-->
 <!--						</li>-->
