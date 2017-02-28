@@ -42,7 +42,9 @@ get_header();
             <div class="dez-post-title ">
                 <h3 class="post-title"><a href="#"><?php the_title(); ?></a></h3>
             </div>
-         
+         <div class="dez-post-text">
+                <?php the_content(); ?>
+            </div>
             <div class="p-a30 bg-white m-b30">
                     
                     <div class="section-content">
