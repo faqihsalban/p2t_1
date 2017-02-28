@@ -199,21 +199,20 @@ get_header();
                 </div>
             </div>
         </div>
-		 <div class="section-full box-shadow bg-white p-t70 p-b40">
+		 
+		 
+		 <div class="section-full p-t70 p-b10">
             <div class="container">
-                <div class="section-content">
-                    <div class="row">
-                        <div class="col-md-12 text-center section-head">
-                            <a href="http://p2t.azurewebsites.net/short-course"><h2 class="h2"><span class="text-primary">Short Course</span>
-                                </h2></a>
-                            <div class="dez-separator-outer">
-                                <div class="dez-separator bg-primary style-liner"></div>
-                            </div>
-                            <div class="clear"></div>
-                            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>-->
-                        </div>
-                    </div>
-                    <?php
+                <div class="section-head text-center">
+                    <h2 class="h2"><span class="text-primary">Our University Gallery</span></h2>
+					<div class="dez-separator-outer"><div class="dez-separator bg-primary style-liner"></div></div>
+                    
+                </div>
+                <div class="section-content ">
+					
+					<div class="row">
+						<ul id="masonry" class="dez-gallery-listing gallery-grid-4 gallery mfp-gallery" style="position: relative; height: 543.75px;">
+							<?php
                     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                     $query_args = array(
                         'post_type' => 'post',
@@ -227,20 +226,16 @@ get_header();
 
                     <?php if ($the_query->have_posts()) :
                         while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
-                            <div class="col-md-4 col-sm-4 m-b30">
-                                <div class="dez-box dez-img-effect rotate">
-                                    <div class="dez-media"><a href="<?php the_permalink();?>"><img
-                                                    src="<?php the_field('cover');?>"
-                                                    alt=""/></a></div>
-                                    <div class="dez-info p-a20 border-1 text-center">
-                                        <h2 class="dez-title m-t0 m-b10 font-weight-900"><a
-                                                    href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
-                                        <p><?php echo substr(strip_tags(get_the_content()),0,35) . '[...]'; ?> </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        <?php endwhile; ?>
+							<li data-filter="events" class="card-container col-lg-3 col-md-3 col-sm-4 col-xs-6" style="position: absolute; left: 900px; top: 271px;">
+								<div class="dez-box dez-gallery-box m-b0">
+									<div class="dez-media dez-img-overlay1 dez-img-effect zoom-slow radius-sm"> <a href="javascript:void(0);"> <img src="./images/gallery/college/pic8.jpg" alt=""> </a>
+										<div class="overlay-bx">
+											<div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/college/pic6.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<?php endwhile; ?>
                         <div class="navigation">
                             <div class="next-posts"><?php next_posts_link(); ?></div>
                             <div class="prev-posts"><?php previous_posts_link(); ?></div>
@@ -254,6 +249,8 @@ get_header();
 
                     <?php endif; ?>
                     <?php wp_reset_query(); ?>
+						</ul>
+					</div>
                 </div>
             </div>
         </div>

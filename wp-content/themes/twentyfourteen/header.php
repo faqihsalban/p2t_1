@@ -233,7 +233,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li><a href="http://p2t.azurewebsites.net/profil/mitra-kreatif/">Mitra Kreatif</a></li>
 							</ul>
 						</li>
-						<li> <a href="http://p2t.azurewebsites.net/layanan/">Layanan<i class="fa fa-chevron-down"></i></a>
+						<li class="has-mega-menu "> <a href="http://p2t.azurewebsites.net/layanan/">Layanan<i class="fa fa-chevron-down"></i></a>
 							<ul class="mega-menu">
 								<li> <a href="http://p2t.azurewebsites.net/layanan/individual/">Individual</a>
 									<ul>
