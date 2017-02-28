@@ -49,7 +49,8 @@ get_header();
                     
                     <div class="section-content">
                         <div class="row">
-						
+						<?php $latest = new WP_Query('showposts=10&cat=11'); ?>
+        <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
                             <div class="col-md-3 col-sm-3 m-b30">
                                 <div class="dez-box">
                                     <div class="dez-media"><img src="<?php the_field('cover');?>" alt="" /></div>
@@ -58,7 +59,20 @@ get_header();
                                          </div>
                                 </div>
                             </div>
-							
+							<?php endwhile; ?>
+          <div class="navigation">
+           <div class="next-posts"><?php next_posts_link(); ?></div>
+           <div class="prev-posts"><?php previous_posts_link(); ?></div>
+          </div>
+
+         <?php else : ?>
+
+          <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+           <h1>Not Found</h1>
+          </div>
+
+         <?php endif; ?>
+         <?php wp_reset_query(); ?>
                         </div>
                     </div>
                 </div>
