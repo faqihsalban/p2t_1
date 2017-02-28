@@ -58,13 +58,20 @@ get_header();
 
                     <?php if ($the_query->have_posts()) :
                         while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
-								<div class="col-md-3 col-sm-6">
+								<div class="col-md-4 col-sm-6">
 									<div class="dez-box m-b30">
 										<div class="dez-media">
 											<a href="<?php the_permalink();?>">
 												<img width="358" height="460" src="<?php the_field('cover');?>" alt="" />
 											</a>
-											
+											<div class="dez-info-has bg-primary">
+												<ul class="dez-social-icon border">
+													<li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
+													<li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
+													<li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
+													<li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
+												</ul>
+										  </div>
 										</div> 
 										<div class="p-a10">
 											<h4 class="dez-title text-uppercase"><a href="<?php the_permalink();?>"><?php the_field('name');?></a></h4>
