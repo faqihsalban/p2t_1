@@ -83,7 +83,6 @@ else:
   <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif;
 						?>
-                </div>
 				<div class="col-md-3">
                         <aside class="side-bar">
                             <div class="widget recent-posts-entry">
