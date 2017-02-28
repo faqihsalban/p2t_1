@@ -35,6 +35,8 @@ get_header(); ?>
             <div class="container">
                 <div class="row">
                     <!-- Left part start -->
+					
+                    <div class="col-md-9">
                     <div class="col-md-12">
                         <div class="col-md-5 m-b30">
                             <div class="dez-thu "><img
@@ -74,17 +76,82 @@ get_header(); ?>
                             
                     </div>
                 </div>
-            </div>
-        </div>
-		
-    </div>
-	<?php
+					<?php
 endwhile;
 else:
 ?>
   <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif;
 						?>
+                </div>
+				<div class="col-md-3">
+                        <aside class="side-bar">
+                            <div class="widget recent-posts-entry">
+                                <h4 class="widget-title">Berita Terbaru</h4>
+                                <?php $latest = new WP_Query('showposts=4&cat=4'); ?>
+                                <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
+                                    <div class="widget-post-bx">
+                                        <div class="widget-post clearfix">
+                                            <div class="dez-post-media"> <img src="<?php the_field('cover') ?>" width="200" height="143" alt="" /> </div>
+                                            <div class="dez-post-info">
+                                                <div class="dez-post-header">
+                                                    <h6 class="post-title"><?php the_title(); ?></h6>
+                                                </div>
+                                                <div class="dez-post-meta">
+                                                    <ul>
+                                                        <li class="post-author">By <?php the_author(); ?></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php endwhile; ?>
+                                    <div class="navigation">
+                                        <div class="next-posts"><?php next_posts_link(); ?></div>
+                                        <div class="prev-posts"><?php previous_posts_link(); ?></div>
+                                    </div>
+
+                                <?php else : ?>
+
+                                    <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                                        <h1>Not Found</h1>
+                                    </div>
+
+                                <?php endif; ?>
+                                <?php wp_reset_query(); ?>
+                            </div>
+
+                            <div class="widget widget_gallery">
+                                <h5 class="widget-title">Gallery</h5>
+                                <ul>
+								<?php
+                /* The loop */
+                 
+                 if ( get_post_gallery() ) :
+                  $gallery = get_post_gallery( 104, false );
+                  
+                  /* Loop through all the image and output them one by one */
+                  foreach( $gallery['src'] AS $src )
+                  {
+                   ?>
+				   <li class="img-effect2"> <a href="http://p2t.azurewebsites.net/galeri/"><img src="<?php echo $src;?>" alt="" /></a> </li>
+                                
+							<?php 
+                  }
+                 endif;
+                 
+               ?>
+                                    
+                                </ul>
+                            </div>
+
+                        </aside>
+                    </div>
+            </div>
+        </div>
+		
+    </div>
+
 <?php
 //get_sidebar( 'content' );
 //get_sidebar();

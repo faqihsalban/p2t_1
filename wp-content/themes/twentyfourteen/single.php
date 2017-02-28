@@ -14,7 +14,7 @@ get_header(); ?>
         <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(<?php echo get_template_directory_uri() ?>/assets/images/background/bg4.jpg);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
-                    <h1 class="text-white">Blog single with sidebar</h1>
+                    <h1 class="text-white"><?php  the_title();?></h1>
                 </div>
             </div>
         </div>
@@ -23,8 +23,8 @@ get_header(); ?>
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="#">Home</a></li>
-                    <li>Blog single with sidebar</li>
+                    <li><a href="http://p2t.azurewebsites.net">Home</a></li>
+                    <li><?php  the_title();?></li>
                 </ul>
             </div>
         </div>
