@@ -10,7 +10,7 @@ get_header();
 ?>
 
     <!-- Content -->
-    <div class="page-content" style="padding-bottom: 0px;">
+    <div class="page-content padtop" style="padding-bottom: 0px;
         <!--Slider Start-->
         <div id="jssor_1"
              style="position:relative;margin-top: 0px;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
@@ -76,8 +76,8 @@ get_header();
 											</span>
                                         </div>
                                         <div class="icon-content">
-                                            <h5 class="dez-tilte ">All Courses Available</h5>
-                                            <p>Lorem ipsum dolor sit adipiscing sed diam nonummy end [...]</p>
+                                            <h5 class="dez-tilte "><?php the_field('element_1');?></h5>
+                                            <p><?php the_field('value_element_1');?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -89,8 +89,8 @@ get_header();
 											</span>
                                         </div>
                                         <div class="icon-content">
-                                            <h5 class="dez-tilte ">Experience Teacher</h5>
-                                            <p>Lorem ipsum dolor sit adipiscing sed diam nonummy end [...]</p>
+                                             <h5 class="dez-tilte "><?php the_field('element_1');?></h5>
+                                            <p><?php the_field('value_element_1');?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -102,8 +102,8 @@ get_header();
 											</span>
                                         </div>
                                         <div class="icon-content">
-                                            <h5 class="dez-tilte ">Other Activities</h5>
-                                            <p>Lorem ipsum dolor sit adipiscing sed diam nonummy end [...]</p>
+                                             <h5 class="dez-tilte "><?php the_field('element_1');?></h5>
+                                            <p><?php the_field('value_element_1');?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -115,8 +115,8 @@ get_header();
 											</span>
                                         </div>
                                         <div class="icon-content">
-                                            <h5 class="dez-tilte ">Books & Libraary</h5>
-                                            <p>Lorem ipsum dolor sit adipiscing sed diam nonummy end [...]</p>
+                                             <h5 class="dez-tilte "><?php the_field('element_1');?></h5>
+                                            <p><?php the_field('value_element_1');?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -268,8 +268,7 @@ get_header();
                 <div class="dez-separator-outer ">
                     <div class="dez-separator bg-white style-liner"></div>
                 </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's
-                    standard dummy text ever since the been when an unknown printer.</p>
+                <p><?php the_field('short_layanan_kami');?></p>
             </div>
             <div class="row">
                 <div class="col-md-3 col-sm-6 m-b30 ">
