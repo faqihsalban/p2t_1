@@ -109,16 +109,7 @@ else:
     <!-- Side bar start -->
         <div class="col-md-3">
             <aside class="side-bar">
-			<div class="widget recent-posts-entry">
-                    <h4 class="widget-title">Pages</h4>
-
-                    <div class="widget-post-bx">
-                        <h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/">Tentang Kami</a></h6>
-						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/sejarah/">Sejarah</a></h6>
-						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/nilai-nilai-p2t/">Nilai-nilai P2T</a></h6>
-                    </div>
-
-                </div>
+			
                 <div class="widget recent-posts-entry">
                     <h4 class="widget-title">Recent Posts</h4>
 <?php $latest = new WP_Query('showposts=4&cat=3,4,5,6'); ?>
