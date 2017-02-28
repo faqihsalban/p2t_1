@@ -656,9 +656,13 @@ get_header();
         </div>
     </div>
 	 <div class="p-a30 bg-white m-b30">
-                    <a href="http://p2t.azurewebsites.net/berita"><h2 class="h2"><span class="text-primary">Berita</span>
+                    <a href="http://p2t.azurewebsites.net/klien"><h2 class="h2" style="
+    text-align: center;
+"><span class="text-primary">Klien Kami</span>
                                 </h2></a>
-                            <div class="dez-separator-outer">
+                            <div class="dez-separator-outer" style="
+    text-align: center;
+">
                                 <div class="dez-separator bg-primary style-liner"></div>
                             </div>
                             <div class="clear"></div>
