@@ -226,6 +226,60 @@ get_header();
                 </div>
             </div>
         </div>
+
+        <div class="section-full p-t70 p-b10">
+            <div class="container">
+                <div class="section-head text-center">
+                    <h2 class="h2"><span class="text-primary">Short Course</span></h2>
+                    <div class="dez-separator-outer"><div class="dez-separator bg-primary style-liner"></div></div>
+
+                </div>
+                <div class="section-content ">
+
+                    <div class="row">
+                        <ul id="masonry" class="dez-gallery-listing gallery-grid-4 gallery mfp-gallery" style="position: relative; height: 543.75px;">
+                            <?php
+                            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                            $query_args = array(
+                                'post_type' => 'post',
+                                'category_name' => 'short-course',
+                                'posts_per_page' => 3,
+                                'paged' => $paged
+                            );
+                            // create a new instance of WP_Query
+                            $the_query = new WP_Query($query_args);
+                            ?>
+
+                            <?php if ($the_query->have_posts()) :
+                                while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
+                                    <li data-filter="events" class="card-container col-lg-3 col-md-3 col-sm-4 col-xs-6" style="position: absolute; left: 900px; top: 271px;">
+                                        <div class="dez-box dez-gallery-box m-b0">
+                                            <div class="dez-media dez-img-overlay1 dez-img-effect zoom-slow radius-sm"> <a href="javascript:void(0);"> <img src="<?php the_field('cover'); ?>" alt=""> </a>
+                                                <div class="overlay-bx">
+                                                    <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="<?php the_field('cover'); ?>" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                <?php endwhile; ?>
+                                <div class="navigation">
+                                    <div class="next-posts"><?php next_posts_link(); ?></div>
+                                    <div class="prev-posts"><?php previous_posts_link(); ?></div>
+                                </div>
+
+                            <?php else : ?>
+
+                                <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                                    <h1>Not Found</h1>
+                                </div>
+
+                            <?php endif; ?>
+                            <?php wp_reset_query(); ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Our Awesome Services END -->
     <!-- Our Philosophy -->

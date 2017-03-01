@@ -33,31 +33,7 @@ get_header();
         <!-- Breadcrumb row END -->
         <div class="content-area">
             <div class="container">
-                <!-- Gallery -->
-                <!--<div class="site-filters clearfix center  m-b40">
-                    <ul class="filters" data-toggle="buttons">
-                        <li data-filter="" class="btn active">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry active"><span>Show All</span></a>
-                        </li>
-                        <li data-filter="home" class="btn">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry "><span>Swimming</span></a>
-                        </li>
-                        <li data-filter="office" class="btn">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry "><span>Spanish</span></a>
-                        </li>
-                        <li data-filter="commercial" class="btn">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry "><span>Lunch</span></a>
-                        </li>
-                        <li data-filter="window" class="btn">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry "><span>Playground</span></a>
-                        </li>
-                    </ul>
-                </div>-->
+
                 <div class="row">
                     <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery">
                         <?php
