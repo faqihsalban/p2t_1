@@ -147,12 +147,12 @@ get_header();
                                                     href="<?php the_permalink(); ?>"><?php echo substr(strip_tags(get_the_title()), 0, 35) . '[...]'; ?></a>
                                         </h2>
                                         <!--<!--                                        <div class="dez-post-meta m-b20">-->
-                                        -->
-                                        <!--<!--                                        <ul>-->-->
+
+                                        <!--<!--                                        <ul>-->
                                         <!--                                            <p>-->
                                         <?php //the_date(); ?><!--</p>-->
-                                        <!--<!--                                        </ul>-->-->
-                                        <!--<!--                                        </div>-->-->
+                                        <!--<!--                                        </ul>-->
+                                        <!--<!--                                        </div>-->
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +175,7 @@ get_header();
             </div>
         </div>
 
-        <div class="section-full p-t70 p-b10">
+        <div class="section-full box-shadow bg-white p-t70 p-b40">
             <div class="container">
                 <div class="section-head text-center">
                     <h2 class="h2"><span class="text-primary">Short Course</span></h2>
