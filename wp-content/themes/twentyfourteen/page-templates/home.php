@@ -178,7 +178,7 @@ get_header();
         <div class="section-full p-t70 p-b40">
             <div class="container">
                 <div class="section-head text-center">
-                    <h2 class="h2"><span class="text-primary">Short Course</span></h2>
+                    <a href="http://p2t.azurewebsites.net/short-course"><h2 class="h2"><span class="text-primary">Short Course</span></h2></a>
                     <div class="dez-separator-outer">
                         <div class="dez-separator bg-primary style-liner"></div>
                     </div>
