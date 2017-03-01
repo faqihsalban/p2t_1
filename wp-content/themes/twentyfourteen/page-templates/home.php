@@ -175,7 +175,7 @@ get_header();
             </div>
         </div>
 
-        <div class="section-full p-t70 p-b10">
+        <div class="section-full p-t70 p-b40">
             <div class="container">
                 <div class="section-head text-center">
                     <h2 class="h2"><span class="text-primary">Short Course</span></h2>
@@ -202,7 +202,7 @@ get_header();
 
                             <?php if ($the_query->have_posts()) :
                             while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
-                                <li data-filter="home" class="card-container col-md-3 col-sm-4 m-b30">
+                                <li data-filter="home" class="card-container col-md-4 col-sm-4 m-b30">
                                     <div class="dez-box dez-gallery-box">
 
                                         <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"><a
