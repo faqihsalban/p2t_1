@@ -175,7 +175,7 @@ get_header();
             </div>
         </div>
 
-        <div class="section-full box-shadow bg-white p-t70 p-b40">
+        <div class="section-full p-t70 p-b10">
             <div class="container">
                 <div class="section-head text-center">
                     <h2 class="h2"><span class="text-primary">Short Course</span></h2>
@@ -187,16 +187,67 @@ get_header();
                 <div class="section-content ">
 
                     <div class="row">
-                        <ul id="masonry" class="dez-gallery-listing gallery-grid-4 gallery mfp-gallery"
-                            style="position: relative; height: 543.75px;">
+                        <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery">
+                            <?php
+                            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                            $query_args = array(
+                                'post_type' => 'post',
+                                'category_name' => 'short-course',
+                                'posts_per_page' => 3,
+                                'paged' => $paged
+                            );
+                            // create a new instance of WP_Query
+                            $the_query = new WP_Query($query_args);
+                            ?>
 
-                        </ul>
+                            <?php if ($the_query->have_posts()) :
+                            while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
+                                <li data-filter="home" class="card-container col-md-3 col-sm-6 ">
+                                    <div class="dez-box dez-gallery-box">
+
+                                        <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"><a
+                                                    href="javascript:void(0);"> <img src="<?php echo the_field('cover'); ?>"
+                                                                                     alt=""/> </a>
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"><a href="<?php echo the_field('cover'); ?>"
+                                                                             class="mfp-link"> <i
+                                                                class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Pagination END -->
+                                    </div>
+                                </li>
+                            <?php endwhile; ?>
+                            <div class="navigation">
+                                <div class="next-posts"></div>
+                                <div class="prev-posts"></div>
+                            </div>
+                    </div>
+                    <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
+                        <div class="pagination-bx col-lg-12 clearfix ">
+                            <ul class="pagination">
+                                <li clas="previous"><?php echo get_next_posts_link('Older Entries', $the_query->max_num_pages); // display older posts link ?></li>
+                                <li class="next"><?php echo get_previous_posts_link('Newer Entries'); // display newer posts link ?></li>
+                            </ul>
+                        </div>
+                    <?php } ?>
+                    <?php else : ?>
+
+                        <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                            <h1>Not Found</h1>
+                        </div>
+
+                    <?php endif; ?>
+                    <?php wp_reset_query(); ?>
+                    </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="section-full p-t70 p-b10">
+    <div class="section-full box-shadow bg-white p-t70 p-b40">
             <div class="container">
                 <div class="section-content ">
                     <div class="row">
