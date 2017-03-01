@@ -11,15 +11,15 @@ get_header();
 
     <!-- Content -->
     <div class="page-content padtop" style="padding-bottom: 0px;">
-      
-      
-       <!-- Slider -->
-         <div class="container"style="width:auto;">
-<?php 
-    echo do_shortcode("[metaslider id=230]"); 
-?></div>
-      
-        
+
+
+        <!-- Slider -->
+        <div class="container" style="width:auto;">
+            <?php
+            echo do_shortcode("[metaslider id=230]");
+            ?></div>
+
+
         <!-- About Company -->
         <div class="section-full  bg-white p-t70 p-b40">
             <div class="container">
@@ -44,8 +44,8 @@ get_header();
 											</span>
                                         </div>
                                         <div class="icon-content">
-                                            <h5 class="dez-tilte "><?php the_field('element_1');?></h5>
-                                            <p><?php the_field('value_element_1');?></p>
+                                            <h5 class="dez-tilte "><?php the_field('element_1'); ?></h5>
+                                            <p><?php the_field('value_element_1'); ?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -57,8 +57,8 @@ get_header();
 											</span>
                                         </div>
                                         <div class="icon-content">
-                                             <h5 class="dez-tilte "><?php the_field('element_1');?></h5>
-                                            <p><?php the_field('value_element_1');?></p>
+                                            <h5 class="dez-tilte "><?php the_field('element_1'); ?></h5>
+                                            <p><?php the_field('value_element_1'); ?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -70,8 +70,8 @@ get_header();
 											</span>
                                         </div>
                                         <div class="icon-content">
-                                             <h5 class="dez-tilte "><?php the_field('element_1');?></h5>
-                                            <p><?php the_field('value_element_1');?></p>
+                                            <h5 class="dez-tilte "><?php the_field('element_1'); ?></h5>
+                                            <p><?php the_field('value_element_1'); ?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -83,8 +83,8 @@ get_header();
 											</span>
                                         </div>
                                         <div class="icon-content">
-                                             <h5 class="dez-tilte "><?php the_field('element_1');?></h5>
-                                            <p><?php the_field('value_element_1');?></p>
+                                            <h5 class="dez-tilte "><?php the_field('element_1'); ?></h5>
+                                            <p><?php the_field('value_element_1'); ?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -137,19 +137,22 @@ get_header();
 
                     <?php if ($the_query->have_posts()) :
                         while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
-                              <div class="col-md-4 col-sm-4 m-b30">
+                            <div class="col-md-4 col-sm-4 m-b30">
                                 <div class="dez-box dez-img-effect rotate">
-                                    <div class="dez-media"><a href="<?php the_permalink();?>"><img
-                                                    src="<?php the_field('cover');?>"
+                                    <div class="dez-media"><a href="<?php the_permalink(); ?>"><img
+                                                    src="<?php the_field('cover'); ?>"
                                                     alt=""/></a></div>
                                     <div class="dez-info p-a20 border-1 text-center">
                                         <h2 class="dez-title m-t0 m-b10 font-weight-900"><a
-                                                    href="<?php the_permalink();?>"><?php echo substr(strip_tags(get_the_title()),0,35) . '[...]'; ?></a></h2>
-<!--                                        <div class="dez-post-meta m-b20">-->
-<!--                                        <ul>-->
-                                            <p><?php the_date(); ?></p>
-<!--                                        </ul>-->
-<!--                                        </div>-->
+                                                    href="<?php the_permalink(); ?>"><?php echo substr(strip_tags(get_the_title()), 0, 35) . '[...]'; ?></a>
+                                        </h2>
+                                        <!--<!--                                        <div class="dez-post-meta m-b20">-->
+                                        -->
+                                        <!--<!--                                        <ul>-->-->
+                                        <!--                                            <p>-->
+                                        <?php //the_date(); ?><!--</p>-->
+                                        <!--<!--                                        </ul>-->-->
+                                        <!--<!--                                        </div>-->-->
                                     </div>
                                 </div>
                             </div>
@@ -171,112 +174,88 @@ get_header();
                 </div>
             </div>
         </div>
-		 
-		 
-		 <div class="section-full p-t70 p-b10">
+
+        <div class="section-full p-t70 p-b10">
             <div class="container">
                 <div class="section-head text-center">
-                    <h2 class="h2"><span class="text-primary">Our University Gallery</span></h2>
-					<div class="dez-separator-outer"><div class="dez-separator bg-primary style-liner"></div></div>
-                    
+                    <h2 class="h2"><span class="text-primary">Short Course</span></h2>
+                    <div class="dez-separator-outer">
+                        <div class="dez-separator bg-primary style-liner"></div>
+                    </div>
+
                 </div>
                 <div class="section-content ">
-					
-					<div class="row">
-						<ul id="masonry" class="dez-gallery-listing gallery-grid-4 gallery mfp-gallery" style="position: relative; height: 543.75px;">
-							<?php
-                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                    $query_args = array(
-                        'post_type' => 'post',
-                        'category_name' => 'short-course',
-                        'posts_per_page' => 3,
-                        'paged' => $paged
-                    );
-                    // create a new instance of WP_Query
-                    $the_query = new WP_Query($query_args);
-                    ?>
 
-                    <?php if ($the_query->have_posts()) :
-                        while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
-							<li data-filter="events" class="card-container col-lg-3 col-md-3 col-sm-4 col-xs-6" style="position: absolute; left: 900px; top: 271px;">
-								<div class="dez-box dez-gallery-box m-b0">
-									<div class="dez-media dez-img-overlay1 dez-img-effect zoom-slow radius-sm"> <a href="javascript:void(0);"> <img src="./images/gallery/college/pic8.jpg" alt=""> </a>
-										<div class="overlay-bx">
-											<div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/college/pic6.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<?php endwhile; ?>
-                        <div class="navigation">
-                            <div class="next-posts"><?php next_posts_link(); ?></div>
-                            <div class="prev-posts"><?php previous_posts_link(); ?></div>
-                        </div>
+                    <div class="row">
+                        <ul id="masonry" class="dez-gallery-listing gallery-grid-4 gallery mfp-gallery"
+                            style="position: relative; height: 543.75px;">
 
-                    <?php else : ?>
-
-                        <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-                            <h1>Not Found</h1>
-                        </div>
-
-                    <?php endif; ?>
-                    <?php wp_reset_query(); ?>
-						</ul>
-					</div>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="section-full p-t70 p-b10">
             <div class="container">
-                <div class="section-head text-center">
-                    <h2 class="h2"><span class="text-primary">Short Course</span></h2>
-                    <div class="dez-separator-outer"><div class="dez-separator bg-primary style-liner"></div></div>
-
-                </div>
                 <div class="section-content ">
-
                     <div class="row">
-                        <ul id="masonry" class="dez-gallery-listing gallery-grid-4 gallery mfp-gallery" style="position: relative; height: 543.75px;">
-                            <?php
-                            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                            $query_args = array(
-                                'post_type' => 'post',
-                                'category_name' => 'short-course',
-                                'posts_per_page' => 3,
-                                'paged' => $paged
-                            );
-                            // create a new instance of WP_Query
-                            $the_query = new WP_Query($query_args);
-                            ?>
+                        <div class="section-head text-center">
+                            <h2 class="h2"><span class="text-primary">Our University Gallery</span></h2>
+                            <div class="dez-separator-outer">
+                                <div class="dez-separator bg-primary style-liner"></div>
+                            </div>
 
-                            <?php if ($the_query->have_posts()) :
-                                while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
-                                    <li data-filter="events" class="card-container col-lg-3 col-md-3 col-sm-4 col-xs-6" style="position: absolute; left: 900px; top: 271px;">
-                                        <div class="dez-box dez-gallery-box m-b0">
-                                            <div class="dez-media dez-img-overlay1 dez-img-effect zoom-slow radius-sm"> <a href="javascript:void(0);"> <img src="<?php the_field('cover'); ?>" alt=""> </a>
-                                                <div class="overlay-bx">
-                                                    <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="<?php the_field('cover'); ?>" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                                </div>
+                        </div>
+
+                    </div>
+
+                    <ul id="masonry" class="dez-gallery-listing gallery-grid-4 gallery mfp-gallery"
+                        style="position: relative; height: 543.75px;">
+                        <?php
+                        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                        $query_args = array(
+                            'post_type' => 'post',
+                            'category_name' => 'short-course',
+                            'posts_per_page' => 3,
+                            'paged' => $paged
+                        );
+                        // create a new instance of WP_Query
+                        $the_query = new WP_Query($query_args);
+                        ?>
+
+                        <?php if ($the_query->have_posts()) :
+                            while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
+                                <li data-filter="events" class="card-container col-lg-3 col-md-3 col-sm-4 col-xs-6"
+                                    style="position: absolute; left: 900px; top: 271px;">
+                                    <div class="dez-box dez-gallery-box m-b0">
+                                        <div class="dez-media dez-img-overlay1 dez-img-effect zoom-slow radius-sm"><a
+                                                    href="javascript:void(0);"> <img
+                                                        src="./images/gallery/college/pic8.jpg" alt=""> </a>
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"><a href="javascript:void(0);"> <i
+                                                                class="fa fa-link icon-bx-xs"></i> </a> <a
+                                                            href="./images/gallery/college/pic6.jpg" class="mfp-link">
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i> </a></div>
                                             </div>
                                         </div>
-                                    </li>
-                                <?php endwhile; ?>
-                                <div class="navigation">
-                                    <div class="next-posts"><?php next_posts_link(); ?></div>
-                                    <div class="prev-posts"><?php previous_posts_link(); ?></div>
-                                </div>
+                                    </div>
+                                </li>
+                            <?php endwhile; ?>
+                            <div class="navigation">
+                                <div class="next-posts"><?php next_posts_link(); ?></div>
+                                <div class="prev-posts"><?php previous_posts_link(); ?></div>
+                            </div>
 
-                            <?php else : ?>
+                        <?php else : ?>
 
-                                <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-                                    <h1>Not Found</h1>
-                                </div>
+                            <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                                <h1>Not Found</h1>
+                            </div>
 
-                            <?php endif; ?>
-                            <?php wp_reset_query(); ?>
-                        </ul>
-                    </div>
+                        <?php endif; ?>
+                        <?php wp_reset_query(); ?>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -291,11 +270,12 @@ get_header();
                 <div class="dez-separator-outer ">
                     <div class="dez-separator bg-white style-liner"></div>
                 </div>
-                <p><?php the_field('short_layanan_kami');?></p>
+                <p><?php the_field('short_layanan_kami'); ?></p>
             </div>
             <div class="row">
                 <div class="col-md-3 col-sm-6 m-b30 ">
-                    <div style="position: static; height: 365px;" class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
+                    <div style="position: static; height: 365px;"
+                         class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
                         <div s class="icon-bx-md radius bg-white m-b20">
                             <span class="icon-cell text-primary"><i class="fa fa-male"></i></span>
                         </div>
@@ -305,22 +285,24 @@ get_header();
                             $titleInd = $postInd->post_title;
                             $contentInd = $postInd->post_content;
 
-                            $excerptInd = strip_shortcodes( $contentInd );
-                            $excerptInd = apply_filters( 'the_content', $excerptInd );
+                            $excerptInd = strip_shortcodes($contentInd);
+                            $excerptInd = apply_filters('the_content', $excerptInd);
                             $excerptInd = str_replace(']]>', ']]&gt;', $excerptInd);
-                            $excerpt_length = apply_filters( 'excerpt_length', 20 );
+                            $excerpt_length = apply_filters('excerpt_length', 20);
                             //                              $excerpt_more = apply_filters( 'excerpt_more', ' ' . '[&hellip;]' );
-                            $excerptInd = wp_trim_words( $excerptInd, $excerpt_length, $excerpt_more );
+                            $excerptInd = wp_trim_words($excerptInd, $excerpt_length, $excerpt_more);
                             ?>
                             <h4 class="dez-tilte"><?php echo $titleInd; ?></h4>
                             <p><?php echo $excerptInd; ?></p>
 
                         </div>
-                        <button style="top: 10px;" type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalInd">Read More <i class="icon-play3 position-right"></i></button>
+                        <button style="top: 10px;" type="button" class="btn btn-default btn-sm" data-toggle="modal"
+                                data-target="#modalInd">Read More <i class="icon-play3 position-right"></i></button>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 m-b30">
-                    <div style="position: static; height: 365px;" class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
+                    <div style="position: static; height: 365px;"
+                         class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
                         <div class="icon-bx-md radius bg-white m-b20">
                             <span class="icon-cell text-red"><i class="fa fa-users"></i></span>
                         </div>
@@ -330,21 +312,23 @@ get_header();
                             $titleKel = $postKel->post_title;
                             $contentKel = $postKel->post_content;
 
-                            $excerptKel = strip_shortcodes( $contentKel );
-                            $excerptKel = apply_filters( 'the_content', $excerptKel );
+                            $excerptKel = strip_shortcodes($contentKel);
+                            $excerptKel = apply_filters('the_content', $excerptKel);
                             $excerptKel = str_replace(']]>', ']]&gt;', $excerptKel);
-                            $excerpt_length = apply_filters( 'excerpt_length', 20 );
+                            $excerpt_length = apply_filters('excerpt_length', 20);
                             //                              $excerpt_more = apply_filters( 'excerpt_more', ' ' . '[&hellip;]' );
-                            $excerptKel = wp_trim_words( $excerptKel, $excerpt_length, $excerpt_more );
+                            $excerptKel = wp_trim_words($excerptKel, $excerpt_length, $excerpt_more);
                             ?>
                             <h4 class="dez-tilte"><?php echo $titleKel; ?></h4>
                             <p><?php echo $excerptKel; ?></p>
                         </div>
-                        <button type="button" style="top: 10px;" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalKel">Read More <i class="icon-play3 position-right"></i></button>
+                        <button type="button" style="top: 10px;" class="btn btn-default btn-sm" data-toggle="modal"
+                                data-target="#modalKel">Read More <i class="icon-play3 position-right"></i></button>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 m-b30">
-                    <div style="position: static; height: 365px;" class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
+                    <div style="position: static; height: 365px;"
+                         class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
                         <div class="icon-bx-md radius bg-white m-b20">
                             <span class="icon-cell text-yello"><i class="fa fa-university"></i></span>
                         </div>
@@ -354,22 +338,24 @@ get_header();
                             $titleSek = $postSek->post_title;
                             $contentSek = $postSek->post_content;
 
-                            $excerptSek = strip_shortcodes( $contentSek );
-                            $excerptSek = apply_filters( 'the_content', $excerptSek );
+                            $excerptSek = strip_shortcodes($contentSek);
+                            $excerptSek = apply_filters('the_content', $excerptSek);
                             $excerptSek = str_replace(']]>', ']]&gt;', $excerptSek);
-                            $excerpt_length = apply_filters( 'excerpt_length', 20 );
+                            $excerpt_length = apply_filters('excerpt_length', 20);
                             //                              $excerpt_more = apply_filters( 'excerpt_more', ' ' . '[&hellip;]' );
-                            $excerptSek = wp_trim_words( $excerptSek, $excerpt_length, $excerpt_more );
+                            $excerptSek = wp_trim_words($excerptSek, $excerpt_length, $excerpt_more);
                             ?>
                             <h4 class="dez-tilte"><?php echo $titleSek; ?></h4>
                             <p><?php echo $excerptSek; ?></p>
 
                         </div>
-                        <button type="button" style="top: 10px;" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalSek">Read More <i class="icon-play3 position-right"></i></button>
+                        <button type="button" style="top: 10px;" class="btn btn-default btn-sm" data-toggle="modal"
+                                data-target="#modalSek">Read More <i class="icon-play3 position-right"></i></button>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 m-b30">
-                    <div style="position: static; height: 365px;" class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
+                    <div style="position: static; height: 365px;"
+                         class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">
                         <div class="icon-bx-md radius bg-white m-b20">
                             <span class="icon-cell text-green"><i class="fa fa-building-o"></i></span>
                         </div>
@@ -379,44 +365,45 @@ get_header();
                             $titlePer = $postPer->post_title;
                             $contentPer = $postPer->post_content;
 
-                            $excerptPer = strip_shortcodes( $contentPer );
-                            $excerptPer = apply_filters( 'the_content', $excerptPer );
+                            $excerptPer = strip_shortcodes($contentPer);
+                            $excerptPer = apply_filters('the_content', $excerptPer);
                             $excerptPer = str_replace(']]>', ']]&gt;', $excerptPer);
-                            $excerpt_length = apply_filters( 'excerpt_length', 20 );
+                            $excerpt_length = apply_filters('excerpt_length', 20);
                             //                              $excerpt_more = apply_filters( 'excerpt_more', ' ' . '[&hellip;]' );
-                            $excerptPer = wp_trim_words( $excerptPer, $excerpt_length, $excerpt_more );
+                            $excerptPer = wp_trim_words($excerptPer, $excerpt_length, $excerpt_more);
                             ?>
                             <h4 class="dez-tilte"><?php echo $titlePer; ?></h4>
                             <p><?php echo $excerptPer; ?></p>
 
                         </div>
-                        <button type="button" style="top: 10px;" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modalPer">Read More <i class="icon-play3 position-right"></i></button>
+                        <button type="button" style="top: 10px;" class="btn btn-default btn-sm" data-toggle="modal"
+                                data-target="#modalPer">Read More <i class="icon-play3 position-right"></i></button>
                     </div>
                 </div>
-<!--                <div class="col-md-3 col-sm-6 m-b30">-->
-<!--                    <div class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">-->
-<!--                        <div class="icon-bx-md radius bg-white m-b20">-->
-<!--                            <span class="icon-cell text-green"><i class="fa fa-smile-o"></i></span>-->
-<!--                        </div>-->
-<!--                            <div class="icon-content">-->
-<!--                                --><?php
-//                                $postShort = get_post(54);
-//                                $titleShort = $postShort->post_title;
-//                                $contentShort = $postShort->post_content;
-//
-//                                $excerptShort = strip_shortcodes( $contentShort );
-//                                $excerptShort = apply_filters( 'the_content', $excerptShort );
-//                                $excerptShort = str_replace(']]>', ']]&gt;', $excerptShort);
-//                                $excerpt_length = apply_filters( 'excerpt_length', 20 );
-////                              $excerpt_more = apply_filters( 'excerpt_more', ' ' . '[&hellip;]' );
-//                                $excerptShort = wp_trim_words( $excerptShort, $excerpt_length, $excerpt_more );
-//
-//                                ?>
-<!--                                <h4 class="dez-tilte">--><?php //echo $titleShort; ?><!--</h4>-->
-<!--                                <p>--><?php //echo $excerptShort; ?><!--</p>-->
-<!--                            </div>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <!--                <div class="col-md-3 col-sm-6 m-b30">-->
+                <!--                    <div class="icon-bx-wraper bx-style-1 p-a20 center radius-sm">-->
+                <!--                        <div class="icon-bx-md radius bg-white m-b20">-->
+                <!--                            <span class="icon-cell text-green"><i class="fa fa-smile-o"></i></span>-->
+                <!--                        </div>-->
+                <!--                            <div class="icon-content">-->
+                <!--                                --><?php
+                //                                $postShort = get_post(54);
+                //                                $titleShort = $postShort->post_title;
+                //                                $contentShort = $postShort->post_content;
+                //
+                //                                $excerptShort = strip_shortcodes( $contentShort );
+                //                                $excerptShort = apply_filters( 'the_content', $excerptShort );
+                //                                $excerptShort = str_replace(']]>', ']]&gt;', $excerptShort);
+                //                                $excerpt_length = apply_filters( 'excerpt_length', 20 );
+                ////                              $excerpt_more = apply_filters( 'excerpt_more', ' ' . '[&hellip;]' );
+                //                                $excerptShort = wp_trim_words( $excerptShort, $excerpt_length, $excerpt_more );
+                //
+                //                                ?>
+                <!--                                <h4 class="dez-tilte">--><?php //echo $titleShort; ?><!--</h4>-->
+                <!--                                <p>--><?php //echo $excerptShort; ?><!--</p>-->
+                <!--                            </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
             </div>
         </div>
         <!-- Modal with h4 -->
@@ -709,44 +696,45 @@ get_header();
             </div>
         </div>
     </div>
-	 <div class="p-a30 bg-white m-b30">
-                    <a href="http://p2t.azurewebsites.net/klien"><h2 class="h2" style="
+    <div class="p-a30 bg-white m-b30">
+        <a href="http://p2t.azurewebsites.net/klien"><h2 class="h2" style="
     text-align: center;
 "><span class="text-primary">Klien Kami</span>
-                                </h2></a>
-                            <div class="dez-separator-outer" style="
+            </h2></a>
+        <div class="dez-separator-outer" style="
     text-align: center; 
 ">
-                                <div class="dez-separator bg-primary style-liner"></div>
-                            </div>
-                            <div class="clear"></div>
-                    <div class="section-content">
-                        <div class="img-carousel-content mfp-gallery gallery owl-btn-center-lr">
-						<?php $latest = new WP_Query('showposts=10&cat=11'); ?>
-        <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
-                            <div class="item">
-                                <div class="ow-carousel-entry">
-                                    <div class="ow-entry-media dez-img-effect zoom-slow"> <img src="<?php the_field('cover');?>" alt="" /> </div>
-                                   
-                                </div>
-                            </div>
-                             <?php endwhile; ?>
-          <div class="navigation">
-           <div class="next-posts"><?php next_posts_link(); ?></div>
-           <div class="prev-posts"><?php previous_posts_link(); ?></div>
-          </div>
+            <div class="dez-separator bg-primary style-liner"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="section-content">
+            <div class="img-carousel-content mfp-gallery gallery owl-btn-center-lr">
+                <?php $latest = new WP_Query('showposts=10&cat=11'); ?>
+                <?php if (have_posts()) : while ($latest->have_posts()) : $latest->the_post(); ?>
+                    <div class="item">
+                        <div class="ow-carousel-entry">
+                            <div class="ow-entry-media dez-img-effect zoom-slow"><img src="<?php the_field('cover'); ?>"
+                                                                                      alt=""/></div>
 
-         <?php else : ?>
-
-          <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-           <h1>Not Found</h1>
-          </div>
-
-         <?php endif; ?>
-         <?php wp_reset_query(); ?>
                         </div>
                     </div>
-                </div>
+                <?php endwhile; ?>
+                    <div class="navigation">
+                        <div class="next-posts"><?php next_posts_link(); ?></div>
+                        <div class="prev-posts"><?php previous_posts_link(); ?></div>
+                    </div>
+
+                <?php else : ?>
+
+                    <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                        <h1>Not Found</h1>
+                    </div>
+
+                <?php endif; ?>
+                <?php wp_reset_query(); ?>
+            </div>
+        </div>
+    </div>
     </div>
 <?php
 get_footer();
