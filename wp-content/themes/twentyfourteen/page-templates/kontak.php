@@ -111,6 +111,7 @@
 				
             </div>
         </div>
+     <?php echo $connectstr_dbhost ?>
         <!-- contact area  END -->
     </div>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_YEzHx_YCQvqQSB_xuSC18BT81BlKVvI&amp;sensor=false"></script>
