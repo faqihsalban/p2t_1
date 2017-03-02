@@ -143,9 +143,9 @@ get_header();
                                                     src="<?php the_field('cover'); ?>"
                                                     alt=""/></a></div>
                                     <div class="dez-info p-a20 border-1 text-center">
-                                        <h2 class="dez-title m-t0 m-b10 font-weight-900"><a
+                                        <p class="dez-title m-t0 m-b10 font-weight-900"><a
                                                     href="<?php the_permalink(); ?>"><?php echo substr(strip_tags(get_the_content()), 0, 35) . '[...]'; ?></a>
-                                        </h2>
+                                        </p>
                                         <!--<!--                                        <div class="dez-post-meta m-b20">-->
 
                                         <!--<!--                                        <ul>-->
