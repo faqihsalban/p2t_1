@@ -202,7 +202,7 @@ get_header();
 
                             <?php if ($the_query->have_posts()) :
                             while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
-                                <li data-filter="home" class="card-container col-md-3 col-sm-4 m-b30">
+                                <li data-filter="home" class="card-container col-md-3 col-sm-3 m-b30">
                                     <div class="dez-box dez-gallery-box">
 
                                         <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"><a
@@ -225,14 +225,6 @@ get_header();
                                 <div class="prev-posts"></div>
                             </div>
                     </div>
-                    <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1  ?>
-                        <div class="pagination-bx col-lg-12 clearfix ">
-                            <ul class="pagination">
-                                <li clas="previous"><?php echo get_next_posts_link('Older Entries', $the_query->max_num_pages); // display older posts link ?></li>
-                                <li class="next"><?php echo get_previous_posts_link('Newer Entries'); // display newer posts link ?></li>
-                            </ul>
-                        </div>
-                    <?php } ?>
                     <?php else : ?>
 
                         <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
