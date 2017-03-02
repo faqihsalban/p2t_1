@@ -62,7 +62,7 @@ get_header();
 									<div class="dez-box m-b30">
 										<div class="dez-media">
 											<a href="<?php the_permalink();?>">
-												<img style="img-circle" width="358" height="460" src="<?php the_field('cover');?>" alt="" />
+												<img class="img-circle" width="358" height="460" src="<?php the_field('cover');?>" alt="" />
 											</a>
 											<div class="dez-info-has bg-primary">
 												<a href="<?php the_permalink();?>" style="border: rgba(255,255,255,0.4) solid 1.5px;
