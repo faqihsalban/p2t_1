@@ -36,28 +36,29 @@ get_header();
     <div class="container">
     <div class="row">
     <!-- Left part start -->
-    <div class="col-md-9">
+		<div class="col-md-9">
         <!-- blog start -->
-        <div class="blog-post blog-single">
-            <div class="dez-post-title ">
-                <h3 class="post-title"><a href="#"><?php the_title(); ?></a></h3>
-            </div>
-         <div class="dez-post-text">
-                <?php the_content(); ?>
-         </div>
-           
-           
-    </div>
-   
-    <!-- Left part END -->
-    <!-- Side bar start -->
-        <div class="col-md-3">
+			<div class="blog-post blog-single">
+				<div class="dez-post-title ">
+					<h3 class="post-title"><a href="#"><?php the_title(); ?></a></h3>
+				</div>
+				<div class="dez-post-text">
+						<?php the_content(); ?>
+				</div>
+			</div>   
+		</div>      
+  
+
+
+		<!-- Left part END -->
+		<!-- Side bar start -->
+		<div class="col-md-3">
             <aside class="side-bar">
 			
                 <div class="widget recent-posts-entry">
                     <h4 class="widget-title">Recent Posts</h4>
-<?php $latest = new WP_Query('showposts=4&cat=3,4,5,6'); ?>
-<?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
+                        <?php $latest = new WP_Query('showposts=4&cat=3,4,5,6'); ?>
+                        <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
                     <div class="widget-post-bx">
                         <div class="widget-post clearfix">
                             <div class="dez-post-media"> <a href="<?php the_permalink();?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt="" /> </a></div>
@@ -73,20 +74,20 @@ get_header();
                             </div>
                         </div>
                     </div>
-<?php endwhile; ?>
-    <div class="navigation">
-        <div class="next-posts"><?php next_posts_link(); ?></div>
-        <div class="prev-posts"><?php previous_posts_link(); ?></div>
-    </div>
+								<?php endwhile; ?>
+									<div class="navigation">
+										<div class="next-posts"><?php next_posts_link(); ?></div>
+										<div class="prev-posts"><?php previous_posts_link(); ?></div>
+									</div>
 
-<?php else : ?>
+								<?php else : ?>
 
-    <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-        <h1>Not Found</h1>
-    </div> 
+									<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+										<h1>Not Found</h1>
+									</div> 
 
-<?php endif; ?>
-                    <?php wp_reset_query(); ?>
+								<?php endif; ?>
+													<?php wp_reset_query(); ?>
                 </div>
 
                 <div class="widget widget_gallery">
