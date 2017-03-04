@@ -61,8 +61,8 @@ get_header();
 									<div class="dez-box m-b30">
 										<div class="dez-media">
 											<a href="<?php the_permalink();?>">
-                                            <img class="frame" src="http://p2t.azurewebsites.net/wp-content/themes/twentyfourteen/images/frame-lecture-white.svg">
-											<img class="" width="500" height="500" src="<?php the_field('cover');?>" alt="" />
+                                            <div class="circle-avatar" style="background-image:url(<?php the_field('cover');?>)"></div>
+											
 											</a>
 											<div class="dez-info-has bg-primary">
 												<ul class="dez-social-icon border">
