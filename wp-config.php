@@ -29,7 +29,7 @@ foreach ($_SERVER as $key => $value) {
     if (strpos($key, "MYSQLCONNSTR_") !== 0) {
         continue;
     }
-    
+
     $connectstr_dbhost = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $value);
     $connectstr_dbname = preg_replace("/^.*Database=(.+?);.*$/", "\\1", $value);
     $connectstr_dbusername = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
@@ -38,16 +38,16 @@ foreach ($_SERVER as $key => $value) {
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'p2t');
+define('DB_NAME', $connectstr_dbname);
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', $connectstr_dbusername);
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', $connectstr_dbpassword);
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', $connectstr_dbhost);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -100,15 +100,15 @@ define('WP_DEBUG', false);
 /* That's all, stop editing! Happy blogging. */
 
 //Relative URLs for swapping across app service deployment slots
-define('WP_HOME','http://localhost/p2t_1');
-define('WP_SITEURL', 'http://localhost/p2t_1');
-//define('WP_CONTENT_URL', '/wp-content');
-//define('DOMAIN_CURRENT_SITE', filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
+define('WP_HOME', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
+define('WP_SITEURL', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
+define('WP_CONTENT_URL', '/wp-content');
+define('DOMAIN_CURRENT_SITE', filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
 
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+    define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
