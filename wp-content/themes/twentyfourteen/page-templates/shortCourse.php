@@ -35,30 +35,7 @@ get_header();
             <!-- Left & right section start -->
             <div class="container">
                 <!-- Gallery -->
-                <div class="site-filters clearfix center  m-b40">
-                    <ul class="filters" data-toggle="buttons">
-                        <li data-filter="" class="btn active">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry active"><span>Show All</span></a> 
-						</li>
-                        <li data-filter="home" class="btn">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry "><span>Swimming</span></a> 
-						</li>
-                        <li data-filter="office" class="btn">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry "><span>Spanish</span></a> 
-						</li>
-                        <li data-filter="commercial" class="btn">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry "><span>Lunch</span></a> 
-						</li>
-                        <li data-filter="window" class="btn">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry "><span>Playground</span></a> 
-						</li>
-                    </ul>
-                </div>
+                
                 <div class="row">
                     <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery">
 					<?php
@@ -75,7 +52,7 @@ get_header();
 
                         <?php if ($the_query->have_posts()) :
                         while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
-                        <li data-filter="home" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <li data-filter="home" class="card-container col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <div class="dez-box dez-gallery-box">
                                 <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="<?php echo the_field('cover'); ?>" alt="" /> </a>
                                     <div class="overlay-bx">
