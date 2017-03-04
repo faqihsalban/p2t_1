@@ -68,7 +68,7 @@ get_header();
 													<?php if(get_field('facebook')!=''){ ?><li><a href="<?php echo the_field('facebook');?>" class="fa fa-facebook"></a></li><?php }?>
 													<?php if(get_field('twitter')!=''){ ?><li><a href="<?php echo the_field('twitter');?>" class="fa fa-twitter"></a></li><?php }?>
 													<?php if(get_field('linkedin')!=''){ ?><li><a href="<?php echo the_field('linkedin');?>" class="fa fa-linkedin"></a></li><?php }?>
-													<?php if(get_field('google-plus')!=''){ ?><li><a href="<?php echo the_field('google-plus');?>" class="fa fa-google-plus"></a></li><?php }?>
+													<?php if(get_field('google_plus')!=''){ ?><li><a href="<?php echo the_field('google_plus');?>" class="fa fa-google-plus"></a></li><?php }?>
 												</ul>
 										  </div>
 										</div> 

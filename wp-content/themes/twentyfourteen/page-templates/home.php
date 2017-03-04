@@ -187,7 +187,7 @@ get_header();
                 <div class="section-content ">
 
                     <div class="row">
-                        <ul id="masonry" class="dez-gallery-listing gallery-grid-3 mfp-gallery">
+                        <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery">
                             <?php
                             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                             $query_args = array(
