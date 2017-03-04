@@ -64,18 +64,12 @@ get_header();
 												<img class="img-circle" width="358" height="460" src="<?php the_field('cover');?>" alt="" />
 											</a>
 											<div class="dez-info-has bg-primary">
-<<<<<<< Updated upstream
-												<a href="<?php the_permalink();?>" style="border: rgba(255,255,255,0.4) solid 1.5px;
-    padding: 10px;
-    color: white;">Lihat Saya</a>
-=======
-												<ul class="dez-social-icon border">
+												<ul class="dez-social-icon border"> 
 													<?php if(get_field('facebook')!=''){ ?><li><a href="<?php echo the_field('facebook');?>" class="fa fa-facebook"></a></li><?php }?>
 													<?php if(get_field('twitter')!=''){ ?><li><a href="<?php echo the_field('twitter');?>" class="fa fa-twitter"></a></li><?php }?>
 													<?php if(get_field('linkedin')!=''){ ?><li><a href="<?php echo the_field('linkedin');?>" class="fa fa-linkedin"></a></li><?php }?>
 													<?php if(get_field('google-plus')!=''){ ?><li><a href="<?php echo the_field('google-plus');?>" class="fa fa-google-plus"></a></li><?php }?>
 												</ul>
->>>>>>> Stashed changes
 										  </div>
 										</div> 
 										<div class="p-a10">
