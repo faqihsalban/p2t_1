@@ -144,7 +144,7 @@ get_header();
                                                     alt=""/></a></div>
                                     <div class="dez-info p-a20 border-1 text-center">
                                         <p class="dez-title m-t0 m-b10 font-weight-900"><a
-                                                    href="<?php the_permalink(); ?>"><?php echo substr(strip_tags(get_the_content()), 0, 35) . '[...]'; ?></a>
+                                                    href="<?php the_permalink(); ?>"><?php echo substr(strip_tags(get_the_content()), 0, 205) . '[...]'; ?></a>
                                         </p>
                                         <!--<!--                                        <div class="dez-post-meta m-b20">-->
 
