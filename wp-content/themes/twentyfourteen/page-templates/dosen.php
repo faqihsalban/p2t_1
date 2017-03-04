@@ -8,8 +8,7 @@
  */
 get_header();
 ?>
-
-  <div class="page-content">
+<div class="page-content">
     <!-- inner page banner -->
         <?php
         if ( have_posts() ) : while ( have_posts() ) : the_post();
@@ -38,16 +37,66 @@ get_header();
     <!-- Left part start -->
     <div class="col-md-9">
         <!-- blog start -->
-        <div class="blog-post blog-single">
-            <div class="dez-post-title ">
-                <h3 class="post-title"><a href="#"><?php the_title(); ?></a></h3>
-            </div>
-         
-            <div class="dez-post-text">
-                <?php the_content(); ?>
-            </div>
-            
-        </div>
+        <div class="p-a30 bg-white m-b30">
+                        <div class="section-head">
+                            <h2 class="text-uppercase"><?php the_title();?></h2>
+                        </div>
+						<div class="section-content text-center ">
+							<div class="row">
+							<?php
+                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                    $query_args = array(
+                        'post_type' => 'post',
+                        'category_name' => 'dosen',
+                        'posts_per_page' => 200,
+                        'paged' => $paged
+                    );
+                    // create a new instance of WP_Query
+                    $the_query = new WP_Query($query_args);
+                    ?>
+
+                    <?php if ($the_query->have_posts()) :
+                        while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
+								<div class="col-md-4 col-sm-6">
+									<div class="dez-box m-b30">
+										<div class="dez-media">
+											<a href="<?php the_permalink();?>">
+												<img class="img-circle" width="358" height="460" src="<?php the_field('cover');?>" alt="" />
+											</a>
+											<div class="dez-info-has bg-primary">
+												<ul class="dez-social-icon border">
+													<?php if(get_field('facebook')!=''){ ?><li><a href="<?php echo the_field('facebook');?>" class="fa fa-facebook"></a></li><?php }?>
+													<?php if(get_field('twitter')!=''){ ?><li><a href="<?php echo the_field('twitter');?>" class="fa fa-twitter"></a></li><?php }?>
+													<?php if(get_field('linkedin')!=''){ ?><li><a href="<?php echo the_field('linkedin');?>" class="fa fa-linkedin"></a></li><?php }?>
+													<?php if(get_field('google-plus')!=''){ ?><li><a href="<?php echo the_field('google-plus');?>" class="fa fa-google-plus"></a></li><?php }?>
+												</ul>
+										  </div>
+										</div> 
+										<div class="p-a10">
+											<h4 class="dez-title text-uppercase"><a href="<?php the_permalink();?>"><?php the_field('name');?></a></h4>
+											
+										</div>       
+									</div>
+								</div>
+								<?php endwhile; ?>
+                        <div class="navigation">
+                            <div class="next-posts"><?php next_posts_link(); ?></div>
+                            <div class="prev-posts"><?php previous_posts_link(); ?></div>
+                        </div>
+
+                    <?php else : ?>
+
+                        <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                            <h1>Not Found</h1>
+                        </div>
+
+                    <?php endif; ?>
+                    <?php wp_reset_query(); ?>
+							</div>
+						</div>                        
+                        
+                    
+                    </div>
     <?php
 endwhile;
 else:
@@ -65,12 +114,11 @@ else:
                     <h4 class="widget-title">Pages</h4>
 
                     <div class="widget-post-bx">
-                        <h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/">Profil</a></h6>
-						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/sejarah/">Direktur</a></h6>
-						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/nilai-nilai-p2t/">Manajer Operasional</a></h6>
-						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/">Staf</a></h6>
-						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/">Dosen</a></h6>
-						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/tentang-kami/">Mitra Kreatif</a></h6>
+                        <h6 class="post-title"><a href="http://p2t.azurewebsites.net/profil/">Profil</a></h6>
+						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/profil/direktur/">Direktur</a></h6>
+						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/profil/manajer-operasional/">Manajer Operasional</a></h6>
+						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/profil/staf">Staf</a></h6>
+						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/profil/dosen/">Dosen</a></h6>
 					</div>
 
                 </div>
@@ -110,7 +158,7 @@ else:
                 </div>
 
                 <div class="widget widget_gallery">
-                    <h5 class="widget-title">Our services</h5>
+                    <h5 class="widget-title">Our Gallery</h5>
                     <ul>
                         <?php
                 /* The loop */

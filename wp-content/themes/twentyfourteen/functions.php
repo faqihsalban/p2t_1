@@ -619,7 +619,16 @@ add_action('template_include', 'load_single_template');
     if( is_single() ) {
       global $post;
 
-      if( has_term('staff', 'category', $post) ) {
+      if( has_term('direktur', 'category', $post) ) {
+        $new_template = locate_template(array('single2.php' ));
+      }
+	  if( has_term('dosen', 'category', $post) ) {
+        $new_template = locate_template(array('single1.php' ));
+      }
+	  if( has_term('manajer-oprasional', 'category', $post) ) {
+        $new_template = locate_template(array('single1.php' ));
+      }
+	  if( has_term('dosen', 'category', $post) ) {
         $new_template = locate_template(array('single1.php' ));
       }
       
