@@ -48,7 +48,13 @@ get_header();
 			</div>   
 		</div>      
   
-
+  <?php
+endwhile;
+else:
+    ?>
+    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+<?php endif;
+?>
 
 		<!-- Left part END -->
 		<!-- Side bar start -->
