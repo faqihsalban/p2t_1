@@ -44,67 +44,11 @@ get_header();
             </div>
          <div class="dez-post-text">
                 <?php the_content(); ?>
-            </div>
-            <div class="p-a30 bg-white m-b30">
-                    
-                    <div class="section-content">
-                        <div class="row">
-						<?php
-                    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                    $query_args = array(
-                        'post_type' => 'post',
-                        'category_name' => 'klien',
-                        'posts_per_page' => 200,
-                        'paged' => $paged
-                    );
-                    // create a new instance of WP_Query
-                    $the_query = new WP_Query($query_args);
-                    ?>
-
-                    <?php if ($the_query->have_posts()) :
-                        while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
-                            <div class="col-md-3 col-sm-3 m-b30">
-                                <div class="dez-box">
-                                    <div class="dez-media"><img src="<?php the_field('cover');?>" alt="" /></div>
-                                    <div class="dez-info p-a30 border-1"style="
-    padding: 0px;
-    text-align: center;
-    font-size: 10px;
-">
-                                        <h4 class="dez-title m-t0" style="
-    font-size:15px
-"><?php the_title();?></h4>
-                                         </div>
-                                </div>
-                            </div>
-							<?php endwhile; ?>
-                        <div class="navigation">
-                            <div class="next-posts"><?php next_posts_link(); ?></div>
-                            <div class="prev-posts"><?php previous_posts_link(); ?></div>
-                        </div>
-
-                    <?php else : ?>
-
-                        <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-                            <h1>Not Found</h1>
-                        </div>
-
-                    <?php endif; ?>
-                    <?php wp_reset_query(); ?>
-                        </div>
-                    </div>
-                </div>
-            
-        </div>
-    <?php
-endwhile;
-else:
-    ?>
-    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-<?php endif;
-?>
-        <!-- blog END -->
+         </div>
+           
+           
     </div>
+   
     <!-- Left part END -->
     <!-- Side bar start -->
         <div class="col-md-3">
