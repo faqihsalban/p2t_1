@@ -14,7 +14,7 @@ get_header();
 
 
         <!-- Slider -->
-        <div class="container" style="width:auto;">
+        <div class="container" style="max-width:1920px; width:auto;">
             <?php
             echo do_shortcode("[metaslider id=230]");
             ?></div>
