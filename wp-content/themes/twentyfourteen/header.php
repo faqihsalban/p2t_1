@@ -218,13 +218,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="header-nav navbar-collapse collapse">
 					<ul class=" nav navbar-nav">
 						<li> <a href="http://p2t.azurewebsites.net/">Home<i class="fa fa-chevron-down"></i></a></li>
-						<li> <a href="http://p2t.azurewebsites.net/tentang-kami/">Tentang Kami<i class="fa fa-chevron-down"></i></a>
+						<li> <a href="#">Tentang Kami<i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
 								<li><a href="http://p2t.azurewebsites.net/tentang-kami/sejarah/">Sejarah</a></li>
 								<li><a href="http://p2t.azurewebsites.net/tentang-kami/nilai-nilai-p2t/">Nilai-nilai P2T</a></li>
 							</ul>
 						</li>
-						<li> <a href="http://p2t.azurewebsites.net/profil/">Profil<i class="fa fa-chevron-down"></i></a>
+						<li> <a href="#">Profil<i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
 								<li><a href="http://p2t.azurewebsites.net/profil/direktur/">Direktur</a></li>
 								<li><a href="http://p2t.azurewebsites.net/profil/manajer-operasional/">Manajer Operasional</a></li>
@@ -232,7 +232,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li><a href="http://p2t.azurewebsites.net/profil/dosen/">Dosen</a></li>
 							</ul>
 						</li>
-						<li class="has-mega-menu "> <a href="http://p2t.azurewebsites.net/layanan/">Layanan<i class="fa fa-chevron-down"></i></a>
+						<li class="has-mega-menu "> <a href="#">Layanan<i class="fa fa-chevron-down"></i></a>
 							<ul class="mega-menu">
 								<li> <a href="http://p2t.azurewebsites.net/layanan/individual/">Individual</a>
 									<ul>
