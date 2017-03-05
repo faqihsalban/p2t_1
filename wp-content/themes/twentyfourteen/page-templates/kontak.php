@@ -40,31 +40,7 @@
                         <div class="p-a30 bg-white clearfix m-b30">
                             <form method="post" id="contact_form" action="contact.php" />
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="input-group"> <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                                <input id="contact_name" name="name" type="text" required="" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                <input id="contact_email" name="email" type="email" class="form-control" required="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="input-group"> <span class="input-group-addon v-align-t"><i class="fa fa-pencil"></i></span>
-                                                <textarea id="contact_text" name="message" rows="4" class="form-control" required=""></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <button name="submit" type="submit" value="Submit" class="site-button skew-secondry"> <span>Submit</span> </button>
-                                        <button name="Resat" type="reset" value="Reset" class="site-button skew-secondry m-l30"> <span>Reset</span> </button>
-                                    </div>
+                                  <?php the_field('contact_show');?>
                                 </div>
                             </form>
                         </div>
