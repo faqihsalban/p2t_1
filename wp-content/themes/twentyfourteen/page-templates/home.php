@@ -306,7 +306,7 @@ get_header();
     <!-- Our Awesome Services END -->
     <!-- Our Philosophy -->
     <div class="section-full text-white bg-img-fix p-t70 p-b40 choose-us overlay-black-middle"
-         style="background-image:url(<?php echo get_template_directory_uri() ?>/assets/images/background/bg1.jpg);">
+         style="background-image:url(<?php echo get_template_directory_uri() ?>/assets/images/background/isola.jpg);">
         <div class="container">
             <div class="section-head  text-center text-white">
                 <h2 class="h2">Layanan Kami</h2>

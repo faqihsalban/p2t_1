@@ -40,43 +40,23 @@
                         <div class="p-a30 bg-white clearfix m-b30">
                             <form method="post" id="contact_form" action="contact.php" />
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="input-group"> <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                                <input id="contact_name" name="name" type="text" required="" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                <input id="contact_email" name="email" type="email" class="form-control" required="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="input-group"> <span class="input-group-addon v-align-t"><i class="fa fa-pencil"></i></span>
-                                                <textarea id="contact_text" name="message" rows="4" class="form-control" required=""></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <button name="submit" type="submit" value="Submit" class="site-button skew-secondry"> <span>Submit</span> </button>
-                                        <button name="Resat" type="reset" value="Reset" class="site-button skew-secondry m-l30"> <span>Reset</span> </button>
-                                    </div>
+                                  <?php the_field('contact_show');?>
                                 </div>
                             </form>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <!-- Map part start -->
-                                <h4>Lokasi Kami</h4>
+                                <h4>Lokasi Kami</h4> 
 <!--                                <div id="gmap_canvas"></div>-->
                                 <!-- Map part END -->
                             </div>
                         </div>
+<<<<<<< HEAD
                         <div class="col-md-12"><iframe width="100%" height="600" src="http://www.mapi.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=universitas%20pendidikan%20indonesia+(Pusat%20Psikologi%20Terapan%20(P2T))&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/fr/mesurer-distance-surface-google-maps.html">Mesurer distance avec Google Maps</a> en <a href="http://www.mapsdirections.info/fr/">www.mapsdirections.info/fr/</a></iframe></div><br />
+=======
+                        <div style="col-md-12"><iframe width="100%" height="600" src="http://www.mapi.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=universitas%20pendidikan%20indonesia+(Pusat%20Psikologi%20Terapan%20(P2T))&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/fr/mesurer-distance-surface-google-maps.html">Mesurer distance avec Google Maps</a> en <a href="http://www.mapsdirections.info/fr/">www.mapsdirections.info/fr/</a></iframe></div><br />
+>>>>>>> origin/master
                     </div>
                     <!-- Left part END -->
                     <!-- right part start -->
