@@ -8,7 +8,7 @@
  */
 get_header();
 ?>
-<div class="page-content">
+    <div class="page-content">
         <!-- inner page banner -->
         <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(./images/background/bg4.jpg);">
             <div class="container">
@@ -31,141 +31,62 @@ get_header();
         <div class="content-area">
             <!-- Left & right section start -->
             <div class="container">
-                <!-- Gallery -->
-                <div class="site-filters clearfix center  m-b40">
-                    <ul class="filters" data-toggle="buttons">
-                        <li data-filter="" class="btn active">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry active"><span>Show All</span></a> 
-						</li>
-                        <li data-filter="home" class="btn">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry "><span>Swimming</span></a> 
-						</li>
-                        <li data-filter="office" class="btn">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry "><span>Spanish</span></a> 
-						</li>
-                        <li data-filter="commercial" class="btn">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry "><span>Lunch</span></a> 
-						</li>
-                        <li data-filter="window" class="btn">
-                            <input type="radio" />
-                            <a href="#" class="site-button-secondry "><span>Playground</span></a> 
-						</li>
-                    </ul>
-                </div>
+                
                 <div class="row">
                     <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery">
-                        <li data-filter="home" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="./images/gallery/pic1.jpg" alt="" /> </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/pic1.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                        <?php
+                        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                        $query_args = array(
+                            'post_type' => 'post',
+                            'category_name' => 'short-course',
+                            'posts_per_page' => 8,
+                            'paged' => $paged
+                        );
+                        // create a new instance of WP_Query
+                        $the_query = new WP_Query($query_args);
+                        ?>
+
+                        <?php if ($the_query->have_posts()) :
+                            while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
+                                <li data-filter="home" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                    <div class="dez-box dez-gallery-box">
+                                        <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"><a
+                                                    href="javascript:void(0);"> <img
+                                                        src="<?php the_field('cover'); ?>" alt=""/> </a>
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"><a href="javascript:void(0);"> <i
+                                                                class="fa fa-link icon-bx-xs"></i>
+                                                    </a> <a href="<?php the_field('cover'); ?>" class="mfp-link"> <i
+                                                                class="fa fa-picture-o icon-bx-xs"></i> </a></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </li>
+                            <?php endwhile; ?>
+                            <div class="navigation">
+                                <div class="next-posts"></div>
+                                <div class="prev-posts"></div>
                             </div>
-                        </li>
-                        <li data-filter="office" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow dez-img-effect zoom"> <a href="javascript:void(0);"> <img src="./images/gallery/pic2.jpg" alt="" /> </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/pic2.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                    </div>
-                                </div>
+
+                            <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1 ?>
+                            <div class="pagination-bx col-lg-12 clearfix ">
+                                <ul class="pagination">
+                                    <li clas="previous"><?php echo get_next_posts_link('Older Entries', $the_query->max_num_pages); // display older posts link
+                                        ?></li>
+                                    <li class="next"><?php echo get_previous_posts_link('Newer Entries'); // display newer posts link
+                                        ?></li>
+                                </ul>
                             </div>
-                        </li>
-                        <li data-filter="children-aid" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="./images/gallery/pic3.jpg" alt="" /> </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/pic3.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                    </div>
-                                </div>
+                            <?php } ?>
+                        <?php else : ?>
+
+                            <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                                <h1>Not Found</h1>
                             </div>
-                        </li>
-                        <li data-filter="commercial" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="./images/gallery/pic4.jpg" alt="" /> </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/pic4.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-filter="window" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="./images/gallery/pic5.jpg" alt="" /> </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/pic5.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-filter="apartment" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="./images/gallery/pic6.jpg" alt="" /> </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/pic6.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-filter="construction" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="./images/gallery/pic1.jpg" alt="" /> </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/pic1.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-filter="home" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="./images/gallery/pic2.jpg" alt="" /> </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/pic2.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-filter="office" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="./images/gallery/pic9.jpg" alt="" /> </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/pic9.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-filter="office" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="./images/gallery/pic8.jpg" alt="" /> </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/pic9.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-filter="office" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="./images/gallery/pic2.jpg" alt="" /> </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/pic2.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li data-filter="office" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="./images/gallery/pic5.jpg" alt="" /> </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="./images/gallery/pic5.jpg" class="mfp-link"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+
+                        <?php endif; ?>
+                        <?php wp_reset_query(); ?>
+                        <!-- Pagination END -->
                     </ul>
                 </div>
                 <!-- Gallery END -->
