@@ -25,7 +25,7 @@ get_header();
     <div class="breadcrumb-row">
         <div class="container">
             <ul class="list-inline">
-			<li><a href="http://p2t.azurewebsites.net/">Home</a></li>
+			<li><a href="<?php echo get_home_url();?>/">Home</a></li>
                 <li><?php the_title(); ?></li>
             </ul>
         </div>
@@ -114,11 +114,11 @@ else:
                     <h4 class="widget-title">Pages</h4>
 
                     <div class="widget-post-bx">
-                        <h6 class="post-title"><a href="http://p2t.azurewebsites.net/profil/">Profil</a></h6>
-						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/profil/direktur/">Direktur</a></h6>
-						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/profil/manajer-operasional/">Manajer Operasional</a></h6>
-						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/profil/staf">Staf</a></h6>
-						<h6 class="post-title"><a href="http://p2t.azurewebsites.net/profil/dosen/">Dosen</a></h6>
+                        <h6 class="post-title"><a href="<?php echo get_home_url();?>/profil/">Profil</a></h6>
+						<h6 class="post-title"><a href="<?php echo get_home_url();?>/profil/direktur/">Direktur</a></h6>
+						<h6 class="post-title"><a href="<?php echo get_home_url();?>/profil/manajer-operasional/">Manajer Operasional</a></h6>
+						<h6 class="post-title"><a href="<?php echo get_home_url();?>/profil/staf">Staf</a></h6>
+						<h6 class="post-title"><a href="<?php echo get_home_url();?>/profil/dosen/">Dosen</a></h6>
 					</div>
 
                 </div>
@@ -169,7 +169,7 @@ else:
                   foreach( $gallery['src'] AS $src )
                   {
                    ?>
-				   <li class="img-effect2"> <a href="http://p2t.azurewebsites.net/galeri/"><img src="<?php echo $src;?>" alt="" /></a> </li>
+				   <li class="img-effect2"> <a href="<?php echo get_home_url();?>/galeri/"><img src="<?php echo $src;?>" alt="" /></a> </li>
                                 
 							<?php 
                   }

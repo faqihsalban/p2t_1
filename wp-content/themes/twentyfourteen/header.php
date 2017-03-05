@@ -217,66 +217,66 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<!-- main nav -->
 				<div class="header-nav navbar-collapse collapse">
 					<ul class=" nav navbar-nav">
-						<li> <a href="http://p2t.azurewebsites.net/">Home<i class="fa fa-chevron-down"></i></a></li>
+						<li> <a href="<?php echo get_home_url();?>/">Home<i class="fa fa-chevron-down"></i></a></li>
 						<li> <a href="#">Tentang Kami<i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
-								<li><a href="http://p2t.azurewebsites.net/tentang-kami/sejarah/">Sejarah</a></li>
-								<li><a href="http://p2t.azurewebsites.net/tentang-kami/nilai-nilai-p2t/">Nilai-nilai P2T</a></li>
+								<li><a href="<?php echo get_home_url();?>/tentang-kami/sejarah/">Sejarah</a></li>
+								<li><a href="<?php echo get_home_url();?>/tentang-kami/nilai-nilai-p2t/">Nilai-nilai P2T</a></li>
 							</ul>
 						</li>
 						<li> <a href="#">Profil<i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
 								<li><a href="<?php echo get_home_url();?>/profil/direktur/">Direktur</a></li>
-								<li><a href="http://p2t.azurewebsites.net/profil/manajer-operasional/">Manajer Operasional</a></li>
-								<li><a href="http://p2t.azurewebsites.net/profil/staff/">Staf</a></li>
-								<li><a href="http://p2t.azurewebsites.net/profil/dosen/">Dosen</a></li>
+								<li><a href="<?php echo get_home_url();?>/profil/manajer-operasional/">Manajer Operasional</a></li>
+								<li><a href="<?php echo get_home_url();?>/profil/staff/">Staf</a></li>
+								<li><a href="<?php echo get_home_url();?>/profil/dosen/">Dosen</a></li>
 							</ul>
 						</li>
 						<li class="has-mega-menu "> <a href="#">Layanan<i class="fa fa-chevron-down"></i></a>
 							<ul class="mega-menu">
-								<li> <a href="http://p2t.azurewebsites.net/layanan/individual/">Individual</a>
+								<li> <a href="<?php echo get_home_url();?>/layanan/individual/">Individual</a>
 									<ul>
-										<li><a href="http://p2t.azurewebsites.net/layanan/psikotes-individual/">Psikotes Individual</a></li>
-										<li><a href="http://p2t.azurewebsites.net/layanan/konseling-individual/">Konseling Individual</a></li>
-										<li><a href="http://p2t.azurewebsites.net/layanan/terapi/">Terapi</a></li>
+										<li><a href="<?php echo get_home_url();?>/layanan/psikotes-individual/">Psikotes Individual</a></li>
+										<li><a href="<?php echo get_home_url();?>/layanan/konseling-individual/">Konseling Individual</a></li>
+										<li><a href="<?php echo get_home_url();?>/layanan/terapi/">Terapi</a></li>
 									</ul>
 								</li>
-								<li> <a href="http://p2t.azurewebsites.net/keluarga/">Keluarga</a>
+								<li> <a href="<?php echo get_home_url();?>/keluarga/">Keluarga</a>
 									<ul>
-										<li><a href="http://p2t.azurewebsites.net/layanan/konseling-keluarga/">Konseling Keluarga</a></li>
-										<li><a href="http://p2t.azurewebsites.net/layanan/terapi-grup/">Terapi Group</a></li>
+										<li><a href="<?php echo get_home_url();?>/layanan/konseling-keluarga/">Konseling Keluarga</a></li>
+										<li><a href="<?php echo get_home_url();?>/layanan/terapi-grup/">Terapi Group</a></li>
 									</ul>
 								</li>
-								<li> <a href="http://p2t.azurewebsites.net/sekolah/">Sekolah</a>
+								<li> <a href="<?php echo get_home_url();?>/sekolah/">Sekolah</a>
 									<ul>
-										<li><a href="http://p2t.azurewebsites.net/sekolah/bidik-jurusan-untuk-pelajar/">Bidik Jurusan Untuk Pelajar</a></li>
-										<li><a href="http://p2t.azurewebsites.net/sekolah/bidik-minat-dan-bakat/">Bidik Minat Dan Bakat</a></li>
-										<li><a href="http://p2t.azurewebsites.net/sekolah/pendampingan-siswa-cerdas-istimewa/">Pendamping Siswa Cerdas Istimewa (CI)</a></li>
-										<li><a href="http://p2t.azurewebsites.net/sekolah/parenting">Parenting</a></li>
+										<li><a href="<?php echo get_home_url();?>/sekolah/bidik-jurusan-untuk-pelajar/">Bidik Jurusan Untuk Pelajar</a></li>
+										<li><a href="<?php echo get_home_url();?>/sekolah/bidik-minat-dan-bakat/">Bidik Minat Dan Bakat</a></li>
+										<li><a href="<?php echo get_home_url();?>/sekolah/pendampingan-siswa-cerdas-istimewa/">Pendamping Siswa Cerdas Istimewa (CI)</a></li>
+										<li><a href="<?php echo get_home_url();?>/sekolah/parenting">Parenting</a></li>
 									</ul>
 								</li>
-								<li> <a href="http://p2t.azurewebsites.net/perusahaan/">Perusahaan</a>
+								<li> <a href="<?php echo get_home_url();?>/perusahaan/">Perusahaan</a>
 									<ul>
-										<li><a href="http://p2t.azurewebsites.net/perusahaan/rekrutmen-dan-seleksi-karyawan/">Rekruitmen Dan Seleksi Karyawan</a></li>
-										<li><a href="http://p2t.azurewebsites.net/perusahaan/assesmen/">Asesment</a></li>
-										<li><a href="http://p2t.azurewebsites.net/perusahaan/pemetaan-kompetensi-karyawan/">Pemetaan Kompetensi Karyawan</a></li>
-										<li><a href="http://p2t.azurewebsites.net/perusahaan/pelatihan-dan-pengembangan-diri/">Pemetaan Dan Pengembangan Diri</a></li>
-										<li><a href="http://p2t.azurewebsites.net/perusahaan/modifikasi-perilaku">Modifikasi Prilaku</a></li>
+										<li><a href="<?php echo get_home_url();?>/perusahaan/rekrutmen-dan-seleksi-karyawan/">Rekruitmen Dan Seleksi Karyawan</a></li>
+										<li><a href="<?php echo get_home_url();?>/perusahaan/assesmen/">Asesment</a></li>
+										<li><a href="<?php echo get_home_url();?>/perusahaan/pemetaan-kompetensi-karyawan/">Pemetaan Kompetensi Karyawan</a></li>
+										<li><a href="<?php echo get_home_url();?>/perusahaan/pelatihan-dan-pengembangan-diri/">Pemetaan Dan Pengembangan Diri</a></li>
+										<li><a href="<?php echo get_home_url();?>/perusahaan/modifikasi-perilaku">Modifikasi Prilaku</a></li>
 									</ul>
 								</li>
 							</ul>
 						</li>
-						<li > <a href="http://p2t.azurewebsites.net/short-course/">Short Course</a>
+						<li > <a href="<?php echo get_home_url();?>/short-course/">Short Course</a>
                            
                         </li>
-						<li > <a href="http://p2t.azurewebsites.net/berita/">Berita</a>
+						<li > <a href="<?php echo get_home_url();?>/berita/">Berita</a>
                            
                         </li>
-<!--						<li> <a href="http://p2t.azurewebsites.net/berita">Berita<i class="fa fa-chevron-down"></i></a>-->
+<!--						<li> <a href="<?php echo get_home_url();?>/berita">Berita<i class="fa fa-chevron-down"></i></a>-->
 <!--						</li>-->
-						<li > <a href="http://p2t.azurewebsites.net/galeri/">Dokumentasi<i class="fa fa-chevron-down"></i></a></li>
-						<li > <a href="http://p2t.azurewebsites.net/klien/">Klien<i class="fa fa-chevron-down"></i></a></li>
-						<li > <a href="http://p2t.azurewebsites.net/kontak/">Kontak<i class="fa fa-chevron-down"></i></a></li>
+						<li > <a href="<?php echo get_home_url();?>/galeri/">Dokumentasi<i class="fa fa-chevron-down"></i></a></li>
+						<li > <a href="<?php echo get_home_url();?>/klien/">Klien<i class="fa fa-chevron-down"></i></a></li>
+						<li > <a href="<?php echo get_home_url();?>/kontak/">Kontak<i class="fa fa-chevron-down"></i></a></li>
 					</ul>
 				</div>
 		

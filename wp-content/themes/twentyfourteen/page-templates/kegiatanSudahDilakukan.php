@@ -24,7 +24,7 @@
   <div class="breadcrumb-row">
    <div class="container">
     <ul class="list-inline">
-     <li><a href="http://p2t.azurewebsites.net/">Home</a></li>
+     <li><a href="<?php echo get_home_url();?>/">Home</a></li>
      <li>Kegiatan yang sudah dilakukan</li>
     </ul>
    </div>

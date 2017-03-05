@@ -26,7 +26,7 @@ get_header();
     <div class="breadcrumb-row">
         <div class="container">
             <ul class="list-inline">
-			<li><a href="http://p2t.azurewebsites.net/">Home</a></li>
+			<li><a href="<?php echo get_home_url();?>/">Home</a></li>
                 <li><?php the_title(); ?></li>
             </ul>
         </div>
@@ -108,7 +108,7 @@ else:
                   foreach( $gallery['src'] AS $src )
                   {
                    ?>
-				   <li class="img-effect2"> <a href="http://p2t.azurewebsites.net/galeri/"><img src="<?php echo $src;?>" alt="" /></a> </li>
+				   <li class="img-effect2"> <a href="<?php echo get_home_url();?>/galeri/"><img src="<?php echo $src;?>" alt="" /></a> </li>
                                 
 							<?php 
                   }

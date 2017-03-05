@@ -35,7 +35,7 @@ get_header();
                             <div class="dez-separator bg-primary"></div>
                             <div class="clear"></div>
                             <p><?php the_field('short_about'); ?></p>
-                            <div class="row">
+                            <div class="row" style="display:none">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="icon-bx-wraper bx-style-1 p-a20 left m-b30">
                                         <div class="bg-primary icon-bx-xs m-b20 ">
@@ -114,7 +114,7 @@ get_header();
                 <div class="section-content">
                     <div class="row">
                         <div class="col-md-12 text-center section-head">
-                            <a href="http://p2t.azurewebsites.net/berita"><h2 class="h2"><span class="text-primary">Berita</span>
+                            <a href="<?php echo get_home_url();?>/berita"><h2 class="h2"><span class="text-primary">Berita</span>
                                 </h2></a>
                             <div class="dez-separator-outer">
                                 <div class="dez-separator bg-primary style-liner"></div>
@@ -178,7 +178,7 @@ get_header();
         <div class="section-full p-t70 p-b40">
             <div class="container">
                 <div class="section-head text-center">
-                    <a href="http://p2t.azurewebsites.net/short-course"><h2 class="h2"><span class="text-primary">Short Course</span></h2></a>
+                    <a href="<?php echo get_home_url();?>/short-course"><h2 class="h2"><span class="text-primary">Short Course</span></h2></a>
                     <div class="dez-separator-outer">
                         <div class="dez-separator bg-primary style-liner"></div>
                     </div>
@@ -740,7 +740,7 @@ get_header();
         </div>
     </div>
     <div class="p-a30 bg-white m-b30">
-        <a href="http://p2t.azurewebsites.net/klien"><h2 class="h2" style="
+        <a href="<?php echo get_home_url();?>/klien"><h2 class="h2" style="
     text-align: center;
 "><span class="text-primary">Klien Kami</span>
             </h2></a>

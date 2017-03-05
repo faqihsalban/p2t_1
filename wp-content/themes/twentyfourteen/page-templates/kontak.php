@@ -10,7 +10,7 @@
 ?>
  <div class="page-content">
         <!-- inner page banner -->
-        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(./assets/images/background/bg4.jpg);">
+        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(<?php echo get_template_directory_uri() ?>/assets/images/background/bg4.jpg);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
                     <h1 class="text-white"><?php the_title();?></h1>
@@ -22,7 +22,7 @@
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="<?php echo get_home_url();?>/">Home</a></li>
                     <li><?php the_title();?></li>
                 </ul>
             </div>
