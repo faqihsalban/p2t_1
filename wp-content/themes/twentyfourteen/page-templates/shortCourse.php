@@ -72,9 +72,6 @@ get_header();
                         <ul class="pagination">
                             <li class="previous"><?php echo get_next_posts_link('Older Entries', $the_query->max_num_pages); // display older posts link
                                     ?></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
                             <li class="next"><?php echo get_previous_posts_link('Newer Entries'); // display newer posts link
                                     ?></li>
                         </ul>
