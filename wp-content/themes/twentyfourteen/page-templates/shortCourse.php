@@ -31,7 +31,7 @@ get_header();
         <div class="content-area">
             <!-- Left & right section start -->
             <div class="container">
-                
+
                 <div class="row">
                     <ul id="masonry" class="dez-gallery-listing gallery-grid-4 mfp-gallery">
                         <?php
@@ -67,39 +67,31 @@ get_header();
                                 <div class="next-posts"></div>
                                 <div class="prev-posts"></div>
                             </div>
-
-                            <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1 ?>
-                            <div class="pagination-bx col-lg-12 clearfix ">
-                                <ul class="pagination">
-                                    <li clas="previous"><?php echo get_next_posts_link('Older Entries', $the_query->max_num_pages); // display older posts link
-                                        ?></li>
-                                    <li class="next"><?php echo get_previous_posts_link('Newer Entries'); // display newer posts link
-                                        ?></li>
-                                </ul>
-                            </div>
-                            <?php } ?>
-                        <?php else : ?>
-
-                            <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-                                <h1>Not Found</h1>
-                            </div>
-
-                        <?php endif; ?>
-                        <?php wp_reset_query(); ?>
-                        <!-- Pagination END -->
                     </ul>
                 </div>
                 <!-- Gallery END -->
                 <!-- Pagination start -->
+<?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1 ?>
                 <div class="pagination-bx  clearfix ">
                     <ul class="pagination">
-                        <li class="previous"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li class="previous"><a href="#"><?php echo get_next_posts_link('Older Entries', $the_query->max_num_pages); // display older posts link
+                                ?></a></li>
                         <li class="active"><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
-                        <li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                        <li class="next"><a href="#"><?php echo get_previous_posts_link('Newer Entries'); // display newer posts link
+                                ?></a></li>
                     </ul>
                 </div>
+<?php } ?>
+                <?php else : ?>
+
+                    <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                        <h1>Not Found</h1>
+                    </div>
+
+                <?php endif; ?>
+                <?php wp_reset_query(); ?>
                 <!-- Pagination END -->
             </div>
             <!-- Left & right section  END -->
