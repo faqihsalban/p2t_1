@@ -97,7 +97,7 @@ get_header();
         <!-- About Company END -->
         <!-- Purchase Add -->
         <div class="section-full bg-img-fix overlay-black-middle"
-             style="background-image:url(<?php echo get_template_directory_uri() ?>/assets/images/background/bg1.jpg);">
+             style="background-image:url(<?php echo get_template_directory_uri() ?>/assets/images/background/isola.jpg);">
             <div class="container">
                 <div class="row text-white p-tb60">
                     <div class="col-md-6">
