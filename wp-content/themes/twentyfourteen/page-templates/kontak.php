@@ -36,6 +36,7 @@
                     <div class="col-md-9">
                         <h4>Formulir kontak</h4>
                         <div id="show_contact_msg"></div>
+
                         <div class="p-a30 bg-white clearfix m-b30">
                             <form method="post" id="contact_form" action="contact.php" />
                                 <div class="row">
@@ -66,6 +67,14 @@
                                     </div>
                                 </div>
                             </form>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Map part start -->
+                                <h4>Lokasi Kami</h4>
+                                <div id="gmap_canvas"></div>
+                                <!-- Map part END -->
+                            </div>
                         </div>
                         <div style="width: 100%"><iframe width="100%" height="600" src="http://www.mapi.ie/create-google-map/map.php?width=100%&amp;height=600&amp;hl=en&amp;q=universitas%20pendidikan%20indonesia+(Pusat%20Psikologi%20Terapan%20(P2T))&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.mapsdirections.info/fr/mesurer-distance-surface-google-maps.html">Mesurer distance avec Google Maps</a> en <a href="http://www.mapsdirections.info/fr/">www.mapsdirections.info/fr/</a></iframe></div><br />
                     </div>
@@ -98,21 +107,10 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
                     <!-- right part END -->
                 </div>
-				<div class="row">
-					<div class="col-md-12">
-					<!-- Map part start -->
-					<h4>Lokasi Kami</h4>
-					<div id="gmap_canvas"></div>
-					<!-- Map part END -->
-					</div>
-				</div>
-				
             </div>
         </div>
-     <?php echo $connectstr_dbhost ?>
         <!-- contact area  END -->
     </div>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_YEzHx_YCQvqQSB_xuSC18BT81BlKVvI&amp;sensor=false"></script>
