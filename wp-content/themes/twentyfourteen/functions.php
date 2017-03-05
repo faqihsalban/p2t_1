@@ -628,7 +628,7 @@ add_action('template_include', 'load_single_template');
 	  if( has_term('manajer-oprasional', 'category', $post) ) {
         $new_template = locate_template(array('single1.php' ));
       }
-	  if( has_term('dosen', 'category', $post) ) {
+	  if( has_term('staff', 'category', $post) ) {
         $new_template = locate_template(array('single1.php' ));
       }
       
