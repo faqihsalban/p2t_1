@@ -72,7 +72,7 @@
                             <div class="col-md-12">
                                 <!-- Map part start -->
                                 <h4>Lokasi Kami</h4>
-                                <div id="gmap_canvas"></div>
+<!--                                <div id="gmap_canvas"></div>-->
                                 <!-- Map part END -->
                             </div>
                         </div>
