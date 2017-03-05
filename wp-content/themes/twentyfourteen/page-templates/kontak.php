@@ -35,6 +35,9 @@
                     <!-- Left part start -->
                     <div class="col-md-9">
                         <h4>Formulir kontak</h4>
+                        <?php 
+                                            echo do_shortcode("[contact-form-7 id=4 title=Contact]");
+                                        ?>
                         <div id="show_contact_msg"></div>
 
                         <div class="p-a30 bg-white clearfix m-b30">
@@ -43,6 +46,7 @@
                                   <?php the_field('contact_show');?>
                                 </div>
                             </form>
+                                    
                         </div>
                         <div class="row">
                             <div class="col-md-12">
