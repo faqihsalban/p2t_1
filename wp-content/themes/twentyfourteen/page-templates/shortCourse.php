@@ -47,43 +47,41 @@ get_header();
                         ?>
 
                         <?php if ($the_query->have_posts()) :
-                            while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
-                                <li data-filter="home" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                                    <div class="dez-box dez-gallery-box">
-                                        <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"><a
-                                                    href="javascript:void(0);"> <img
-                                                        src="<?php the_field('cover'); ?>" alt=""/> </a>
-                                            <div class="overlay-bx">
-                                                <div class="overlay-icon"><a href="javascript:void(0);"> <i
-                                                                class="fa fa-link icon-bx-xs"></i>
-                                                    </a> <a href="<?php the_field('cover'); ?>" class="mfp-link"> <i
-                                                                class="fa fa-picture-o icon-bx-xs"></i> </a></div>
-                                            </div>
+                        while ($the_query->have_posts()) : $the_query->the_post(); // run the loop ?>
+                            <li data-filter="home" class="card-container col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                <div class="dez-box dez-gallery-box">
+                                    <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"><a
+                                                href="javascript:void(0);"> <img
+                                                    src="<?php the_field('cover'); ?>" alt=""/> </a>
+                                        <div class="overlay-bx">
+                                            <div class="overlay-icon"><a href="javascript:void(0);"> <i
+                                                            class="fa fa-link icon-bx-xs"></i>
+                                                </a> <a href="<?php the_field('cover'); ?>" class="mfp-link"> <i
+                                                            class="fa fa-picture-o icon-bx-xs"></i> </a></div>
                                         </div>
                                     </div>
-                                </li>
-                            <?php endwhile; ?>
-                            <div class="navigation">
-                                <div class="next-posts"></div>
-                                <div class="prev-posts"></div>
-                            </div>
+                                </div>
+                            </li>
+                        <?php endwhile; ?>
                     </ul>
                 </div>
                 <!-- Gallery END -->
                 <!-- Pagination start -->
-<?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1 ?>
-                <div class="pagination-bx  clearfix ">
-                    <ul class="pagination">
-                        <li class="previous"><a href="#"><?php echo get_next_posts_link('Older Entries', $the_query->max_num_pages); // display older posts link
-                                ?></a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li class="next"><a href="#"><?php echo get_previous_posts_link('Newer Entries'); // display newer posts link
-                                ?></a></li>
-                    </ul>
-                </div>
-<?php } ?>
+                <?php if ($the_query->max_num_pages > 1) { // check if the max number of pages is greater than 1 ?>
+                    <div class="pagination-bx  clearfix ">
+                        <ul class="pagination">
+                            <li class="previous"><a
+                                        href="#"><?php echo get_next_posts_link('Older Entries', $the_query->max_num_pages); // display older posts link
+                                    ?></a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li class="next"><a
+                                        href="#"><?php echo get_previous_posts_link('Newer Entries'); // display newer posts link
+                                    ?></a></li>
+                        </ul>
+                    </div>
+                <?php } ?>
                 <?php else : ?>
 
                     <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
