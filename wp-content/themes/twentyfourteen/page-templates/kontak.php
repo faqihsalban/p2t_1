@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Kontak
+ * Template Name: Kontaks
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen
