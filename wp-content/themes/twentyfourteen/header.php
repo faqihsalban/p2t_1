@@ -226,7 +226,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</li>
 						<li> <a href="#">Profil<i class="fa fa-chevron-down"></i></a>
 							<ul class="sub-menu">
-								<li><a href="http://p2t.azurewebsites.net/profil/direktur/">Direktur</a></li>
+								<li><a href="<?php echo get_home_url(); ?> /profil/direktur/">Direktur</a></li>
 								<li><a href="http://p2t.azurewebsites.net/profil/manajer-operasional/">Manajer Operasional</a></li>
 								<li><a href="http://p2t.azurewebsites.net/profil/staff/">Staf</a></li>
 								<li><a href="http://p2t.azurewebsites.net/profil/dosen/">Dosen</a></li>
@@ -274,7 +274,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </li>
 <!--						<li> <a href="http://p2t.azurewebsites.net/berita">Berita<i class="fa fa-chevron-down"></i></a>-->
 <!--						</li>-->
-						<li > <a href="http://p2t.azurewebsites.net/galeri/">Galeri<i class="fa fa-chevron-down"></i></a></li>
+						<li > <a href="http://p2t.azurewebsites.net/galeri/">Dokumentasi<i class="fa fa-chevron-down"></i></a></li>
 						<li > <a href="http://p2t.azurewebsites.net/klien/">Klien<i class="fa fa-chevron-down"></i></a></li>
 						<li > <a href="http://p2t.azurewebsites.net/kontak/">Kontak<i class="fa fa-chevron-down"></i></a></li>
 					</ul>

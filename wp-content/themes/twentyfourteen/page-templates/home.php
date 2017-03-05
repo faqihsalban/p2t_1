@@ -529,7 +529,7 @@ get_header();
     <div class="section-full p-t70 p-b10" style="display:none">
         <div class="container">
             <div class="section-head text-center">
-                <h2 class="h2"><span class="text-primary">Our University Gallery</span></h2>
+                <h2 class="h2"><span class="text-primary">Dokumentasi Aktifitas</span></h2>
                 <div class="dez-separator-outer">
                     <div class="dez-separator bg-primary style-liner"></div>
                 </div>
