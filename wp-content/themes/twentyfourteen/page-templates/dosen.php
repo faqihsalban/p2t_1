@@ -61,7 +61,7 @@ get_header();
 									<div class="dez-box m-b30">
 										<div class="dez-media">
 											<a href="<?php the_permalink();?>">
-												<img class="img-circle" width="358" height="460" src="<?php the_field('cover');?>" alt="" />
+												  <div class="circle-avatar" style="background-image:url(<?php the_field('cover');?>)"></div></a>
 											</a>
 											<div class="dez-info-has bg-primary">
 												<ul class="dez-social-icon border">
