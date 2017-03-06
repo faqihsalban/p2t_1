@@ -42,7 +42,7 @@ get_header();
                         $query_args = array(
                             'post_type' => 'post',
                             'category_name' => 'berita',
-                            'posts_per_page' => 8,
+                            'posts_per_page' => 6,
                             'paged' => $paged
                         );
                         // create a new instance of WP_Query
