@@ -61,10 +61,9 @@ get_header();
 									<div class="dez-box m-b30">
 										<div class="dez-media">
 											<a href="<?php the_permalink();?>">
-                                            <div class="circle-avatar" style="background-image:url(<?php the_field('cover');?>)"></div>
-											
-											</a>
-											<div class="dez-info-has bg-primary">
+
+                                            <div class="circle-avatar" style="background-image:url(<?php the_field('cover');?>)">
+                                            <div class="dez-info-has bg-primary">
 												<ul class="dez-social-icon border">
 													<?php if(get_field('facebook')!=''){ ?><li><a href="<?php echo the_field('facebook');?>" class="fa fa-facebook"></a></li><?php }?>
 													<?php if(get_field('twitter')!=''){ ?><li><a href="<?php echo the_field('twitter');?>" class="fa fa-twitter"></a></li><?php }?>
@@ -72,6 +71,11 @@ get_header();
 													<?php if(get_field('google_plus')!=''){ ?><li><a href="<?php echo the_field('google_plus');?>" class="fa fa-google-plus"></a></li><?php }?>
 												</ul>
 										  </div>
+                                            
+                                            </div>
+											
+											</a>
+											
 										</div> 
 										<div class="p-a10">
 											<h4 class="dez-title text-uppercase"><a href="<?php the_permalink();?>"><?php the_field('name');?></a></h4>
