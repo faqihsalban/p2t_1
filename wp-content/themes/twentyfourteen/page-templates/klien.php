@@ -57,7 +57,7 @@ else:
 ?>
 
 		<!-- Left part END -->
-<!--		<!-- Side bar start -->-->
+<!--		<!-- Side bar start -->
 <!--		<div class="col-md-3">-->
 <!--            <aside class="side-bar">-->
 <!--			-->
@@ -119,7 +119,7 @@ else:
 <!---->
 <!--            </aside>-->
 <!--        </div>-->
-<!--        <!-- Side bar END -->-->
+<!--        <!-- Side bar END -->
     </div>
     </div>
     </div>
