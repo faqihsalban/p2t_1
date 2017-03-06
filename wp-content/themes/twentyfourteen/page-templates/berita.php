@@ -15,7 +15,7 @@ get_header();
         <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(<?php echo get_template_directory_uri() ?>/assets/images/background/bg4.jpg);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
-                    <h1 class="text-white">Kegiatan yang akan dilakukan</h1>
+                    <h1 class="text-white">Berita Kegiatan</h1>
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@ get_header();
             <div class="container">
                 <ul class="list-inline">
                     <li><a href="<?php echo get_home_url();?>/">Home</a></li>
-                    <li>Kegiatan yang akan dilakukan</li>
+                    <li>Berita</li>
                 </ul>
             </div>
         </div>
