@@ -274,7 +274,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </li>
 <!--						<li> <a href="<?php echo get_home_url();?>/berita">Berita<i class="fa fa-chevron-down"></i></a>-->
 <!--						</li>-->
-						<li > <a href="<?php echo get_home_url();?>/galeri/">Dokumentasi<i class="fa fa-chevron-down"></i></a></li>
+						<li > <a href="<?php echo get_home_url();?>/dokumentasi/">Dokumentasi<i class="fa fa-chevron-down"></i></a></li>
 						<li > <a href="<?php echo get_home_url();?>/klien/">Klien<i class="fa fa-chevron-down"></i></a></li>
 						<li > <a href="<?php echo get_home_url();?>/kontak/">Kontak<i class="fa fa-chevron-down"></i></a></li>
 					</ul>
