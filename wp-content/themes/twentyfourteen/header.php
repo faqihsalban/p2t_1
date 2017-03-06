@@ -180,7 +180,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="container header-contant-block"> 
 					<div class="row">
 						<div class="col-md-4">
-							<div class="logo-header "><a href="http://p2t.azurewebsites.net"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logo3.png" width="193" height="89" alt="" /></a></div>
+							<div class="logo-header "><a href="<?php echo get_home_url();?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logo3.png" width="193" height="89" alt="" /></a></div>
 						</div> 
 						
 					</div>
