@@ -750,6 +750,7 @@ get_header();
             <div class="dez-separator bg-primary style-liner"></div>
         </div>
         <div class="clear"></div>
+<div class="container">
         <div class="section-content">
             <div class="img-carousel-content mfp-gallery gallery owl-btn-center-lr">
                 <?php $latest = new WP_Query('showposts=10&cat=11'); ?>
@@ -777,6 +778,8 @@ get_header();
                 <?php wp_reset_query(); ?>
             </div>
         </div>
+    </div>
+
     </div>
     </div>
 <?php
