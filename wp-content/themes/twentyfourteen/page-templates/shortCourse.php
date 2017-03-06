@@ -54,9 +54,7 @@ get_header();
                                                 href="javascript:void(0);"> <img
                                                     src="<?php the_field('cover'); ?>" alt=""/> </a>
                                         <div class="overlay-bx">
-                                            <div class="overlay-icon"><a href="javascript:void(0);"> <i
-                                                            class="fa fa-link icon-bx-xs"></i>
-                                                </a> <a href="<?php the_field('cover'); ?>" class="mfp-link"> <i
+                                            <div class="overlay-icon"><a href="<?php the_field('cover'); ?>" class="mfp-link"> <i
                                                             class="fa fa-picture-o icon-bx-xs"></i> </a></div>
                                         </div>
                                     </div>
