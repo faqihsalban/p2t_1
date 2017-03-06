@@ -603,7 +603,7 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /*
- * Add Featured Content functionality.
+ * Add Featured Content  functionality.
  *
  * To overwrite in a plugin, define your own Featured_Content class on or
  * before the 'setup_theme' hook.
