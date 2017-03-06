@@ -205,3 +205,16 @@ h6 a:hover,
 .text-primary {
     color: #ae52de !important;
 }
+#namatab{
+	.col-md-6;
+}
+#emailtab{
+	.col-md-6;
+}
+#pesantab{
+	.col-md-12;
+}
+.submittab{
+	.btn;
+	.btn-submit;
+}
