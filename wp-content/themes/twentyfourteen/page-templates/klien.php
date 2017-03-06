@@ -57,69 +57,69 @@ else:
 ?>
 
 		<!-- Left part END -->
-		<!-- Side bar start -->
-		<div class="col-md-3">
-            <aside class="side-bar">
-			
-                <div class="widget recent-posts-entry">
-                    <h4 class="widget-title">Recent Posts</h4>
-                        <?php $latest = new WP_Query('showposts=4&cat=3,4,5,6'); ?>
-                        <?php if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
-                    <div class="widget-post-bx">
-                        <div class="widget-post clearfix">
-                            <div class="dez-post-media"> <a href="<?php the_permalink();?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt="" /> </a></div>
-                            <div class="dez-post-info">
-                                <div class="dez-post-header">
-                                    <a href="<?php the_permalink();?>"><h6 class="post-title"><?php the_title(); ?></h6></a>
-                                </div>
-                                <div class="dez-post-meta">
-                                    <ul>
-                                        <a href="<?php the_permalink();?>"><li class="post-author">By <?php the_author(); ?></li></a>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-								<?php endwhile; ?>
-									<div class="navigation">
-										<div class="next-posts"><?php next_posts_link(); ?></div>
-										<div class="prev-posts"><?php previous_posts_link(); ?></div>
-									</div>
-
-								<?php else : ?>
-
-									<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-										<h1>Not Found</h1>
-									</div> 
-
-								<?php endif; ?>
-													<?php wp_reset_query(); ?>
-                </div>
-
-                <div class="widget widget_gallery">
-                    <h5 class="widget-title">Our services</h5>
-                    <ul>
-                        <?php
-                /* The loop */
-                 
-                  $gallery = get_post_gallery( 104, false );
-                  
-                  /* Loop through all the image and output them one by one */
-                  foreach( $gallery['src'] AS $src )
-                  {
-                   ?>
-				   <li class="img-effect2"> <a href="<?php echo get_home_url();?>/galeri/"><img src="<?php echo $src;?>" alt="" /></a> </li>
-                                
-							<?php 
-                  }
-                 
-               ?>
-                    </ul>
-                </div>
-
-            </aside>
-        </div>
-        <!-- Side bar END -->
+<!--		<!-- Side bar start -->-->
+<!--		<div class="col-md-3">-->
+<!--            <aside class="side-bar">-->
+<!--			-->
+<!--                <div class="widget recent-posts-entry">-->
+<!--                    <h4 class="widget-title">Recent Posts</h4>-->
+<!--                        --><?php //$latest = new WP_Query('showposts=4&cat=3,4,5,6'); ?>
+<!--                        --><?php //if (have_posts()) : while ( $latest->have_posts() ) : $latest->the_post(); ?>
+<!--                    <div class="widget-post-bx">-->
+<!--                        <div class="widget-post clearfix">-->
+<!--                            <div class="dez-post-media"> <a href="--><?php //the_permalink();?><!--"><img src="--><?php //echo get_template_directory_uri() ?><!--/assets/images/blog/recent-blog/pic1.jpg" width="200" height="143" alt="" /> </a></div>-->
+<!--                            <div class="dez-post-info">-->
+<!--                                <div class="dez-post-header">-->
+<!--                                    <a href="--><?php //the_permalink();?><!--"><h6 class="post-title">--><?php //the_title(); ?><!--</h6></a>-->
+<!--                                </div>-->
+<!--                                <div class="dez-post-meta">-->
+<!--                                    <ul>-->
+<!--                                        <a href="--><?php //the_permalink();?><!--"><li class="post-author">By --><?php //the_author(); ?><!--</li></a>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--								--><?php //endwhile; ?>
+<!--									<div class="navigation">-->
+<!--										<div class="next-posts">--><?php //next_posts_link(); ?><!--</div>-->
+<!--										<div class="prev-posts">--><?php //previous_posts_link(); ?><!--</div>-->
+<!--									</div>-->
+<!---->
+<!--								--><?php //else : ?>
+<!---->
+<!--									<div --><?php //post_class(); ?><!-- id="post---><?php //the_ID(); ?><!--">-->
+<!--										<h1>Not Found</h1>-->
+<!--									</div> -->
+<!---->
+<!--								--><?php //endif; ?>
+<!--													--><?php //wp_reset_query(); ?>
+<!--                </div>-->
+<!---->
+<!--                <div class="widget widget_gallery">-->
+<!--                    <h5 class="widget-title">Our services</h5>-->
+<!--                    <ul>-->
+<!--                        --><?php
+//                /* The loop */
+//
+//                  $gallery = get_post_gallery( 104, false );
+//
+//                  /* Loop through all the image and output them one by one */
+//                  foreach( $gallery['src'] AS $src )
+//                  {
+//                   ?>
+<!--				   <li class="img-effect2"> <a href="--><?php //echo get_home_url();?><!--/galeri/"><img src="--><?php //echo $src;?><!--" alt="" /></a> </li>-->
+<!--                                -->
+<!--							--><?php //
+//                  }
+//
+//               ?>
+<!--                    </ul>-->
+<!--                </div>-->
+<!---->
+<!--            </aside>-->
+<!--        </div>-->
+<!--        <!-- Side bar END -->-->
     </div>
     </div>
     </div>
