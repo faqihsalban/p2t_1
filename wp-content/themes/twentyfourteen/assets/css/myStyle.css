@@ -199,7 +199,7 @@ h6 a:hover,
 }
 
 .dez-info-has.bg-primary {
-    background-color: rgba(174, 82, 222, 1) !important;
+    background-color: rgba(174, 82, 222, 0) !important;
 }
 
 .text-primary {
