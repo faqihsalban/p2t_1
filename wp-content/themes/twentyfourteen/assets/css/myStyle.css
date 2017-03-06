@@ -1,14 +1,91 @@
 .txtModals {
     color: #110b09 !important;
 }
+
 .header-style-4.dark .main-bar {
-    background:#fff;  
-}
-.bg-primary, .meet-ask-row:after, .dez-separator.style-skew[class*="style-"]:after, .dez-separator.style-skew[class*="style-"]:before, .dez-tilte-inner.skew-title:after, .date-style-2 .post-date, .date-style-3.skew-date .post-date, .date-style-3.skew-date .post-date:before, .overlay-primary-light:after, .overlay-primary-middle:after, .overlay-primary-dark:after, .widget-title:after, .site-button, .comments-area .comment-form p input[type="submit"], .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .footer-line:after, .testimonial-1 .quote-left:before, .testimonial-2 .quote-left:before, .site-filters .active > [class*="site-button"], .list-num-count > li:before, .date-style-4 .post-date strong, .date-style-3 .post-date, .date-style-2 .post-date, .team-social-btn ul li a:hover, .top-bar-curve:after, .header-style-6 .header-nav .nav > li.active:after, .header-style-6 .header-nav .nav > li:hover > a:after, .owl-prev, .owl-next, .scroltop {
-    background-color: #ae52de; 
+    background: #fff;
 }
 
-a, .text-primary, .primary li:before, .breadcrumb-row ul li a, .header-nav .nav > li.active > a, .header-nav .nav > li.current-menu-item > a .header-nav .nav > li .sub-menu li a:hover, .header-nav .nav > li:hover > a, .header-nav .nav > li .mega-menu > li ul a:hover, .header-nav .nav > li .sub-menu li:hover > a, .nav-dark.header-nav .nav > li .sub-menu li:hover > a, .nav-dark.header-nav .nav > li .mega-menu > li ul a:hover, blockquote:before, ol.comment-list li.comment .reply a, footer a:active, footer a:focus, footer a:hover, footer h1 a, footer h2 a, footer h3 a, footer h4 a, footer h5 a, footer h6 a, footer p a, .testimonial-1 .testimonial-position, .testimonial-4 .testimonial-name:after, .testimonial-2 .testimonial-position, .testimonial-3 .testimonial-position, .testimonial-3 .quote-left:before, .acod-head a:after, .acod-head a, .acod-head a:hover, .acod-head a.collapsed:hover, .dez-tabs .nav-tabs > li > a i, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .gallery-filters ul li:hover a, .gallery-filters ul li a:focus, .gallery-filters ul {
+.bg-primary,
+.meet-ask-row:after,
+.dez-separator.style-skew[class*="style-"]:after,
+.dez-separator.style-skew[class*="style-"]:before,
+.dez-tilte-inner.skew-title:after,
+.date-style-2 .post-date,
+.date-style-3.skew-date .post-date,
+.date-style-3.skew-date .post-date:before,
+.overlay-primary-light:after,
+.overlay-primary-middle:after,
+.overlay-primary-dark:after,
+.widget-title:after,
+.site-button,
+.comments-area .comment-form p input[type="submit"],
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus,
+.footer-line:after,
+.testimonial-1 .quote-left:before,
+.testimonial-2 .quote-left:before,
+.site-filters .active>[class*="site-button"],
+.list-num-count>li:before,
+.date-style-4 .post-date strong,
+.date-style-3 .post-date,
+.date-style-2 .post-date,
+.team-social-btn ul li a:hover,
+.top-bar-curve:after,
+.header-style-6 .header-nav .nav>li.active:after,
+.header-style-6 .header-nav .nav>li:hover>a:after,
+.owl-prev,
+.owl-next,
+.scroltop {
+    background-color: #ae52de;
+}
+
+a,
+.text-primary,
+.primary li:before,
+.breadcrumb-row ul li a,
+.header-nav .nav>li.active>a,
+.header-nav .nav>li.current-menu-item>a .header-nav .nav>li .sub-menu li a:hover,
+.header-nav .nav>li:hover>a,
+.header-nav .nav>li .mega-menu>li ul a:hover,
+.header-nav .nav>li .sub-menu li:hover>a,
+.nav-dark.header-nav .nav>li .sub-menu li:hover>a,
+.nav-dark.header-nav .nav>li .mega-menu>li ul a:hover,
+blockquote:before,
+ol.comment-list li.comment .reply a,
+footer a:active,
+footer a:focus,
+footer a:hover,
+footer h1 a,
+footer h2 a,
+footer h3 a,
+footer h4 a,
+footer h5 a,
+footer h6 a,
+footer p a,
+.testimonial-1 .testimonial-position,
+.testimonial-4 .testimonial-name:after,
+.testimonial-2 .testimonial-position,
+.testimonial-3 .testimonial-position,
+.testimonial-3 .quote-left:before,
+.acod-head a:after,
+.acod-head a,
+.acod-head a:hover,
+.acod-head a.collapsed:hover,
+.dez-tabs .nav-tabs>li>a i,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+.gallery-filters ul li:hover a,
+.gallery-filters ul li a:focus,
+.gallery-filters ul {
     color: #ae52de;
 }
 
@@ -16,6 +93,7 @@ a, .text-primary, .primary li:before, .breadcrumb-row ul li a, .header-nav .nav 
     border-bottom: 1px solid #21072f;
     background-color: #400a5d;
 }
+
 .header-style-4.dark .social-line li a {
     border-color: #300846;
 }
@@ -33,7 +111,28 @@ a, .text-primary, .primary li:before, .breadcrumb-row ul li a, .header-nav .nav 
     color: #787878;
     font-size: 15px;
 }
-.site-button:active, .site-button:hover, .site-button:focus, .active > .site-button, .bg-primary-dark, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .owl-prev:hover, .owl-prev:active, .owl-prev:focus, .owl-next:hover, .owl-next:active, .owl-next:focus {
+
+.site-button:active,
+.site-button:hover,
+.site-button:focus,
+.active>.site-button,
+.bg-primary-dark,
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>li>a:focus,
+.pagination>li>span:focus,
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus,
+.owl-prev:hover,
+.owl-prev:active,
+.owl-prev:focus,
+.owl-next:hover,
+.owl-next:active,
+.owl-next:focus {
     background-color: #67208c !important;
 }
 
@@ -41,23 +140,29 @@ a, .text-primary, .primary li:before, .breadcrumb-row ul li a, .header-nav .nav 
     color: #2D3239;
 }
 
-[class*=bg-] .header-nav .nav>li.active>a, [class*=bg-] .header-nav .nav>li.current-menu-item>a, [class*=bg-] .header-nav .nav>li:hover>a, [class*=bg-] .header-nav .nav>li>a:hover {
+[class*=bg-] .header-nav .nav>li.active>a,
+[class*=bg-] .header-nav .nav>li.current-menu-item>a,
+[class*=bg-] .header-nav .nav>li:hover>a,
+[class*=bg-] .header-nav .nav>li>a:hover {
     color: #ae52de;
 }
+
 .content-area {
     padding-top: 10px;
 }
-@media only screen and (max-width: 991px){
+
+@media only screen and (max-width: 991px) {
     .header-nav .nav {
         margin: 0;
         background: #ae52de !important;
     }
-	.padtop{
-		padding-top:0px !important;
-	}
+    .padtop {
+        padding-top: 0px !important;
+    }
 }
 
-.header-style-3 .slide-up, .header-style-4 .slide-up {
+.header-style-3 .slide-up,
+.header-style-4 .slide-up {
     background: #fff;
 }
 
@@ -66,7 +171,7 @@ a, .text-primary, .primary li:before, .breadcrumb-row ul li a, .header-nav .nav 
 .navigation li.active a,
 .navigation li.disabled {
     color: #fff;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .navigation li {
@@ -75,7 +180,7 @@ a, .text-primary, .primary li:before, .breadcrumb-row ul li a, .header-nav .nav 
 
 .navigation li a,
 .navigation li a:hover,
-.navigation li.active a, 
+.navigation li.active a,
 .navigation li.disabled {
     background-color: #6FB7E9;
     border-radius: 3px;
@@ -88,12 +193,15 @@ a, .text-primary, .primary li:before, .breadcrumb-row ul li a, .header-nav .nav 
 .navigation li.active a {
     background-color: #3C8DC5;
 }
-.padtop{
-	padding-top:70px;
+
+.padtop {
+    padding-top: 70px;
 }
+
 .dez-info-has.bg-primary {
-    background-color: rgba(174, 82, 222, 0.55) !important;
+    background-color: rgba(174, 82, 222, 1) !important;
 }
+
 .text-primary {
     color: #ae52de !important;
 }
