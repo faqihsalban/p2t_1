@@ -218,3 +218,6 @@ h6 a:hover,
 	.btn;
 	.btn-submit;
 }
+.mfp-bottom-bar{
+	display:none;
+}
